@@ -1,0 +1,14 @@
+{
+  "profile": "analysis",
+  "python": "3.12.14",
+  "packages": {
+    "geopandas": "1.1.4",
+    "netCDF4": "1.7.4",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1",
+    "shapely": "2.1.2",
+    "statsmodels": "0.15.0"
+  },
+  "blas_policy": "record"
+}

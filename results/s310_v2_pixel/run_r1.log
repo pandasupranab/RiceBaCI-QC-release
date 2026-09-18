@@ -1,0 +1,77 @@
+panel  90,000 pixel-years | 10,000 pixels | 25 districts | seasons 2017-2025
+retained overall: 0.3527
+all 25 panel districts resolve in the exposure catalogue
+
+NOTE: severe storms hitting roster districts that are NOT in the protocol's estimable list: ['DANA', 'MICHAUNG', 'MONTHA']
+  These enter the §3.8 A exposure panel through S_pre/S_harv but get no per-cyclone row. That is the frozen §3.8 B design (named-cyclone stacks are the six of §1.1); if the catalogue has changed, revisit §1.1 before reporting.
+--resume: 52 strata reusable from Table_SX_AttritionDiagnostic.partial.csv
+  --resume provenance check: class:pre_season reproduces exactly (coef -0.053303, p_WCB 0.0010)
+
+=== class:pre_season  (11,600 exposed pixel-years, 17 treated clusters)
+    coef -0.0533 (se 0.0109)  p_cluster 0.0000  p_WCB 0.0010  95% WCB CI [-0.0756, -0.0314]
+
+built dist_to_track_km from the exposure file: 0.209 of rows have a catalogued 34-kt track, the rest coded at 500 km
+
+IPSW (radar declaration, ipsw): logit on ['obs_total', 'n_valid_dekads', 'dist_to_track_km', 'elevation_m', 'slope_deg', 'incidence_deg'] + district/season FE, fitted on 90000 of 90000 rows, 813.9 events per parameter, converged=True, weights in [1.25, 100.00]
+  calibration |mean(p_hat) - mean(retained)| = 2.78e-16 (OK)
+    pretrend:trough:Slead_pre_season             beta   -0.052 d  (se 1.923)  p_WCB 0.9740  CI [-4.05, +4.42]
+    pretrend:trough:Slead_harvest_window         beta   -2.898 d  (se 1.319)  p_WCB 0.0740  CI [-5.79, -0.09]
+    pretrend:heading:Slead_pre_season            beta   +0.566 d  (se 1.263)  p_WCB 0.6830  CI [-2.25, +3.57]
+    pretrend:heading:Slead_harvest_window        beta   -2.412 d  (se 0.736)  p_WCB 0.0030  CI [-3.86, -0.82]
+    pretrend:drainage:Slead_pre_season           beta   +0.829 d  (se 1.160)  p_WCB 0.5340  CI [-1.70, +3.82]
+    pretrend:drainage:Slead_harvest_window       beta   -0.954 d  (se 0.652)  p_WCB 0.1930  CI [-2.40, +0.55]
+    pretrend:harvest:Slead_pre_season            beta   +1.536 d  (se 0.972)  p_WCB 0.1350  CI [-0.40, +3.59]
+    pretrend:harvest:Slead_harvest_window        beta   -0.547 d  (se 1.231)  p_WCB 0.6690  CI [-3.20, +2.00]
+    pretrend:veg_days:Slead_pre_season           beta   +0.617 d  (se 1.361)  p_WCB 0.6700  CI [-2.49, +3.31]
+    pretrend:veg_days:Slead_harvest_window       beta   +0.486 d  (se 1.379)  p_WCB 0.7770  CI [-2.60, +3.63]
+    pretrend:plateau_days:Slead_pre_season       beta   +0.264 d  (se 0.735)  p_WCB 0.7380  CI [-1.27, +1.79]
+    pretrend:plateau_days:Slead_harvest_window   beta   +1.458 d  (se 0.744)  p_WCB 0.0670  CI [+0.00, +2.89]
+    pretrend:fill_days:Slead_pre_season          beta   +0.970 d  (se 1.280)  p_WCB 0.4800  CI [-2.02, +3.70]
+    pretrend:fill_days:Slead_harvest_window      beta   +1.865 d  (se 1.363)  p_WCB 0.1930  CI [-0.83, +4.59]
+    pretrend:season_days:Slead_pre_season        beta   +1.587 d  (se 1.611)  p_WCB 0.3500  CI [-2.08, +4.99]
+    pretrend:season_days:Slead_harvest_window    beta   +2.351 d  (se 2.022)  p_WCB 0.2780  CI [-2.19, +6.45]
+    pretrend:rise_db:Slead_pre_season            beta   +0.127 d  (se 0.102)  p_WCB 0.2670  CI [-0.11, +0.36]
+    pretrend:rise_db:Slead_harvest_window        beta   -0.008 d  (se 0.082)  p_WCB 0.9230  CI [-0.19, +0.17]
+    pretrend:fall_db:Slead_pre_season            beta   +0.160 d  (se 0.078)  p_WCB 0.0770  CI [-0.01, +0.33]
+    pretrend:fall_db:Slead_harvest_window        beta   +0.019 d  (se 0.082)  p_WCB 0.8000  CI [-0.18, +0.19]
+    pretrend:plateau_db:Slead_pre_season         beta   -0.085 d  (se 0.083)  p_WCB 0.3570  CI [-0.29, +0.11]
+    pretrend:plateau_db:Slead_harvest_window     beta   -0.051 d  (se 0.057)  p_WCB 0.3800  CI [-0.17, +0.07]
+
+==========================================================================
+ROBUSTNESS ARM -- exposure classified against the measured season
+==========================================================================
+  S_phase_pre_window          29 exposed district-seasons,  17 treated clusters
+  S_phase_rise                14 exposed district-seasons,  14 treated clusters
+  S_phase_post_heading         4 exposed district-seasons,   4 treated clusters
+
+=== phase_attrition:S_phase_pre_window  (11,600 exposed pixel-years, 17 treated clusters)
+    coef -0.0533 (se 0.0109)  p_cluster 0.0000  p_WCB 0.0010  95% WCB CI [-0.0756, -0.0314]
+
+=== phase_attrition:S_phase_rise  (5,600 exposed pixel-years, 14 treated clusters)
+    coef +0.0358 (se 0.0153)  p_cluster 0.0188  p_WCB 0.0420  95% WCB CI [+0.0045, +0.0694]
+
+=== phase_attrition:S_phase_post_heading  (1,600 exposed pixel-years, 4 treated clusters)
+    coef +0.0162 (se 0.0286)  p_cluster 0.5706  p_WCB 0.6320  95% WCB CI [-0.0877, +0.1145]
+    phase:trough:S_phase_pre_window              beta   -0.138 d  (se 1.737)  p_WCB 0.9380  CI [-3.58, +3.46]
+    phase_ipsw:trough:S_phase_pre_window         beta   +1.031 d  (se 1.880)  p_WCB 0.6010  CI [-2.74, +5.37]
+    phase:trough:S_phase_rise                    beta   +6.608 d  (se 2.176)  p_WCB 0.0080  CI [+1.72, +11.67]
+    phase_ipsw:trough:S_phase_rise               beta   +5.112 d  (se 2.094)  p_WCB 0.0360  CI [+0.65, +9.50]
+    phase:trough:S_phase_post_heading            beta  +11.069 d  (se 1.817)  p_WCB 0.0170  CI [+6.31, +16.39]
+    phase_ipsw:trough:S_phase_post_heading       beta   +8.473 d  (se 2.905)  p_WCB 0.0860  CI [+0.69, +16.51]
+    phase:heading:S_phase_pre_window             beta   -0.566 d  (se 0.746)  p_WCB 0.4460  CI [-2.00, +1.00]
+    phase_ipsw:heading:S_phase_pre_window        beta   -0.180 d  (se 0.821)  p_WCB 0.8360  CI [-1.87, +1.61]
+    phase:heading:S_phase_rise                   beta   +2.011 d  (se 1.079)  p_WCB 0.1300  CI [-0.56, +4.57]
+    phase_ipsw:heading:S_phase_rise              beta   +1.754 d  (se 1.064)  p_WCB 0.1760  CI [-0.84, +4.12]
+    phase:heading:S_phase_post_heading           beta   +1.984 d  (se 1.307)  p_WCB 0.2450  CI [-1.77, +5.73]
+    phase_ipsw:heading:S_phase_post_heading      beta   +0.769 d  (se 1.870)  p_WCB 0.7250  CI [-5.74, +7.82]
+    phase:drainage:S_phase_pre_window            beta   -1.135 d  (se 0.833)  p_WCB 0.2240  CI [-2.89, +0.81]
+    phase_ipsw:drainage:S_phase_pre_window       beta   -0.434 d  (se 0.832)  p_WCB 0.6320  CI [-2.17, +1.45]
+    phase:drainage:S_phase_rise                  beta   +0.382 d  (se 0.742)  p_WCB 0.6340  CI [-1.40, +2.14]
+    phase_ipsw:drainage:S_phase_rise             beta   +0.011 d  (se 0.860)  p_WCB 0.9930  CI [-1.95, +1.98]
+    phase:drainage:S_phase_post_heading          beta   +0.435 d  (se 3.561)  p_WCB 0.9140  CI [-12.44, +12.69]
+    phase_ipsw:drainage:S_phase_post_heading     beta   -0.256 d  (se 4.015)  p_WCB 0.9550  CI [-17.76, +16.90]
+    phase:harvest:S_phase_pre_window             beta   -3.511 d  (se 1.031)  p_WCB 0.0070  CI [-5.71, -1.20]
+    phase_ipsw:harvest:S_phase_pre_window        beta   -2.764 d  (se 1.183)  p_WCB 0.0490  CI [-5.41, -0.06]
+    phase:harvest:S_phase_rise                   beta   -0.592 d  (se 1.149)  p_WCB 0.6370  CI [-3.46, +2.38]
+    phase_ipsw:harvest:S_phase_rise              beta   -1.458 d  (se 1.295)  p_WCB 0.2980  CI [-4.44, +1.55]
+    phase:harvest:S_phase_post_heading           beta   +0.977 d  (se 4.160)  p_WCB 0.8010  CI [-13.19, +14.33]

@@ -1,0 +1,16 @@
+threshold_db,n_units,median_excess,mean_excess,perm_p_one_sided,rule_i_pass,rule_ii_pass,window_spec
+1,18,-0.04,-0.033287037037,0.970514742629,False,False,postlandfall
+1.5,18,-0.03375,-0.0234259259259,0.92003998001,False,False,postlandfall
+2,18,-0.0225,-0.017962962963,0.936031984008,False,False,postlandfall
+2.5,18,-0.01,-0.00796296296296,0.775112443778,False,False,postlandfall
+3,18,-0.00625,-0.01375,0.938530734633,False,False,postlandfall
+3.5,18,0,-0.005,0.779610194903,False,False,postlandfall
+4,18,0,-0.000555555555556,0.545727136432,False,False,postlandfall
+4.5,18,0.0025,0.00263888888889,0.32383808096,False,False,postlandfall
+5,18,0.00375,0.00513888888889,0.148425787106,False,False,postlandfall
+6,18,0.00375,0.00444444444444,0.140929535232,False,False,postlandfall
+7,18,0.00125,0.00236111111111,0.164917541229,False,False,postlandfall
+8,18,0,0.00111111111111,0.304847576212,False,False,postlandfall
+9,18,0,0.00180555555556,0.0874562718641,False,False,postlandfall
+10,18,0,0.00180555555556,0.0924537731134,False,False,postlandfall
+12,18,0,0.00138888888889,0.0659670164918,False,False,postlandfall

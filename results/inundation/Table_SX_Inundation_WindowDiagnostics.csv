@@ -1,0 +1,3 @@
+window_spec,overlap_days_max,zero_mass_actual,zero_mass_null2017,zero_mass_asymmetry,share_min_predates_landfall_actual,share_min_predates_landfall_null2017,overlap_ok,zero_asymmetry_ok,admissible
+declared,9,0.109929577465,0.0446478873239,0.0652816901408,0.571197183099,0.496091549296,False,False,False
+postlandfall,0,0,0,0,0,0,True,True,True

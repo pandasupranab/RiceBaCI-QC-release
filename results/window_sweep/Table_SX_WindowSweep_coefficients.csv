@@ -1,0 +1,121 @@
+window_end_doy,level,arm,phenometric,test_var,cell_label,beta_days,se_days,t_cluster_robust,n_treated_clusters,n_rows,n_clusters
+425,district,all_estimable,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],1.91202899336,5.27314580738,0.362597406407,18,208,25
+410,district,all_estimable,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],3.90958162604,5.26194187659,0.742992172422,18,209,25
+395,district,all_estimable,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],-5.0384939292,3.50461081287,-1.43767573583,18,207,25
+385,district,all_estimable,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],-0.653389448679,4.95211279307,-0.131941552218,18,208,25
+365,district,all_estimable,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],13.0732836023,7.42726683182,1.76017421999,17,204,25
+425,district,all_estimable,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],-10.1843472315,4.89984262393,-2.07850496703,17,208,25
+410,district,all_estimable,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],-8.88584193131,5.02285430824,-1.76908215648,17,209,25
+395,district,all_estimable,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],-2.48260978242,5.13490272353,-0.483477470965,17,207,25
+385,district,all_estimable,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],-7.63798417056,5.35290554601,-1.42688566143,17,208,25
+365,district,all_estimable,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],5.94789184439,9.27953404181,0.640968804855,17,204,25
+425,district,all_estimable,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],6.18300287008,2.46630409632,2.50699128275,18,208,25
+410,district,all_estimable,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],7.64360294285,3.1571299382,2.42106061279,18,209,25
+395,district,all_estimable,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],7.52705890904,3.21932026416,2.33808950071,18,207,25
+385,district,all_estimable,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],7.50304770099,3.24164615783,2.31457948699,18,208,25
+365,district,all_estimable,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],5.92671194802,3.27785360088,1.80810758187,17,204,25
+425,district,all_estimable,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],2.04109223239,3.54145174875,0.576343369103,17,208,25
+410,district,all_estimable,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],1.46618833707,3.30785837212,0.443243988143,17,209,25
+395,district,all_estimable,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],0.292231313018,3.34541104677,0.0873528869644,17,207,25
+385,district,all_estimable,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],1.18850651537,3.48373488503,0.341158714596,17,208,25
+365,district,all_estimable,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],1.84905467739,3.91124011515,0.472754068517,17,204,25
+425,district,all_estimable,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),5.0009906867,3.10349206788,1.61140759419,18,208,25
+410,district,all_estimable,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),4.81651560177,3.02236045011,1.5936271273,18,209,25
+395,district,all_estimable,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),4.9142031526,3.12024372759,1.57494208197,18,207,25
+385,district,all_estimable,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),3.91422993522,3.13537704831,1.24840804628,18,208,25
+365,district,all_estimable,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),5.56165012669,2.45241209189,2.26782853708,17,204,25
+425,district,all_estimable,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,-0.419629392111,3.56859984467,-0.117589365683,17,208,25
+410,district,all_estimable,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,-0.89270317066,3.66633613691,-0.243486450048,17,209,25
+395,district,all_estimable,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,-0.971087979909,3.74920114141,-0.259011971692,17,207,25
+385,district,all_estimable,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,-1.29958196174,3.65051463159,-0.355999658376,17,208,25
+365,district,all_estimable,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,-2.93796643953,3.93099992879,-0.74738399714,17,204,25
+425,pixel,all_estimable,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],-0.301482658857,1.22977848175,-0.245152003658,18,31741,25
+410,pixel,all_estimable,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],0.479887309114,0.914685681536,0.524647229973,18,32036,25
+395,pixel,all_estimable,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],-0.971119923819,0.796209183968,-1.21967937996,18,31757,25
+385,pixel,all_estimable,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],-1.6433605376,0.835171983757,-1.96769116967,18,30250,25
+365,pixel,all_estimable,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],1.00981755664,0.721976934533,1.39868395837,18,28065,25
+425,pixel,all_estimable,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],-3.3512982784,1.02712450895,-3.26279652485,17,31741,25
+410,pixel,all_estimable,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],-2.84590581551,1.02892198914,-2.76591019099,17,32036,25
+395,pixel,all_estimable,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],0.216381680826,0.852665509018,0.253770884992,17,31757,25
+385,pixel,all_estimable,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],-2.27773015517,0.699774800571,-3.25494738209,17,30250,25
+365,pixel,all_estimable,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],-2.17626760744,0.911051024148,-2.38874393393,17,28065,25
+425,pixel,all_estimable,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],1.99166148128,0.853111310081,2.33458571906,18,31741,25
+410,pixel,all_estimable,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],1.67619167295,0.893273621115,1.87645938862,18,32036,25
+395,pixel,all_estimable,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],2.31797152726,0.928770768971,2.49574125791,18,31757,25
+385,pixel,all_estimable,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],2.48095477508,0.904632797226,2.74249925792,18,30250,25
+365,pixel,all_estimable,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],3.02540533069,0.803434118385,3.76559230117,18,28065,25
+425,pixel,all_estimable,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],-0.38537868045,0.731083374225,-0.527133695057,17,31741,25
+410,pixel,all_estimable,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],-0.37052837635,0.805573563019,-0.459955978398,17,32036,25
+395,pixel,all_estimable,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],-0.149326440765,0.735770049619,-0.202952594825,17,31757,25
+385,pixel,all_estimable,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],0.18817996337,0.737449452641,0.255176761873,17,30250,25
+365,pixel,all_estimable,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],-0.319446151857,0.693520550109,-0.460615264835,17,28065,25
+425,pixel,all_estimable,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),7.43842797991,1.76418940875,4.21634317892,18,31741,25
+410,pixel,all_estimable,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),7.29127178119,1.92101331055,3.79553423245,18,32036,25
+395,pixel,all_estimable,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),8.09870214404,1.91536566466,4.22827990156,18,31757,25
+385,pixel,all_estimable,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),8.01230442783,1.8631113325,4.30049685601,18,30250,25
+365,pixel,all_estimable,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),7.93498359493,2.02476340045,3.91896830671,18,28065,25
+425,pixel,all_estimable,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,0.239842986431,1.74528114264,0.137423696716,17,31741,25
+410,pixel,all_estimable,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,-0.018757101727,1.82660105416,-0.0102688551965,17,32036,25
+395,pixel,all_estimable,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,0.394883406514,1.79508363734,0.219980505811,17,31757,25
+385,pixel,all_estimable,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,0.173557362385,1.72740389248,0.100472948533,17,30250,25
+365,pixel,all_estimable,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,-0.427857420568,1.67249893112,-0.255819249033,17,28065,25
+425,district,harvest_identified,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],0.076052044934,4.39816737568,0.0172917577795,17,191,25
+410,district,harvest_identified,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],-4.34188321724,3.68061850671,-1.17966130131,11,179,25
+395,district,harvest_identified,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],-3.75594239681,1.80657419731,-2.0790413161,12,148,25
+385,district,harvest_identified,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],-0.159505801184,4.42043974714,-0.0360836953581,10,126,24
+365,district,harvest_identified,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],6.71824997909,6.76858528868,0.992563392875,5,79,22
+425,district,harvest_identified,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],-8.08370161314,3.80643655554,-2.12369272289,17,191,25
+410,district,harvest_identified,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],-4.9300234277,4.48331304475,-1.09963845453,17,179,25
+395,district,harvest_identified,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],4.51157299234,3.2691104925,1.38006133555,16,148,25
+385,district,harvest_identified,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],2.35815031147,3.75572193526,0.627882029638,16,126,24
+365,district,harvest_identified,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],1.96435541854,9.8858829669,0.198703082477,6,79,22
+425,district,harvest_identified,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],7.43796555783,2.39695520719,3.10308909217,17,191,25
+410,district,harvest_identified,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],9.26087832164,3.84951758724,2.4057243828,11,179,25
+395,district,harvest_identified,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],8.38168525265,3.45757298991,2.4241528023,12,148,25
+385,district,harvest_identified,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],6.36904209486,4.40845210698,1.44473432858,10,126,24
+365,district,harvest_identified,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],-1.6703862804,12.37302828,-0.135002219554,5,79,22
+425,district,harvest_identified,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],1.90335978995,3.32777794084,0.571961177634,17,191,25
+410,district,harvest_identified,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],0.653343445494,3.462677071,0.188681598687,17,179,25
+395,district,harvest_identified,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],-3.24042785834,3.50306435207,-0.925026643151,16,148,25
+385,district,harvest_identified,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],2.19857135718,6.35281018134,0.346078553337,16,126,24
+365,district,harvest_identified,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],-2.2661762092,12.8870121571,-0.175849621431,6,79,22
+425,district,harvest_identified,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),4.13364000879,3.12360639365,1.32335495829,17,191,25
+410,district,harvest_identified,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),4.91526087792,4.6211563921,1.06364304968,11,179,25
+395,district,harvest_identified,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),4.84160542853,3.38818814397,1.42896593188,12,148,25
+385,district,harvest_identified,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),3.53162118919,5.58304167856,0.63256221116,10,126,24
+365,district,harvest_identified,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),-5.87443161977,12.4044758479,-0.473573546502,5,79,22
+425,district,harvest_identified,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,1.24087780148,4.20283456646,0.29524783378,17,191,25
+410,district,harvest_identified,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,-0.69784064453,3.90219073172,-0.178833043412,17,179,25
+395,district,harvest_identified,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,-1.22646719122,4.76337959281,-0.257478365376,16,148,25
+385,district,harvest_identified,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,0.18203909584,4.84522871487,0.0375707952198,16,126,24
+365,district,harvest_identified,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,9.91279410893,12.2946310847,0.806270154889,6,79,22
+425,pixel,harvest_identified,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],0.119418157521,1.01501710411,0.11765137458,18,28383,25
+410,pixel,harvest_identified,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],0.453663720038,0.845836558827,0.536349150794,18,26640,25
+395,pixel,harvest_identified,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],0.15533003605,0.775793016303,0.200220977484,18,25852,25
+385,pixel,harvest_identified,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],-0.408629423245,0.629613762355,-0.649016028043,18,22506,25
+365,pixel,harvest_identified,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],1.58683420143,0.370606529054,4.281722196,18,15888,25
+425,pixel,harvest_identified,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],-1.49866123954,1.12427886227,-1.3329977907,17,28383,25
+410,pixel,harvest_identified,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],-1.03943639493,0.726736000013,-1.43028059008,17,26640,25
+395,pixel,harvest_identified,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],-1.21184375234,0.631679114942,-1.91844834455,17,25852,25
+385,pixel,harvest_identified,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],-0.00805650363845,0.660723243146,-0.0121934618193,17,22506,25
+365,pixel,harvest_identified,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],-0.83086095621,0.503910380746,-1.64882683103,17,15888,25
+425,pixel,harvest_identified,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],2.08394196921,0.846542596137,2.46170952143,18,28383,25
+410,pixel,harvest_identified,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],1.7900293078,0.893271372432,2.00390313968,18,26640,25
+395,pixel,harvest_identified,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],2.75044368055,0.999090340799,2.75294792496,18,25852,25
+385,pixel,harvest_identified,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],2.82299451681,0.7642806145,3.69366233194,18,22506,25
+365,pixel,harvest_identified,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],2.86539788724,0.662690007209,4.32388878067,18,15888,25
+425,pixel,harvest_identified,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],-0.237839967367,0.726318586538,-0.327459563579,17,28383,25
+410,pixel,harvest_identified,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],-0.296427320969,0.781123942245,-0.379488202751,17,26640,25
+395,pixel,harvest_identified,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],0.367967233326,0.775571309875,0.474446680325,17,25852,25
+385,pixel,harvest_identified,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],-0.119958586315,0.684710393332,-0.175196093827,17,22506,25
+365,pixel,harvest_identified,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],0.656361009447,0.991023638418,0.662306108555,17,15888,25
+425,pixel,harvest_identified,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),7.76772072004,1.85261426057,4.19284299239,18,28383,25
+410,pixel,harvest_identified,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),7.65424064427,1.94106013654,3.94332998767,18,26640,25
+395,pixel,harvest_identified,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),7.9840749283,1.97525750274,4.04204257785,18,25852,25
+385,pixel,harvest_identified,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),7.5809420215,1.85732966739,4.08163513165,18,22506,25
+365,pixel,harvest_identified,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),6.91311691702,1.92361724561,3.59381105196,18,15888,25
+425,pixel,harvest_identified,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,0.023865443181,1.73281414993,0.0137726502187,17,28383,25
+410,pixel,harvest_identified,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,-0.304646819005,1.70981835777,-0.178174960878,17,26640,25
+395,pixel,harvest_identified,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,0.709142617405,1.71887135099,0.412562939626,17,25852,25
+385,pixel,harvest_identified,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,0.0858433698025,1.50358344999,0.0570925210722,17,22506,25
+365,pixel,harvest_identified,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,1.15957110211,1.70399389564,0.68050191088,17,15888,25

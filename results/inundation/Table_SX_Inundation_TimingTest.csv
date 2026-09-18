@@ -1,0 +1,5 @@
+arm,group,n,day_mean,day_median,share_first_5_days,window_spec
+actual,flagged_ge_3dB,627,6.3808560446,6.00935173035,0.393939393939,postlandfall
+actual,unflagged,6179,6.08481800521,6.00935173035,0.284835733938,postlandfall
+null2017,flagged_ge_3dB,726,6.59526118804,6.51416683197,0.3608815427,postlandfall
+null2017,unflagged,6474,7.24465624241,7.51387739182,0.272937905468,postlandfall

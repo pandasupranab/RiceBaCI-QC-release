@@ -1,0 +1,21 @@
+level,sample,measure,specification,coef,se,p_wcb,wcb_ci_lo,wcb_ci_hi,n_obs,n_clusters,n_treated_clusters
+pixel,common,trough,"full PLSM, 5 segments, 28 dekads",4.940774818874703,1.591789503986348,0.0068,1.5352458998586145,8.40984417405159,18174,25,18
+pixel,common,trough_red_cens,"reduced model, 1 breakpoint, dekads 0-12",1.15847206316354,0.947371973169513,0.2545,-0.9684575135257758,3.318016057394842,18174,25,18
+pixel,common,trough_red_full,"reduced model, 1 breakpoint, 28 dekads",-2.38827967530559,2.3184891773459406,0.3108,-7.258326253070325,2.4482733674506063,18174,25,18
+pixel,common_ceiling_free,trough,"arm (1), rows with full-PLSM trough at least one dekad below DOY 254.5",0.2962419323446738,1.172149079377317,0.8014,-2.1456131626403514,2.7378178324468694,10496,25,18
+pixel,common_ceiling_free,trough_red_cens,"arm (3), rows with full-PLSM trough at least one dekad below DOY 254.5",-0.1182870004796309,1.341368764455908,0.9313,-2.99273998871052,2.715028788103401,10496,25,18
+pixel,common_paired_difference,d_full_minus_cens,(1) - (3): 5-segment minus censored 1-breakpoint,3.782302755711141,1.319507144511143,0.0065,0.925502211791856,6.61805697728691,18174,25,18
+pixel,common_paired_difference,d_full_minus_red,(1) - (2): 5-segment minus 28-dekad 1-breakpoint,7.329054494180272,1.8666519957022225,0.0027,3.5119188934119734,11.159095838755892,18174,25,18
+pixel,own,trough,"full PLSM, 5 segments, 28 dekads",7.438427979908357,1.7641894087510868,0.0008,3.3872167327598683,11.485144324933705,31741,25,18
+pixel,own,trough_red_cens,"reduced model, 1 breakpoint, dekads 0-12",1.5095286259802505,0.8298486491590272,0.0967,-0.2835052408932219,3.31339581804447,25118,25,18
+pixel,own,trough_red_full,"reduced model, 1 breakpoint, 28 dekads",2.188290657094537,2.44910476862449,0.4207,-3.5220447942437256,7.837615227992966,22956,25,18
+district,common,trough,"full PLSM, 5 segments, 28 dekads",-3.603506548833243,4.823246501274241,0.4314,-12.96331719283153,5.593277552020165,100,23,7
+district,common,trough_red_full,"reduced model, 1 breakpoint, 28 dekads",17.137512754957463,22.03077735977385,0.718,-40.96648274825704,77.28186426116545,100,23,7
+district,common,trough_red_cens,"reduced model, 1 breakpoint, dekads 0-12",-1.0121183430374263,3.0318173870909635,0.7021,-7.461265788213936,5.384429546538832,100,23,7
+district,common_ceiling_free,trough,"DESCRIPTIVE ONLY -- arm (1) on rows with full-PLSM trough at least one dekad below DOY 254.5; selects on the outcome, so attenuated and not a valid estimate",-10.016314793961124,7.298434731135262,0.2104,-26.21555106493478,6.754105630612086,57,21,4
+district,common_ceiling_free,trough_red_cens,"DESCRIPTIVE ONLY -- arm (3) on rows with full-PLSM trough at least one dekad below DOY 254.5; selects on the outcome, so attenuated and not a valid estimate",-5.640180327139983,4.972483920263512,0.2439,-12.000224914313396,0.7447041351287629,57,21,4
+district,common_paired_difference,d_full_minus_cens,(1) - (3): 5-segment minus censored 1-breakpoint,-2.591388205795818,3.787507412618121,0.4488,-9.44914605252968,4.698082515302848,100,23,7
+district,common_paired_difference,d_full_minus_red,(1) - (2): 5-segment minus 28-dekad 1-breakpoint,-20.741019303790694,20.243523435450328,0.5461,-75.92908355724553,33.766425931889174,100,23,7
+district,own,trough,"full PLSM, 5 segments, 28 dekads",5.000990686697369,3.1034920678778075,0.1102,-1.0372625085601657,11.254109512918353,208,25,18
+district,own,trough_red_full,"reduced model, 1 breakpoint, 28 dekads",14.851771285845738,12.369808200225906,0.2911,-11.935520620191182,41.25977842120607,118,24,11
+district,own,trough_red_cens,"reduced model, 1 breakpoint, dekads 0-12",1.43236640883336,2.3107492624306314,0.5136,-3.390966627222279,6.3848379351972575,176,25,14

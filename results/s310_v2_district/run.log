@@ -1,0 +1,275 @@
+level=district: one row per district-season, retained := estimable, cell_id := district
+panel  225 pixel-years | 25 pixels | 25 districts | seasons 2017-2025
+retained overall: 0.9244
+all 25 panel districts resolve in the exposure catalogue
+
+NOTE: severe storms hitting roster districts that are NOT in the protocol's estimable list: ['DANA', 'MICHAUNG', 'MONTHA']
+  These enter the §3.8 A exposure panel through S_pre/S_harv but get no per-cyclone row. That is the frozen §3.8 B design (named-cyclone stacks are the six of §1.1); if the catalogue has changed, revisit §1.1 before reporting.
+
+=== class:pre_season  (29 exposed pixel-years, 17 treated clusters)
+    coef -0.0448 (se 0.0538)  p_cluster 0.4048  p_WCB 0.3873  95% WCB CI [-0.1553, +0.0677]
+
+=== class:harvest_window  (18 exposed pixel-years, 18 treated clusters)
+    coef -0.1260 (se 0.0581)  p_cluster 0.0300  p_WCB 0.0397  95% WCB CI [-0.2505, -0.0043]
+
+=== cyclone:TITLI  (6 exposed pixel-years, 6 treated clusters)
+    coef -0.1436 (se 0.1188)  p_cluster 0.2267  p_WCB 0.2027  95% WCB CI [-0.3632, +0.0742]
+
+=== cyclone:FANI  (17 exposed pixel-years, 17 treated clusters)
+    coef -0.1563 (se 0.1559)  p_cluster 0.3163  p_WCB 0.3309  95% WCB CI [-0.5317, +0.2192]
+
+=== cyclone:BULBUL  (2 exposed pixel-years, 2 treated clusters)
+    coef -0.0543 (se 0.0569)  p_cluster 0.3393  p_WCB 0.3432  95% WCB CI [-0.1658, +0.0571]
+    UNDERPOWERED: fewer than 3 treated clusters: a null result here is uninformative (MacKinnon & Webb 2018)
+
+=== cyclone:AMPHAN  (5 exposed pixel-years, 5 treated clusters)
+    coef -0.0062 (se 0.0565)  p_cluster 0.9120  p_WCB 0.8566  95% WCB CI [-0.1253, +0.1128]
+
+=== cyclone:YAAS  (5 exposed pixel-years, 5 treated clusters)
+    coef +0.1062 (se 0.0501)  p_cluster 0.0339  p_WCB 0.0432  95% WCB CI [+0.0108, +0.2016]
+
+=== cyclone:REMAL  (2 exposed pixel-years, 2 treated clusters)
+    coef -0.1033 (se 0.0561)  p_cluster 0.0658  p_WCB 0.2260  95% WCB CI [-0.2138, +0.0067]
+    UNDERPOWERED: fewer than 3 treated clusters: a null result here is uninformative (MacKinnon & Webb 2018)
+
+built dist_to_track_km from the exposure file: 0.209 of rows have a catalogued 34-kt track, the rest coded at 500 km
+
+IPSW: ['elevation_m', 'slope_deg', 'incidence_deg'] have no variation within district and season fixed effects at this level and are absorbed by them. Dropped from the score and named here rather than left to make the design singular.
+
+IPSW: dropping 20 districts whose outcome never varies, 3 seasons whose outcome never varies -- they predict retention perfectly and carry no information about selection. 30 of 225 rows remain, with 13 in the smaller outcome class.
+
+IPSW NOT ESTIMABLE at this level: the logit did not converge on 30 rows with 13 parameters and 1.0 events per parameter. Weights discarded and no ipsw rows are produced, rather than reporting a fit pinned at the clip. §3.10 3a's reweighted estimate is therefore not available at this level; item 3c's balanced-composition check carries the robustness role, as the protocol's own safeguard note assigns it.
+    headline:trough:S_pre_season                 beta   -0.420 d  (se 3.569)  p_WCB 0.9013  CI [-7.10, +6.17]
+    balanced:trough:S_pre_season:TITLI: not estimable -- no variation in S_pre_season among retained pixels
+    balanced:trough:S_pre_season:FANI            beta  +17.650 d  (se 11.946)  p_WCB 0.2106  CI [-6.07, +41.33]  |dbeta| 18.069
+    balanced:trough:S_pre_season:BULBUL          beta  +17.650 d  (se 11.946)  p_WCB 0.2106  CI [-6.07, +41.33]  |dbeta| 18.069
+    balanced:trough:S_pre_season:AMPHAN          beta  -34.231 d  (se 26.525)  p_WCB 0.0358  CI [-95.92, +26.00]  |dbeta| 33.811
+    balanced:trough:S_pre_season:YAAS            beta  +26.226 d  (se 19.306)  p_WCB 0.0666  CI [-1.62, +55.12]  |dbeta| 26.646
+    balanced:trough:S_pre_season:REMAL           beta  +20.833 d  (se 7.131)  p_WCB 0.0754  CI [+6.03, +35.64]  |dbeta| 21.253
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    headline:trough:S_harvest_window             beta   +5.001 d  (se 3.103)  p_WCB 0.1102  CI [-1.04, +11.25]
+    balanced:trough:S_harvest_window:TITLI       beta  +18.636 d  (se 25.469)  p_WCB 0.5129  CI [-31.75, +68.73]  |dbeta| 13.635
+    balanced:trough:S_harvest_window:FANI        beta  +30.161 d  (se 14.136)  p_WCB 0.1228  CI [-1.47, +61.65]  |dbeta| 25.160
+    balanced:trough:S_harvest_window:BULBUL      beta  +30.161 d  (se 14.136)  p_WCB 0.1228  CI [-1.47, +61.65]  |dbeta| 25.160
+    balanced:trough:S_harvest_window:AMPHAN      beta  +23.590 d  (se 28.640)  p_WCB 0.3224  CI [-52.01, +95.29]  |dbeta| 18.589
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    balanced:trough:S_harvest_window:YAAS: not estimable -- no variation in S_harvest_window among retained pixels
+    balanced:trough:S_harvest_window:REMAL       beta   +5.833 d  (se 6.880)  p_WCB 0.2290  CI [-4.42, +15.89]  |dbeta| 0.832
+    headline:heading:S_pre_season                beta   +2.041 d  (se 3.541)  p_WCB 0.5554  CI [-4.76, +8.88]
+    balanced:heading:S_pre_season:TITLI: not estimable -- no variation in S_pre_season among retained pixels
+    balanced:heading:S_pre_season:FANI           beta   -0.461 d  (se 12.486)  p_WCB 0.9661  CI [-29.64, +28.62]  |dbeta| 2.502
+    balanced:heading:S_pre_season:BULBUL         beta   -0.461 d  (se 12.486)  p_WCB 0.9661  CI [-29.64, +28.62]  |dbeta| 2.502
+    balanced:heading:S_pre_season:AMPHAN         beta   -8.077 d  (se 6.157)  p_WCB 0.0797  CI [-17.81, +1.97]  |dbeta| 10.118
+    balanced:heading:S_pre_season:YAAS           beta   +3.396 d  (se 9.601)  p_WCB 0.5988  CI [-10.69, +17.53]  |dbeta| 1.355
+    balanced:heading:S_pre_season:REMAL          beta   +5.833 d  (se 4.766)  p_WCB 0.1961  CI [-1.22, +12.89]  |dbeta| 3.792
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    headline:heading:S_harvest_window            beta   +6.183 d  (se 2.466)  p_WCB 0.0088  CI [+1.42, +10.90]
+    balanced:heading:S_harvest_window:TITLI      beta   +3.864 d  (se 7.057)  p_WCB 0.4957  CI [-7.34, +15.00]  |dbeta| 2.319
+    balanced:heading:S_harvest_window:FANI       beta  +12.581 d  (se 18.551)  p_WCB 0.6422  CI [-52.06, +78.02]  |dbeta| 6.398
+    balanced:heading:S_harvest_window:BULBUL     beta  +12.581 d  (se 18.551)  p_WCB 0.6422  CI [-52.06, +78.02]  |dbeta| 6.398
+    balanced:heading:S_harvest_window:AMPHAN     beta   -6.026 d  (se 8.777)  p_WCB 0.4027  CI [-22.71, +10.71]  |dbeta| 12.209
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    balanced:heading:S_harvest_window:YAAS: not estimable -- no variation in S_harvest_window among retained pixels
+    balanced:heading:S_harvest_window:REMAL      beta  +14.167 d  (se 5.346)  p_WCB 0.0034  CI [+6.76, +21.40]  |dbeta| 7.984
+    headline:drainage:S_pre_season               beta   -1.229 d  (se 2.969)  p_WCB 0.6603  CI [-7.22, +4.74]
+    balanced:drainage:S_pre_season:TITLI: not estimable -- no variation in S_pre_season among retained pixels
+    balanced:drainage:S_pre_season:FANI          beta  +13.594 d  (se 8.363)  p_WCB 0.2877  CI [-12.43, +39.84]  |dbeta| 14.824
+    balanced:drainage:S_pre_season:BULBUL        beta  +13.594 d  (se 8.363)  p_WCB 0.2877  CI [-12.43, +39.84]  |dbeta| 14.824
+    balanced:drainage:S_pre_season:AMPHAN        beta  -13.333 d  (se 6.810)  p_WCB 0.0543  CI [-23.57, -3.08]  |dbeta| 12.104
+    balanced:drainage:S_pre_season:YAAS          beta   +3.774 d  (se 8.794)  p_WCB 0.5384  CI [-8.90, +16.34]  |dbeta| 5.003
+    balanced:drainage:S_pre_season:REMAL         beta  -22.500 d  (se 14.542)  p_WCB 0.1528  CI [-53.29, +8.29]  |dbeta| 21.271
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    headline:drainage:S_harvest_window           beta   -0.416 d  (se 2.904)  p_WCB 0.8816  CI [-6.31, +5.60]
+    balanced:drainage:S_harvest_window:TITLI     beta  -12.955 d  (se 10.269)  p_WCB 0.0501  CI [-34.95, +10.15]  |dbeta| 12.538
+    balanced:drainage:S_harvest_window:FANI      beta   +3.871 d  (se 6.558)  p_WCB 0.6411  CI [-13.74, +21.99]  |dbeta| 4.287
+    balanced:drainage:S_harvest_window:BULBUL    beta   +3.871 d  (se 6.558)  p_WCB 0.6411  CI [-13.74, +21.99]  |dbeta| 4.287
+    balanced:drainage:S_harvest_window:AMPHAN    beta  -13.333 d  (se 15.063)  p_WCB 0.2584  CI [-37.94, +10.84]  |dbeta| 12.917
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    balanced:drainage:S_harvest_window:YAAS: not estimable -- no variation in S_harvest_window among retained pixels
+    balanced:drainage:S_harvest_window:REMAL     beta   -7.500 d  (se 9.767)  p_WCB 0.2571  CI [-21.17, +5.83]  |dbeta| 7.084
+    headline:harvest:S_pre_season                beta  -10.184 d  (se 4.900)  p_WCB 0.0437  CI [-19.58, -0.80]
+    balanced:harvest:S_pre_season:TITLI: not estimable -- no variation in S_pre_season among retained pixels
+    balanced:harvest:S_pre_season:FANI           beta  +12.995 d  (se 17.784)  p_WCB 0.4068  CI [-16.23, +42.69]  |dbeta| 23.180
+    balanced:harvest:S_pre_season:BULBUL         beta  +12.995 d  (se 17.784)  p_WCB 0.4068  CI [-16.23, +42.69]  |dbeta| 23.180
+    balanced:harvest:S_pre_season:AMPHAN         beta   -1.987 d  (se 15.373)  p_WCB 0.8748  CI [-33.99, +29.54]  |dbeta| 8.197
+    balanced:harvest:S_pre_season:YAAS           beta  -19.151 d  (se 12.650)  p_WCB 0.0478  CI [-38.44, +0.20]  |dbeta| 8.967
+    balanced:harvest:S_pre_season:REMAL          beta  +20.208 d  (se 10.213)  p_WCB 0.1485  CI [+4.25, +36.17]  |dbeta| 30.393
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    headline:harvest:S_harvest_window            beta   +1.912 d  (se 5.273)  p_WCB 0.7121  CI [-8.72, +12.55]
+    balanced:harvest:S_harvest_window:TITLI      beta  +19.659 d  (se 16.346)  p_WCB 0.0699  CI [-8.56, +46.85]  |dbeta| 17.747
+    balanced:harvest:S_harvest_window:FANI       beta  -29.274 d  (se 23.678)  p_WCB 0.0462  CI [-160.61, +103.33]  |dbeta| 31.186
+    balanced:harvest:S_harvest_window:BULBUL     beta  -29.274 d  (se 23.678)  p_WCB 0.0462  CI [-160.61, +103.33]  |dbeta| 31.186
+    balanced:harvest:S_harvest_window:AMPHAN     beta  -20.385 d  (se 25.632)  p_WCB 0.3566  CI [-73.34, +33.24]  |dbeta| 22.297
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    balanced:harvest:S_harvest_window:YAAS: not estimable -- no variation in S_harvest_window among retained pixels
+    balanced:harvest:S_harvest_window:REMAL      beta   +2.292 d  (se 11.973)  p_WCB 0.7738  CI [-14.73, +19.16]  |dbeta| 0.380
+    headline:veg_days:S_pre_season               beta   +2.461 d  (se 5.173)  p_WCB 0.6119  CI [-7.27, +12.23]
+    balanced:veg_days:S_pre_season:TITLI: not estimable -- no variation in S_pre_season among retained pixels
+    balanced:veg_days:S_pre_season:FANI          beta  -18.111 d  (se 9.193)  p_WCB 0.0940  CI [-32.78, -3.52]  |dbeta| 20.571
+    balanced:veg_days:S_pre_season:BULBUL        beta  -18.111 d  (se 9.193)  p_WCB 0.0940  CI [-32.78, -3.52]  |dbeta| 20.571
+    balanced:veg_days:S_pre_season:AMPHAN        beta  +26.154 d  (se 28.894)  p_WCB 0.2703  CI [-36.38, +90.32]  |dbeta| 23.693
+    balanced:veg_days:S_pre_season:YAAS          beta  -22.830 d  (se 26.886)  p_WCB 0.2255  CI [-62.84, +16.13]  |dbeta| 25.291
+    balanced:veg_days:S_pre_season:REMAL         beta  -15.000 d  (se 9.563)  p_WCB 0.1697  CI [-30.71, +0.71]  |dbeta| 17.461
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    headline:veg_days:S_harvest_window           beta   +1.182 d  (se 4.435)  p_WCB 0.7807  CI [-8.07, +9.94]
+    balanced:veg_days:S_harvest_window:TITLI     beta  -14.773 d  (se 27.679)  p_WCB 0.6605  CI [-75.59, +46.09]  |dbeta| 15.955
+    balanced:veg_days:S_harvest_window:FANI      beta  -17.581 d  (se 31.478)  p_WCB 0.6768  CI [-114.91, +81.96]  |dbeta| 18.763
+    balanced:veg_days:S_harvest_window:BULBUL    beta  -17.581 d  (se 31.478)  p_WCB 0.6768  CI [-114.91, +81.96]  |dbeta| 18.763
+    balanced:veg_days:S_harvest_window:AMPHAN    beta  -29.615 d  (se 33.541)  p_WCB 0.2829  CI [-124.45, +68.29]  |dbeta| 30.797
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    balanced:veg_days:S_harvest_window:YAAS: not estimable -- no variation in S_harvest_window among retained pixels
+    balanced:veg_days:S_harvest_window:REMAL     beta   +8.333 d  (se 9.685)  p_WCB 0.2100  CI [-4.92, +22.21]  |dbeta| 7.151
+    headline:plateau_days:S_pre_season           beta   -3.270 d  (se 4.774)  p_WCB 0.4769  CI [-12.72, +6.08]
+    balanced:plateau_days:S_pre_season:TITLI: not estimable -- no variation in S_pre_season among retained pixels
+    balanced:plateau_days:S_pre_season:FANI      beta  +14.055 d  (se 7.952)  p_WCB 0.0496  CI [-1.00, +28.97]  |dbeta| 17.326
+    balanced:plateau_days:S_pre_season:BULBUL    beta  +14.055 d  (se 7.952)  p_WCB 0.0496  CI [-1.00, +28.97]  |dbeta| 17.326
+    balanced:plateau_days:S_pre_season:AMPHAN    beta   -5.256 d  (se 9.034)  p_WCB 0.4818  CI [-20.59, +9.98]  |dbeta| 1.986
+    balanced:plateau_days:S_pre_season:YAAS      beta   +0.377 d  (se 12.079)  p_WCB 0.9632  CI [-16.33, +17.51]  |dbeta| 3.648
+    balanced:plateau_days:S_pre_season:REMAL     beta  -28.333 d  (se 14.627)  p_WCB 0.1302  CI [-59.11, +1.78]  |dbeta| 25.063
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    headline:plateau_days:S_harvest_window       beta   -6.599 d  (se 3.913)  p_WCB 0.0907  CI [-14.38, +1.26]
+    balanced:plateau_days:S_harvest_window:TITLI beta  -16.818 d  (se 11.508)  p_WCB 0.0640  CI [-35.02, +1.39]  |dbeta| 10.219
+    balanced:plateau_days:S_harvest_window:FANI  beta   -8.710 d  (se 13.352)  p_WCB 0.5712  CI [-43.58, +25.58]  |dbeta| 2.110
+    balanced:plateau_days:S_harvest_window:BULBUL beta   -8.710 d  (se 13.352)  p_WCB 0.5712  CI [-43.58, +25.58]  |dbeta| 2.110
+    balanced:plateau_days:S_harvest_window:AMPHAN beta   -7.308 d  (se 17.843)  p_WCB 0.5880  CI [-37.15, +21.98]  |dbeta| 0.709
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    balanced:plateau_days:S_harvest_window:YAAS: not estimable -- no variation in S_harvest_window among retained pixels
+    balanced:plateau_days:S_harvest_window:REMAL beta  -21.667 d  (se 9.835)  p_WCB 0.0056  CI [-36.02, -7.65]  |dbeta| 15.067
+    headline:fill_days:S_pre_season              beta  -12.225 d  (se 6.453)  p_WCB 0.0565  CI [-24.86, +0.18]
+    balanced:fill_days:S_pre_season:TITLI: not estimable -- no variation in S_pre_season among retained pixels
+    balanced:fill_days:S_pre_season:FANI         beta  +13.456 d  (se 22.970)  p_WCB 0.4732  CI [-19.68, +46.32]  |dbeta| 25.682
+    balanced:fill_days:S_pre_season:BULBUL       beta  +13.456 d  (se 22.970)  p_WCB 0.4732  CI [-19.68, +46.32]  |dbeta| 25.682
+    balanced:fill_days:S_pre_season:AMPHAN       beta   +6.090 d  (se 13.259)  p_WCB 0.5197  CI [-14.32, +26.74]  |dbeta| 18.315
+    balanced:fill_days:S_pre_season:YAAS         beta  -22.547 d  (se 15.330)  p_WCB 0.0421  CI [-44.00, -1.02]  |dbeta| 10.322
+    balanced:fill_days:S_pre_season:REMAL        beta  +14.375 d  (se 11.017)  p_WCB 0.1848  CI [-2.79, +31.35]  |dbeta| 26.600
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    headline:fill_days:S_harvest_window          beta   -4.271 d  (se 6.911)  p_WCB 0.5300  CI [-17.76, +9.40]
+    balanced:fill_days:S_harvest_window:TITLI    beta  +15.795 d  (se 19.416)  p_WCB 0.2772  CI [-15.46, +46.77]  |dbeta| 20.066
+    balanced:fill_days:S_harvest_window:FANI     beta  -41.855 d  (se 41.563)  p_WCB 0.1208  CI [-262.32, +176.62]  |dbeta| 37.584
+    balanced:fill_days:S_harvest_window:BULBUL   beta  -41.855 d  (se 41.563)  p_WCB 0.1208  CI [-262.32, +176.62]  |dbeta| 37.584
+    balanced:fill_days:S_harvest_window:AMPHAN   beta  -14.359 d  (se 28.808)  p_WCB 0.5690  CI [-83.72, +57.34]  |dbeta| 10.088
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    balanced:fill_days:S_harvest_window:YAAS: not estimable -- no variation in S_harvest_window among retained pixels
+    balanced:fill_days:S_harvest_window:REMAL    beta  -11.875 d  (se 13.053)  p_WCB 0.2052  CI [-30.59, +6.60]  |dbeta| 7.604
+    headline:season_days:S_pre_season            beta   -9.765 d  (se 5.681)  p_WCB 0.0808  CI [-20.62, +1.39]
+    balanced:season_days:S_pre_season:TITLI: not estimable -- no variation in S_pre_season among retained pixels
+    balanced:season_days:S_pre_season:FANI       beta   -4.654 d  (se 16.097)  p_WCB 0.7003  CI [-28.23, +19.59]  |dbeta| 5.110
+    balanced:season_days:S_pre_season:BULBUL     beta   -4.654 d  (se 16.097)  p_WCB 0.7003  CI [-28.23, +19.59]  |dbeta| 5.110
+    balanced:season_days:S_pre_season:AMPHAN     beta  +32.244 d  (se 37.761)  p_WCB 0.3204  CI [-33.53, +98.46]  |dbeta| 42.008
+    balanced:season_days:S_pre_season:YAAS       beta  -45.377 d  (se 22.144)  p_WCB 0.0077  CI [-77.60, -14.46]  |dbeta| 35.613
+    balanced:season_days:S_pre_season:REMAL      beta   -0.625 d  (se 8.947)  p_WCB 0.9124  CI [-13.30, +12.05]  |dbeta| 9.140
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    headline:season_days:S_harvest_window        beta   -3.089 d  (se 5.461)  p_WCB 0.5425  CI [-14.22, +7.64]
+    balanced:season_days:S_harvest_window:TITLI  beta   +1.023 d  (se 34.867)  p_WCB 0.9626  CI [-54.02, +55.58]  |dbeta| 4.112
+    balanced:season_days:S_harvest_window:FANI   beta  -59.435 d  (se 15.058)  p_WCB 0.0692  CI [-90.12, -29.59]  |dbeta| 56.347
+    balanced:season_days:S_harvest_window:BULBUL beta  -59.435 d  (se 15.058)  p_WCB 0.0692  CI [-90.12, -29.59]  |dbeta| 56.347
+    balanced:season_days:S_harvest_window:AMPHAN beta  -43.974 d  (se 39.413)  p_WCB 0.2021  CI [-113.43, +26.21]  |dbeta| 40.885
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    balanced:season_days:S_harvest_window:YAAS: not estimable -- no variation in S_harvest_window among retained pixels
+    balanced:season_days:S_harvest_window:REMAL  beta   -3.542 d  (se 14.751)  p_WCB 0.7382  CI [-24.40, +17.36]  |dbeta| 0.453
+    headline:rise_db:S_pre_season                beta   +0.206 d  (se 0.121)  p_WCB 0.1119  CI [-0.05, +0.46]
+    balanced:rise_db:S_pre_season:TITLI: not estimable -- no variation in S_pre_season among retained pixels
+    balanced:rise_db:S_pre_season:FANI           beta   -0.014 d  (se 0.513)  p_WCB 0.9756  CI [-1.24, +1.21]  |dbeta| 0.220
+    balanced:rise_db:S_pre_season:BULBUL         beta   -0.014 d  (se 0.513)  p_WCB 0.9756  CI [-1.24, +1.21]  |dbeta| 0.220
+    balanced:rise_db:S_pre_season:AMPHAN         beta   +0.663 d  (se 0.651)  p_WCB 0.2127  CI [-0.49, +1.81]  |dbeta| 0.458
+    balanced:rise_db:S_pre_season:YAAS           beta   +0.007 d  (se 0.288)  p_WCB 0.9715  CI [-0.41, +0.42]  |dbeta| 0.199
+    balanced:rise_db:S_pre_season:REMAL          beta   +0.095 d  (se 0.385)  p_WCB 0.7231  CI [-1.37, +1.55]  |dbeta| 0.111
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    headline:rise_db:S_harvest_window            beta   -0.154 d  (se 0.116)  p_WCB 0.1892  CI [-0.41, +0.10]
+    balanced:rise_db:S_harvest_window:TITLI      beta   -0.258 d  (se 0.303)  p_WCB 0.4006  CI [-0.77, +0.26]  |dbeta| 0.104
+    balanced:rise_db:S_harvest_window:FANI       beta   -0.155 d  (se 0.749)  p_WCB 0.7190  CI [-3.42, +3.06]  |dbeta| 0.001
+    balanced:rise_db:S_harvest_window:BULBUL     beta   -0.155 d  (se 0.749)  p_WCB 0.7190  CI [-3.42, +3.06]  |dbeta| 0.001
+    balanced:rise_db:S_harvest_window:AMPHAN     beta   -0.126 d  (se 0.849)  p_WCB 0.8480  CI [-1.93, +1.72]  |dbeta| 0.028
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    balanced:rise_db:S_harvest_window:YAAS: not estimable -- no variation in S_harvest_window among retained pixels
+    balanced:rise_db:S_harvest_window:REMAL      beta   -0.090 d  (se 0.177)  p_WCB 0.4694  CI [-0.35, +0.16]  |dbeta| 0.064
+    headline:fall_db:S_pre_season                beta   -0.045 d  (se 0.135)  p_WCB 0.7774  CI [-0.30, +0.20]
+    balanced:fall_db:S_pre_season:TITLI: not estimable -- no variation in S_pre_season among retained pixels
+    balanced:fall_db:S_pre_season:FANI           beta   -0.006 d  (se 0.338)  p_WCB 0.9852  CI [-0.90, +0.90]  |dbeta| 0.039
+    balanced:fall_db:S_pre_season:BULBUL         beta   -0.006 d  (se 0.338)  p_WCB 0.9852  CI [-0.90, +0.90]  |dbeta| 0.039
+    balanced:fall_db:S_pre_season:AMPHAN         beta   +0.366 d  (se 0.305)  p_WCB 0.1666  CI [-0.11, +0.86]  |dbeta| 0.412
+    balanced:fall_db:S_pre_season:YAAS           beta   -0.112 d  (se 0.462)  p_WCB 0.7295  CI [-0.79, +0.56]  |dbeta| 0.066
+    balanced:fall_db:S_pre_season:REMAL          beta   +0.242 d  (se 0.437)  p_WCB 0.6680  CI [-1.69, +2.17]  |dbeta| 0.287
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    headline:fall_db:S_harvest_window            beta   -0.080 d  (se 0.091)  p_WCB 0.3771  CI [-0.27, +0.10]
+    balanced:fall_db:S_harvest_window:TITLI      beta   +0.137 d  (se 0.237)  p_WCB 0.4542  CI [-0.28, +0.55]  |dbeta| 0.216
+    balanced:fall_db:S_harvest_window:FANI       beta   -0.188 d  (se 0.259)  p_WCB 0.4549  CI [-0.74, +0.34]  |dbeta| 0.109
+    balanced:fall_db:S_harvest_window:BULBUL     beta   -0.188 d  (se 0.259)  p_WCB 0.4549  CI [-0.74, +0.34]  |dbeta| 0.109
+    balanced:fall_db:S_harvest_window:AMPHAN     beta   +0.118 d  (se 0.332)  p_WCB 0.6248  CI [-0.40, +0.64]  |dbeta| 0.198
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    balanced:fall_db:S_harvest_window:YAAS: not estimable -- no variation in S_harvest_window among retained pixels
+    balanced:fall_db:S_harvest_window:REMAL      beta   -0.198 d  (se 0.259)  p_WCB 0.3050  CI [-0.59, +0.19]  |dbeta| 0.119
+    headline:plateau_db:S_pre_season             beta   +0.194 d  (se 0.079)  p_WCB 0.0220  CI [+0.04, +0.36]
+    balanced:plateau_db:S_pre_season:TITLI: not estimable -- no variation in S_pre_season among retained pixels
+    balanced:plateau_db:S_pre_season:FANI        beta   +0.261 d  (se 0.210)  p_WCB 0.3051  CI [-0.14, +0.66]  |dbeta| 0.067
+    balanced:plateau_db:S_pre_season:BULBUL      beta   +0.261 d  (se 0.210)  p_WCB 0.3051  CI [-0.14, +0.66]  |dbeta| 0.067
+    balanced:plateau_db:S_pre_season:AMPHAN      beta   +0.617 d  (se 0.313)  p_WCB 0.0407  CI [+0.09, +1.15]  |dbeta| 0.423
+    balanced:plateau_db:S_pre_season:YAAS        beta   +0.137 d  (se 0.236)  p_WCB 0.4108  CI [-0.21, +0.49]  |dbeta| 0.057
+    balanced:plateau_db:S_pre_season:REMAL       beta   +0.086 d  (se 0.399)  p_WCB 0.7353  CI [-1.34, +1.53]  |dbeta| 0.108
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    headline:plateau_db:S_harvest_window         beta   +0.066 d  (se 0.064)  p_WCB 0.2919  CI [-0.06, +0.20]
+    balanced:plateau_db:S_harvest_window:TITLI   beta   +0.336 d  (se 0.115)  p_WCB 0.0093  CI [+0.17, +0.51]  |dbeta| 0.270
+    balanced:plateau_db:S_harvest_window:FANI    beta   +0.080 d  (se 0.403)  p_WCB 0.7831  CI [-1.00, +1.15]  |dbeta| 0.014
+    balanced:plateau_db:S_harvest_window:BULBUL  beta   +0.080 d  (se 0.403)  p_WCB 0.7831  CI [-1.00, +1.15]  |dbeta| 0.014
+    balanced:plateau_db:S_harvest_window:AMPHAN  beta   +0.334 d  (se 0.416)  p_WCB 0.3442  CI [-0.46, +1.13]  |dbeta| 0.268
+      UNDERPOWERED: fewer than 3 treated clusters (MacKinnon & Webb 2018)
+    balanced:plateau_db:S_harvest_window:YAAS: not estimable -- no variation in S_harvest_window among retained pixels
+    balanced:plateau_db:S_harvest_window:REMAL   beta   +0.108 d  (se 0.182)  p_WCB 0.3941  CI [-0.15, +0.36]  |dbeta| 0.042
+    pretrend:trough:Slead_pre_season             beta   -4.637 d  (se 4.662)  p_WCB 0.2932  CI [-13.19, +4.03]
+    pretrend:trough:Slead_harvest_window         beta   -8.074 d  (se 5.221)  p_WCB 0.1003  CI [-17.45, +1.48]
+    pretrend:heading:Slead_pre_season            beta   +4.458 d  (se 2.794)  p_WCB 0.1164  CI [-1.25, +10.11]
+    pretrend:heading:Slead_harvest_window        beta   -2.654 d  (se 2.327)  p_WCB 0.2427  CI [-7.29, +2.03]
+    pretrend:drainage:Slead_pre_season           beta   +2.713 d  (se 3.505)  p_WCB 0.4383  CI [-4.49, +9.71]
+    pretrend:drainage:Slead_harvest_window       beta   +1.760 d  (se 2.878)  p_WCB 0.5194  CI [-3.78, +7.35]
+    pretrend:harvest:Slead_pre_season            beta   -3.845 d  (se 7.919)  p_WCB 0.6400  CI [-20.18, +12.55]
+    pretrend:harvest:Slead_harvest_window        beta   -1.294 d  (se 7.359)  p_WCB 0.8527  CI [-16.98, +14.12]
+    pretrend:veg_days:Slead_pre_season           beta   +9.095 d  (se 5.896)  p_WCB 0.1204  CI [-2.42, +20.62]
+    pretrend:veg_days:Slead_harvest_window       beta   +5.420 d  (se 6.752)  p_WCB 0.4231  CI [-7.33, +18.06]
+    pretrend:plateau_days:Slead_pre_season       beta   -1.746 d  (se 3.343)  p_WCB 0.5577  CI [-7.98, +4.24]
+    pretrend:plateau_days:Slead_harvest_window   beta   +4.414 d  (se 4.113)  p_WCB 0.2739  CI [-3.68, +12.54]
+    pretrend:fill_days:Slead_pre_season          beta   -8.304 d  (se 8.251)  p_WCB 0.3306  CI [-24.95, +8.36]
+    pretrend:fill_days:Slead_harvest_window      beta   +1.360 d  (se 6.768)  p_WCB 0.8314  CI [-12.56, +15.14]
+    pretrend:season_days:Slead_pre_season        beta   +0.792 d  (se 9.800)  p_WCB 0.9351  CI [-19.81, +21.34]
+    pretrend:season_days:Slead_harvest_window    beta   +6.780 d  (se 10.030)  p_WCB 0.5065  CI [-14.36, +28.00]
+    pretrend:rise_db:Slead_pre_season            beta   +0.158 d  (se 0.136)  p_WCB 0.2281  CI [-0.10, +0.41]
+    pretrend:rise_db:Slead_harvest_window        beta   +0.012 d  (se 0.080)  p_WCB 0.8761  CI [-0.14, +0.16]
+    pretrend:fall_db:Slead_pre_season            beta   +0.119 d  (se 0.090)  p_WCB 0.1768  CI [-0.07, +0.30]
+    pretrend:fall_db:Slead_harvest_window        beta   -0.043 d  (se 0.103)  p_WCB 0.6578  CI [-0.25, +0.16]
+    pretrend:plateau_db:Slead_pre_season         beta   -0.026 d  (se 0.081)  p_WCB 0.7503  CI [-0.18, +0.13]
+    pretrend:plateau_db:Slead_harvest_window     beta   -0.065 d  (se 0.054)  p_WCB 0.2138  CI [-0.17, +0.04]
+
+==========================================================================
+ROBUSTNESS ARM -- exposure classified against the measured season
+==========================================================================
+  S_phase_pre_window          29 exposed district-seasons,  17 treated clusters
+  S_phase_rise                14 exposed district-seasons,  14 treated clusters
+  S_phase_post_heading         4 exposed district-seasons,   4 treated clusters
+
+=== phase_attrition:S_phase_pre_window  (29 exposed pixel-years, 17 treated clusters)
+    coef -0.0448 (se 0.0538)  p_cluster 0.4048  p_WCB 0.3873  95% WCB CI [-0.1553, +0.0677]
+
+=== phase_attrition:S_phase_rise  (14 exposed pixel-years, 14 treated clusters)
+    coef -0.1451 (se 0.0766)  p_cluster 0.0582  p_WCB 0.0830  95% WCB CI [-0.3133, +0.0202]
+
+=== phase_attrition:S_phase_post_heading  (4 exposed pixel-years, 4 treated clusters)
+    coef -0.0774 (se 0.0816)  p_cluster 0.3424  p_WCB 0.4756  95% WCB CI [-0.2749, +0.1179]
+    phase:trough:S_phase_pre_window              beta   +0.502 d  (se 3.853)  p_WCB 0.8904  CI [-6.96, +7.80]
+    phase:trough:S_phase_rise                    beta   +6.394 d  (se 3.451)  p_WCB 0.0703  CI [-0.39, +13.27]
+    phase:trough:S_phase_post_heading            beta   +0.661 d  (se 5.982)  p_WCB 0.9158  CI [-14.96, +16.17]
+    phase:heading:S_phase_pre_window             beta   +1.533 d  (se 3.666)  p_WCB 0.6725  CI [-5.41, +8.53]
+    phase:heading:S_phase_rise                   beta   +6.206 d  (se 3.011)  p_WCB 0.0455  CI [+0.10, +12.31]
+    phase:heading:S_phase_post_heading           beta   +6.328 d  (se 3.839)  p_WCB 0.1556  CI [-2.35, +15.21]
+    phase:drainage:S_phase_pre_window            beta   -2.517 d  (se 3.284)  p_WCB 0.4558  CI [-8.77, +3.79]
+    phase:drainage:S_phase_rise                  beta   -1.356 d  (se 3.003)  p_WCB 0.6319  CI [-6.88, +4.18]
+    phase:drainage:S_phase_post_heading          beta   +2.787 d  (se 8.214)  p_WCB 0.6633  CI [-18.70, +24.34]
+    phase:harvest:S_phase_pre_window             beta   -9.778 d  (se 4.869)  p_WCB 0.0422  CI [-18.72, -0.82]
+    phase:harvest:S_phase_rise                   beta   +5.917 d  (se 5.621)  p_WCB 0.3006  CI [-5.30, +17.10]
+    phase:harvest:S_phase_post_heading           beta   -9.637 d  (se 9.852)  p_WCB 0.4105  CI [-62.44, +43.70]
+    phase:veg_days:S_phase_pre_window            beta   +1.032 d  (se 5.485)  p_WCB 0.8432  CI [-9.73, +11.74]
+    phase:veg_days:S_phase_rise                  beta   -0.188 d  (se 5.609)  p_WCB 0.9713  CI [-11.82, +11.36]
+    phase:veg_days:S_phase_post_heading          beta   +5.667 d  (se 5.916)  p_WCB 0.4972  CI [-11.69, +23.47]
+    phase:plateau_days:S_phase_pre_window        beta   -4.050 d  (se 5.034)  p_WCB 0.4070  CI [-13.69, +5.68]
+    phase:plateau_days:S_phase_rise              beta   -7.562 d  (se 4.724)  p_WCB 0.1106  CI [-17.10, +1.85]
+    phase:plateau_days:S_phase_post_heading      beta   -3.541 d  (se 9.409)  p_WCB 0.6520  CI [-26.90, +20.14]
+    phase:fill_days:S_phase_pre_window           beta  -11.311 d  (se 6.571)  p_WCB 0.0760  CI [-24.12, +1.30]
+    phase:fill_days:S_phase_rise                 beta   -0.289 d  (se 7.673)  p_WCB 0.9705  CI [-15.64, +15.33]

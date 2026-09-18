@@ -1,0 +1,29 @@
+state,district_gadm_name,centroid_lat,centroid_lon,dist_to_coast_km
+Andhra Pradesh,Srikakulam,18.5712,83.9793,28.9
+Andhra Pradesh,East Godavari,17.1839,82.001,36.8
+Andhra Pradesh,Nellore,14.4353,79.72,50.5
+Andhra Pradesh,Vizianagaram,18.4653,83.3638,54.6
+Andhra Pradesh,Visakhapatnam,17.8847,82.6819,55.5
+Andhra Pradesh,West Godavari,16.8869,81.3922,60.1
+Andhra Pradesh,Krishna,16.5504,80.7929,60.3
+Andhra Pradesh,Guntur,16.2914,80.0813,67.9
+Andhra Pradesh,Prakasam,15.6114,79.5095,72.2
+Odisha,Baleshwar,21.4889,86.9043,12.0
+Odisha,Puri,19.8658,85.6984,12.2
+Odisha,Jagatsinghapur,20.2163,86.33,15.1
+Odisha,Kendrapara,20.5469,86.6047,15.7
+Odisha,Bhadrak,20.9786,86.6167,26.7
+Odisha,Khordha,20.0826,85.5052,42.4
+Odisha,Ganjam,19.6218,84.6587,47.8
+Odisha,Gajapati,19.1651,84.1533,56.7
+Odisha,Jajapur,20.8497,86.1467,69.7
+Odisha,Cuttack,20.4436,85.6985,72.6
+Odisha,Nayagarh,20.2062,84.9929,79.8
+Odisha,Mayurbhanj,21.8907,86.4059,81.0
+West Bengal,South 24 Parganas,22.1143,88.4161,12.2
+West Bengal,Haora,22.5237,88.0646,17.7
+West Bengal,North 24 Parganas,22.4637,88.7783,17.7
+West Bengal,Purba Medinipur,22.0267,87.7743,21.0
+West Bengal,Kolkata,22.5517,88.3523,37.9
+West Bengal,Hugli,22.8816,88.0759,52.5
+West Bengal,Pashchim Medinipur,22.4104,87.2624,64.6

@@ -1,0 +1,110 @@
+state,district_gadm_name,season,sid,storm_name,max_wind_kt_within_75km,maxwind_fix_iso_time,maxwind_fix_month,timing_class,severity_class,maxwind_segment_dist_km,min_dist_to_track34kt_km
+Andhra Pradesh,East Godavari,2016,2016138N10081,ROANU,40,2016-05-19 15:00:00,5,pre_season,minor,71.7,71.7
+Andhra Pradesh,Srikakulam,2016,2016138N10081,ROANU,40,2016-05-20 03:00:00,5,pre_season,minor,57.8,57.8
+Andhra Pradesh,Visakhapatnam,2016,2016138N10081,ROANU,40,2016-05-19 21:00:00,5,pre_season,minor,73.5,73.5
+Odisha,Ganjam,2016,2016138N10081,ROANU,40,2016-05-20 03:00:00,5,pre_season,minor,62.2,62.2
+Odisha,Jagatsinghapur,2016,2016138N10081,ROANU,40,2016-05-20 12:00:00,5,pre_season,minor,68.6,68.6
+Odisha,Puri,2016,2016138N10081,ROANU,40,2016-05-20 12:00:00,5,pre_season,minor,68.7,68.7
+Andhra Pradesh,Nellore,2016,2016341N08092,VARDAH,70,2016-12-12 06:00:00,12,harvest_window,severe,36.3,36.2
+Andhra Pradesh,Srikakulam,2018,2018263N17089,DAYE,35,2018-09-20 18:00:00,9,mid_season,minor,13.8,13.8
+Andhra Pradesh,Vizianagaram,2018,2018263N17089,DAYE,35,2018-09-20 21:00:00,9,mid_season,minor,61.2,61.2
+Odisha,Gajapati,2018,2018263N17089,DAYE,35,2018-09-20 21:00:00,9,mid_season,minor,0.0,0.0
+Odisha,Ganjam,2018,2018263N17089,DAYE,35,2018-09-20 18:00:00,9,mid_season,minor,0.0,0.0
+Odisha,Khordha,2018,2018263N17089,DAYE,35,2018-09-20 18:00:00,9,mid_season,minor,56.6,56.6
+Odisha,Nayagarh,2018,2018263N17089,DAYE,35,2018-09-20 18:00:00,9,mid_season,minor,69.5,69.5
+Odisha,Puri,2018,2018263N17089,DAYE,35,2018-09-20 18:00:00,9,mid_season,minor,33.8,33.8
+Andhra Pradesh,Srikakulam,2018,2018281N14088,TITLI,80,2018-10-10 21:00:00,10,harvest_window,severe,0.0,0.0
+Andhra Pradesh,Vizianagaram,2018,2018281N14088,TITLI,80,2018-10-11 00:00:00,10,harvest_window,severe,30.1,26.4
+Odisha,Cuttack,2018,2018281N14088,TITLI,48,2018-10-11 21:00:00,10,harvest_window,severe,15.1,15.1
+Odisha,Gajapati,2018,2018281N14088,TITLI,80,2018-10-11 00:00:00,10,harvest_window,severe,0.0,0.0
+Odisha,Ganjam,2018,2018281N14088,TITLI,80,2018-10-11 00:00:00,10,harvest_window,severe,17.8,9.8
+Odisha,Khordha,2018,2018281N14088,TITLI,48,2018-10-11 21:00:00,10,harvest_window,severe,61.3,61.3
+Odisha,Nayagarh,2018,2018281N14088,TITLI,48,2018-10-11 21:00:00,10,harvest_window,severe,0.0,0.0
+Andhra Pradesh,East Godavari,2018,2018347N07089,PHETHAI,45,2018-12-17 06:00:00,12,harvest_window,minor,6.4,2.9
+Andhra Pradesh,Visakhapatnam,2018,2018347N07089,PHETHAI,40,2018-12-17 09:00:00,12,harvest_window,minor,48.9,48.9
+Andhra Pradesh,West Godavari,2018,2018347N07089,PHETHAI,45,2018-12-17 06:00:00,12,harvest_window,minor,47.2,47.2
+Andhra Pradesh,Srikakulam,2019,2019116N02090,FANI,115,2019-05-02 21:00:00,5,pre_season,severe,65.0,65.0
+Odisha,Baleshwar,2019,2019116N02090,FANI,85,2019-05-03 06:00:00,5,pre_season,severe,59.8,0.0
+Odisha,Bhadrak,2019,2019116N02090,FANI,85,2019-05-03 06:00:00,5,pre_season,severe,28.3,0.0
+Odisha,Cuttack,2019,2019116N02090,FANI,105,2019-05-03 00:00:00,5,pre_season,severe,63.2,0.0
+Odisha,Ganjam,2019,2019116N02090,FANI,115,2019-05-02 21:00:00,5,pre_season,severe,52.5,46.3
+Odisha,Jagatsinghapur,2019,2019116N02090,FANI,105,2019-05-03 00:00:00,5,pre_season,severe,69.5,3.8
+Odisha,Jajapur,2019,2019116N02090,FANI,100,2019-05-03 03:00:00,5,pre_season,severe,44.2,0.0
+Odisha,Kendrapara,2019,2019116N02090,FANI,100,2019-05-03 03:00:00,5,pre_season,severe,39.8,20.4
+Odisha,Khordha,2019,2019116N02090,FANI,115,2019-05-02 21:00:00,5,pre_season,severe,69.9,0.0
+Odisha,Mayurbhanj,2019,2019116N02090,FANI,85,2019-05-03 06:00:00,5,pre_season,severe,61.0,0.0
+Odisha,Nayagarh,2019,2019116N02090,FANI,105,2019-05-03 00:00:00,5,pre_season,severe,45.5,36.4
+Odisha,Puri,2019,2019116N02090,FANI,115,2019-05-02 21:00:00,5,pre_season,severe,52.2,0.0
+West Bengal,Haora,2019,2019116N02090,FANI,60,2019-05-03 15:00:00,5,pre_season,severe,59.9,0.0
+West Bengal,Hugli,2019,2019116N02090,FANI,60,2019-05-03 15:00:00,5,pre_season,severe,69.6,0.0
+West Bengal,Kolkata,2019,2019116N02090,FANI,55,2019-05-03 18:00:00,5,pre_season,severe,18.0,17.4
+West Bengal,North 24 Parganas,2019,2019116N02090,FANI,55,2019-05-03 18:00:00,5,pre_season,severe,25.9,6.9
+West Bengal,Pashchim Medinipur,2019,2019116N02090,FANI,70,2019-05-03 12:00:00,5,pre_season,severe,31.7,0.0
+West Bengal,Purba Medinipur,2019,2019116N02090,FANI,70,2019-05-03 12:00:00,5,pre_season,severe,56.9,0.0
+West Bengal,South 24 Parganas,2019,2019116N02090,FANI,60,2019-05-03 15:00:00,5,pre_season,severe,68.9,12.7
+Odisha,Bhadrak,2019,2019302N11118,BULBUL:MATMO,75,2019-11-09 00:00:00,11,harvest_window,severe,73.8,73.8
+Odisha,Kendrapara,2019,2019302N11118,BULBUL:MATMO,75,2019-11-09 00:00:00,11,harvest_window,severe,64.5,64.5
+West Bengal,North 24 Parganas,2019,2019302N11118,BULBUL:MATMO,70,2019-11-09 12:00:00,11,harvest_window,severe,46.3,0.0
+West Bengal,Purba Medinipur,2019,2019302N11118,BULBUL:MATMO,70,2019-11-09 12:00:00,11,harvest_window,severe,57.6,57.6
+West Bengal,South 24 Parganas,2019,2019302N11118,BULBUL:MATMO,70,2019-11-09 12:00:00,11,harvest_window,severe,17.4,0.0
+Odisha,Baleshwar,2020,2020136N10088,AMPHAN,90,2020-05-20 06:00:00,5,pre_season,severe,66.8,66.8
+West Bengal,Haora,2020,2020136N10088,AMPHAN,90,2020-05-20 09:00:00,5,pre_season,severe,36.8,17.5
+West Bengal,Hugli,2020,2020136N10088,AMPHAN,90,2020-05-20 09:00:00,5,pre_season,severe,59.6,19.6
+West Bengal,Kolkata,2020,2020136N10088,AMPHAN,90,2020-05-20 09:00:00,5,pre_season,severe,43.1,12.0
+West Bengal,North 24 Parganas,2020,2020136N10088,AMPHAN,90,2020-05-20 09:00:00,5,pre_season,severe,29.3,0.0
+West Bengal,Pashchim Medinipur,2020,2020136N10088,AMPHAN,90,2020-05-20 09:00:00,5,pre_season,severe,66.8,61.5
+West Bengal,Purba Medinipur,2020,2020136N10088,AMPHAN,90,2020-05-20 09:00:00,5,pre_season,severe,19.8,19.8
+West Bengal,South 24 Parganas,2020,2020136N10088,AMPHAN,90,2020-05-20 09:00:00,5,pre_season,severe,0.0,0.0
+Andhra Pradesh,Nellore,2020,2020327N08086,NIVAR,40,2020-11-26 03:00:00,11,harvest_window,minor,74.1,0.0
+Odisha,Baleshwar,2021,2021143N15090,YAAS,75,2021-05-26 03:00:00,5,pre_season,severe,0.0,0.0
+Odisha,Bhadrak,2021,2021143N15090,YAAS,75,2021-05-26 03:00:00,5,pre_season,severe,24.6,24.6
+Odisha,Jajapur,2021,2021143N15090,YAAS,75,2021-05-26 03:00:00,5,pre_season,severe,66.4,66.4
+Odisha,Kendrapara,2021,2021143N15090,YAAS,75,2021-05-26 00:00:00,5,pre_season,severe,31.2,31.2
+Odisha,Mayurbhanj,2021,2021143N15090,YAAS,75,2021-05-26 06:00:00,5,pre_season,severe,0.0,0.0
+West Bengal,Pashchim Medinipur,2021,2021143N15090,YAAS,75,2021-05-26 06:00:00,5,pre_season,severe,40.0,34.3
+West Bengal,Purba Medinipur,2021,2021143N15090,YAAS,75,2021-05-26 03:00:00,5,pre_season,severe,55.2,55.2
+Andhra Pradesh,Srikakulam,2021,2021267N18094,GULAB:SHAHEEN-GU,45,2021-09-26 12:00:00,9,mid_season,minor,0.0,0.0
+Andhra Pradesh,Visakhapatnam,2021,2021267N18094,GULAB:SHAHEEN-GU,45,2021-09-26 15:00:00,9,mid_season,minor,15.0,0.0
+Andhra Pradesh,Vizianagaram,2021,2021267N18094,GULAB:SHAHEEN-GU,45,2021-09-26 15:00:00,9,mid_season,minor,0.0,0.0
+Odisha,Gajapati,2021,2021267N18094,GULAB:SHAHEEN-GU,45,2021-09-26 12:00:00,9,mid_season,minor,44.9,44.9
+Odisha,Ganjam,2021,2021267N18094,GULAB:SHAHEEN-GU,45,2021-09-26 12:00:00,9,mid_season,minor,64.6,64.6
+Andhra Pradesh,Nellore,2021,2021312N07090,UNNAMED,35,2021-11-11 09:00:00,11,harvest_window,minor,55.5,55.5
+Andhra Pradesh,East Godavari,2022,2022126N07095,ASANI,50,2022-05-10 18:00:00,5,pre_season,severe,67.4,41.1
+Andhra Pradesh,Guntur,2022,2022126N07095,ASANI,45,2022-05-11 03:00:00,5,pre_season,minor,64.1,44.2
+Andhra Pradesh,Krishna,2022,2022126N07095,ASANI,45,2022-05-11 03:00:00,5,pre_season,minor,34.8,11.2
+Andhra Pradesh,West Godavari,2022,2022126N07095,ASANI,50,2022-05-10 18:00:00,5,pre_season,severe,68.6,35.8
+Odisha,Baleshwar,2022,2022230N18095,UNNAMED,43,2022-08-19 09:00:00,8,mid_season,minor,62.8,62.8
+West Bengal,Haora,2022,2022230N18095,UNNAMED,43,2022-08-19 09:00:00,8,mid_season,minor,67.5,67.5
+West Bengal,North 24 Parganas,2022,2022230N18095,UNNAMED,43,2022-08-19 06:00:00,8,mid_season,minor,22.6,22.6
+West Bengal,Pashchim Medinipur,2022,2022230N18095,UNNAMED,43,2022-08-19 09:00:00,8,mid_season,minor,69.4,69.4
+West Bengal,Purba Medinipur,2022,2022230N18095,UNNAMED,43,2022-08-19 09:00:00,8,mid_season,minor,27.8,27.8
+West Bengal,South 24 Parganas,2022,2022230N18095,UNNAMED,43,2022-08-19 09:00:00,8,mid_season,minor,0.0,0.0
+West Bengal,North 24 Parganas,2023,2023317N10094,MIDHILI,50,2023-11-17 06:00:00,11,harvest_window,severe,66.9,64.5
+Andhra Pradesh,Guntur,2023,2023334N08088,MICHAUNG,50,2023-12-05 09:00:00,12,harvest_window,severe,2.5,0.0
+Andhra Pradesh,Krishna,2023,2023334N08088,MICHAUNG,50,2023-12-05 06:00:00,12,harvest_window,severe,64.7,0.0
+Andhra Pradesh,Nellore,2023,2023334N08088,MICHAUNG,55,2023-12-04 18:00:00,12,harvest_window,severe,0.6,0.6
+Andhra Pradesh,Prakasam,2023,2023334N08088,MICHAUNG,55,2023-12-04 21:00:00,12,harvest_window,severe,12.5,0.0
+Andhra Pradesh,West Godavari,2023,2023334N08088,MICHAUNG,40,2023-12-05 12:00:00,12,harvest_window,minor,73.5,51.0
+West Bengal,Haora,2024,2024145N14087,REMAL,60,2024-05-26 18:00:00,5,pre_season,severe,69.2,62.6
+West Bengal,Hugli,2024,2024145N14087,REMAL,60,2024-05-26 18:00:00,5,pre_season,severe,73.6,59.8
+West Bengal,Kolkata,2024,2024145N14087,REMAL,60,2024-05-26 18:00:00,5,pre_season,severe,62.9,57.2
+West Bengal,North 24 Parganas,2024,2024145N14087,REMAL,60,2024-05-26 15:00:00,5,pre_season,severe,0.0,0.0
+West Bengal,Purba Medinipur,2024,2024145N14087,REMAL,60,2024-05-26 18:00:00,5,pre_season,severe,71.5,71.5
+West Bengal,South 24 Parganas,2024,2024145N14087,REMAL,60,2024-05-26 18:00:00,5,pre_season,severe,11.3,11.3
+Odisha,Baleshwar,2024,2024295N15092,DANA,55,2024-10-24 21:00:00,10,harvest_window,severe,31.2,0.0
+Odisha,Bhadrak,2024,2024295N15092,DANA,60,2024-10-24 15:00:00,10,harvest_window,severe,33.5,0.0
+Odisha,Cuttack,2024,2024295N15092,DANA,55,2024-10-24 21:00:00,10,harvest_window,severe,72.5,72.5
+Odisha,Jagatsinghapur,2024,2024295N15092,DANA,60,2024-10-24 15:00:00,10,harvest_window,severe,45.0,45.0
+Odisha,Jajapur,2024,2024295N15092,DANA,60,2024-10-24 15:00:00,10,harvest_window,severe,57.9,30.4
+Odisha,Kendrapara,2024,2024295N15092,DANA,60,2024-10-24 15:00:00,10,harvest_window,severe,21.7,0.0
+Odisha,Mayurbhanj,2024,2024295N15092,DANA,55,2024-10-24 21:00:00,10,harvest_window,severe,66.8,1.7
+Andhra Pradesh,Srikakulam,2025,2025274N16087,UNNAMED,35,2025-10-02 09:00:00,10,harvest_window,minor,14.7,14.7
+Odisha,Gajapati,2025,2025274N16087,UNNAMED,35,2025-10-02 09:00:00,10,harvest_window,minor,38.2,38.2
+Odisha,Ganjam,2025,2025274N16087,UNNAMED,35,2025-10-02 09:00:00,10,harvest_window,minor,0.0,0.0
+Odisha,Khordha,2025,2025274N16087,UNNAMED,35,2025-10-02 09:00:00,10,harvest_window,minor,47.8,47.8
+Odisha,Nayagarh,2025,2025274N16087,UNNAMED,35,2025-10-02 09:00:00,10,harvest_window,minor,55.1,55.1
+Odisha,Puri,2025,2025274N16087,UNNAMED,35,2025-10-02 09:00:00,10,harvest_window,minor,31.5,31.5
+Andhra Pradesh,East Godavari,2025,2025298N11089,MONTHA,50,2025-10-28 18:00:00,10,harvest_window,severe,28.6,28.6
+Andhra Pradesh,Guntur,2025,2025298N11089,MONTHA,50,2025-10-28 18:00:00,10,harvest_window,severe,63.4,63.4
+Andhra Pradesh,Krishna,2025,2025298N11089,MONTHA,50,2025-10-28 18:00:00,10,harvest_window,severe,0.0,0.0
+Andhra Pradesh,West Godavari,2025,2025298N11089,MONTHA,50,2025-10-28 18:00:00,10,harvest_window,severe,2.3,0.0

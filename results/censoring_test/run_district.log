@@ -1,0 +1,31 @@
+censoring window: dekads 0-12, DOY 154.5-274.5 (13 dekads)
+severe harvest-window landfalls in 2017-2025: 20 rows, earliest DOY 283 (TITLI 2018)
+  [PASS] every severe harvest-window landfall is later than DOY 274.5; no censored series contains a post-storm observation
+level=district: one row per district-season, retained := estimable, cell_id := district
+
+==============================================================================
+DISTRICT LEVEL -- beta_harv on the trough, 9999 replications
+==============================================================================
+retained rows 208;  non-missing share: trough 1.000,  trough_red_full 0.567,  trough_red_cens 0.846
+common sample (all three measurable, retained): 100 rows = 48.1% of retained
+
+  -- common sample --
+  (1) full PLSM, 5 segments, 28 dekads                   -3.604 d  (se  4.823)  p_WCB 0.4314  CI [ -12.96,   +5.59]  n=100
+  (2) reduced model, 1 breakpoint, 28 dekads            +17.138 d  (se 22.031)  p_WCB 0.7180  CI [ -40.97,  +77.28]  n=100
+  (3) reduced model, 1 breakpoint, dekads 0-12           -1.012 d  (se  3.032)  p_WCB 0.7021  CI [  -7.46,   +5.38]  n=100
+
+  paired difference in how the estimators respond to exposure (same rows):
+    (1) - (3): 5-segment minus censored 1-breakpoint     -2.591 d  (se  3.788)  p_WCB 0.4488  CI [  -9.45,   +4.70]  n=100
+    (1) - (2): 5-segment minus 28-dekad 1-breakpoint    -20.741 d  (se 20.244)  p_WCB 0.5461  CI [ -75.93,  +33.77]  n=100
+
+  agreement on the common sample (100 rows):
+    trough_red_full - trough:  mean   -8.50 d   sd  73.75   r -0.102
+    trough_red_cens - trough:  mean   -4.60 d   sd  11.84   r +0.835
+    trough_red_cens - trough_red_full:  mean   +3.90 d   sd  72.08   r -0.083
+
+  -- own sample (each arm on every row it can measure) --
+  (1) full PLSM, 5 segments, 28 dekads                   +5.001 d  (se  3.103)  p_WCB 0.1102  CI [  -1.04,  +11.25]  n=208
+  (2) reduced model, 1 breakpoint, 28 dekads            +14.852 d  (se 12.370)  p_WCB 0.2911  CI [ -11.94,  +41.26]  n=118
+  (3) reduced model, 1 breakpoint, dekads 0-12           +1.432 d  (se  2.311)  p_WCB 0.5136  CI [  -3.39,   +6.38]  n=176
+
+wrote /home/claude/results/censoring_test/Table_SX_CensoringTest.district.csv

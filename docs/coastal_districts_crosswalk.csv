@@ -1,0 +1,29 @@
+state,gadm,ra_region,ra_subregion,match,poly_count,area_km2
+Andhra Pradesh,Srikakulam,Andhra Pradesh,Srikakulam,OK,1,6087.811888802757
+Andhra Pradesh,East Godavari,Andhra Pradesh,East Godavari,OK,1,10484.786179231192
+Andhra Pradesh,Nellore,Andhra Pradesh,Nellore,OK,1,12933.206465074325
+Andhra Pradesh,Vizianagaram,Andhra Pradesh,Vizianagaram,OK,1,5556.042468583894
+Andhra Pradesh,Visakhapatnam,Andhra Pradesh,Vishakhapatnam,OK,1,11056.344145570321
+Andhra Pradesh,West Godavari,Andhra Pradesh,West Godavari,OK,1,7571.355881232758
+Andhra Pradesh,Krishna,Andhra Pradesh,Krishna,OK,1,8422.14965797966
+Andhra Pradesh,Guntur,Andhra Pradesh,Guntur,OK,1,11166.829575434856
+Andhra Pradesh,Prakasam,Andhra Pradesh,Prakasam,OK,1,17471.662219756792
+Odisha,Baleshwar,Orissa,Baleshwar,OK,1,3569.258041960636
+Odisha,Puri,Orissa,Puri,OK,1,3384.5229390513095
+Odisha,Jagatsinghapur,Orissa,Jagatsinghpur,OK,1,1613.5185055147413
+Odisha,Kendrapara,Orissa,Kendrapara,OK,1,2395.436635840442
+Odisha,Bhadrak,Orissa,Bhadrak,OK,1,2364.81740139472
+Odisha,Khordha,Orissa,Khordha,OK,1,2662.3159068665354
+Odisha,Ganjam,Orissa,Ganjam,OK,1,8103.927226184859
+Odisha,Gajapati,Orissa,Gajapati,OK,1,3938.667388485778
+Odisha,Jajapur,Orissa,Jajpur,OK,1,2800.063871309391
+Odisha,Cuttack,Orissa,Cuttack,OK,1,3806.6988869203983
+Odisha,Nayagarh,Orissa,Nayagarh,OK,1,3765.2758045320297
+Odisha,Mayurbhanj,Orissa,Mayurbhanj,OK,1,10061.79400998431
+West Bengal,South 24 Parganas,West Bengal,South 24 Parganas,OK,1,5319.803851037352
+West Bengal,Haora,West Bengal,Haora,OK,1,1385.7506133987215
+West Bengal,North 24 Parganas,West Bengal,North 24 Parganas,OK,1,5590.486546746056
+West Bengal,Purba Medinipur,West Bengal,East Midnapore,OK,1,3832.5306554660724
+West Bengal,Kolkata,West Bengal,,EXCLUDED,0,0.0
+West Bengal,Hugli,West Bengal,Hugli,OK,1,3031.7374473750942
+West Bengal,Pashchim Medinipur,West Bengal,West Midnapore,OK,1,9044.959233576035

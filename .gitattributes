@@ -1,0 +1,39 @@
+# Line endings are pinned so that a hash of a committed text file means the same
+# thing on every platform. Without this, git's default core.autocrlf=true on
+# Windows rewrites LF to CRLF on checkout, and figures/figure_provenance.json --
+# whose ten inputs are all CSVs -- reported every one as [CHANGED] on a clean
+# Windows clone. Found by an external audit on 2026-09-13.
+#
+# make_figures.py also normalises line endings before hashing text, so the check
+# survives a git configuration that ignores this file. Belt and braces: this
+# prevents the rewrite, that tolerates it.
+* text=auto eol=lf
+
+*.csv  text eol=lf
+*.tsv  text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.txt  text eol=lf
+*.py   text eol=lf
+*.js   text eol=lf
+*.sh   text eol=lf
+*.log  text eol=lf
+*.bib  text eol=lf
+*.tex  text eol=lf
+
+# Binary: never touched, hashed as raw bytes.
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.zip  binary
+*.npy  binary
+*.shp  binary
+*.dbf  binary
+*.shx  binary
+
+# These two accepted evidence files already contain CRLF. Preserve their exact
+# source bytes at the initial public release instead of silently normalising
+# manuscript evidence hashes during git add. No numerical value is changed.
+results/s310_v2_district/Table_SX_AttritionTriggers.csv -text
+results/s310_v2_pixel/Table_SX_AttritionTriggers.csv -text

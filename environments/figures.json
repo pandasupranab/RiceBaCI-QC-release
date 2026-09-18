@@ -1,0 +1,14 @@
+{
+  "profile": "figures",
+  "python": "3.12.14",
+  "packages": {
+    "matplotlib": "3.10.9",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "Pillow": "12.2.0"
+  },
+  "native": {
+    "freetype": "2.6.1",
+    "zlib": "1.3.1.zlib-ng"
+  }
+}

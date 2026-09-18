@@ -1,0 +1,93 @@
+panel pass over 225 district-season exports
+  primary   five-segment PLSM on the district-season mean curve, free breakpoints, no calendar gate
+  pixel arm PLSM on the padded baseline grid, plus the trapezoid and crossing arms
+  smoothing=OFF  gate1_r=0.0  rise floor=0.00 dB  min_dekads=14  jobs=2
+   10/225  4,000 pixel-seasons      31s
+   20/225  8,000 pixel-seasons      61s
+   30/225  12,000 pixel-seasons      92s
+   40/225  16,000 pixel-seasons     124s
+   50/225  20,000 pixel-seasons     155s
+   60/225  24,000 pixel-seasons     186s
+   70/225  28,000 pixel-seasons     217s
+   80/225  32,000 pixel-seasons     248s
+   90/225  36,000 pixel-seasons     279s
+  100/225  40,000 pixel-seasons     309s
+  110/225  44,000 pixel-seasons     340s
+  120/225  48,000 pixel-seasons     370s
+  130/225  52,000 pixel-seasons     402s
+  140/225  56,000 pixel-seasons     432s
+  150/225  60,000 pixel-seasons     463s
+  160/225  64,000 pixel-seasons     494s
+  170/225  68,000 pixel-seasons     524s
+  180/225  72,000 pixel-seasons     555s
+  190/225  76,000 pixel-seasons     586s
+  200/225  80,000 pixel-seasons     617s
+  210/225  84,000 pixel-seasons     648s
+  220/225  88,000 pixel-seasons     679s
+  225/225  90,000 pixel-seasons     696s
+
+=== PRIMARY: district-season panel ===
+225 district-seasons | 25 districts | 2017-2025
+estimable 208 (0.9244)
+mean-curve sampling se 0.123 dB | fit rmse 0.316 dB | swing 2.73 dB
+  trough       p5   194.5  med   249.5  p95   284.5
+  heading      p5   274.5  med   314.5  p95   334.5
+  drainage     p5   314.5  med   324.5  p95   351.0
+  harvest      p5   344.5  med   384.5  p95   422.0
+  rise_db      p5     1.2  med     2.4  p95     3.8
+  veg_days     p5    30.0  med    60.0  p95   120.0
+  season_days  p5    90.0  med   130.0  p95   177.5
+  within-district sd across seasons (the DiD's working variation):
+    trough     12.02
+    heading    7.82
+    harvest    13.92
+    rise_db    0.37
+  not estimable:
+    Guntur               2017  other
+    Krishna              2017  other
+    Krishna              2018  other
+    Krishna              2020  other
+    Krishna              2024  other
+    Visakhapatnam        2017  other
+    Visakhapatnam        2018  other
+    Visakhapatnam        2019  other
+    Visakhapatnam        2024  other
+    Vizianagaram         2017  other
+    Vizianagaram         2019  other
+    Vizianagaram         2020  other
+    Vizianagaram         2022  other
+    Vizianagaram         2024  other
+    West Godavari        2017  other
+    West Godavari        2019  other
+    West Godavari        2024  other
+
+=== pixel arm ===
+90,000 pixel-seasons | 10,000 pixels
+valid dekads median 27  min 18  fraction >= 14 1.0000
+retained  PLSM 0.3527  | trapezoid 0.2876  | crossings 0.3685
+  trough       median   254.5
+  heading      median   314.5
+  drainage     median   334.5
+  harvest      median   374.5
+  rise_db      median     6.1
+  veg_days     median    50.0
+  season_days  median   120.0
+why the rest were refused:
+  other                               58,259  0.6473
+  retained                            31,741  0.3527
+
+retention by season:
+  2017  10,000  0.3183
+  2018  10,000  0.4169
+  2019  10,000  0.4282
+  2020  10,000  0.3706
+  2021  10,000  0.3199
+  2022  10,000  0.3066
+  2023  10,000  0.3302
+  2024  10,000  0.3094
+  2025  10,000  0.3740
+
+wrote /home/claude/results/phen_panel_district_season.csv
+wrote /home/claude/results/phen_curves_district_season.csv
+wrote /home/claude/results/phen_panel_sar.csv
+wrote /home/claude/results/phen_panel_sar_failures.csv

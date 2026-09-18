@@ -1,0 +1,2 @@
+n_state_marker_cells,gate2_excludes_anything,gate2_rejection_rate_min,gate2_rejection_rate_max,gate2_rejection_rate_spread,spread_tolerance,q1_differential_screening,n_medians_outside_bounds,n_cells_with_p95_above_upper_bound,max_between_state_margin_spread_d,q2_calendar_plausibility
+9,False,0,0,0,0.1,"no differential screening: Gate 2 excludes nothing on this path, so it cannot screen one state more than another",2,9,10,"2 of 9 state x marker medians lie OUTSIDE §3.2's bounds (Odisha, West Bengal)"

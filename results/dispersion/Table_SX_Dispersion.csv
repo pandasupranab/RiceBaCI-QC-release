@@ -1,0 +1,7 @@
+arm,marker,label,within_sd,between_sd,ratio,ci_lo,ci_hi,n_districts,n_pixels,n_boot,verdict
+all retained pixel-seasons,trough,H1 clause (b): radar trough breakpoint,26.745459667813027,19.964942594537725,1.3396211655089059,1.2727642699687387,1.407739912293341,25,6453,2000,NOT MET
+all retained pixel-seasons,harvest,H2 clause (b): radar fall-end breakpoint,25.997992592538683,17.245688074720924,1.5075068318466842,1.4241079764819462,1.592415077975186,25,6453,2000,NOT MET
+all retained pixel-seasons,heading,supplementary: radar rise-end breakpoint,20.30415354256147,14.130484906354031,1.4369042306135817,1.3841748200443238,1.4914075958376056,25,6453,2000,NOT MET
+no severe exposure of any timing class,trough,H1 clause (b): radar trough breakpoint,27.088592386651584,20.585256217655974,1.3159220414957817,1.25962244061624,1.3725852322832623,25,5893,2000,NOT MET
+no severe exposure of any timing class,harvest,H2 clause (b): radar fall-end breakpoint,26.268873592340103,18.0622692010107,1.4543506853983879,1.3824579990286314,1.5281806909917333,25,5893,2000,NOT MET
+no severe exposure of any timing class,heading,supplementary: radar rise-end breakpoint,20.67095908738073,14.729090364896617,1.4034104330465094,1.3551253983303386,1.4487742534508228,25,5893,2000,NOT MET

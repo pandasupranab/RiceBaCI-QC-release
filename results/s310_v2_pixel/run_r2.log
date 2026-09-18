@@ -1,0 +1,67 @@
+panel  90,000 pixel-years | 10,000 pixels | 25 districts | seasons 2017-2025
+retained overall: 0.3527
+all 25 panel districts resolve in the exposure catalogue
+
+NOTE: severe storms hitting roster districts that are NOT in the protocol's estimable list: ['DANA', 'MICHAUNG', 'MONTHA']
+  These enter the §3.8 A exposure panel through S_pre/S_harv but get no per-cyclone row. That is the frozen §3.8 B design (named-cyclone stacks are the six of §1.1); if the catalogue has changed, revisit §1.1 before reporting.
+--resume: 100 strata reusable from Table_SX_AttritionDiagnostic.partial.csv
+  --resume provenance check: class:pre_season reproduces exactly (coef -0.053303, p_WCB 0.0010)
+
+=== class:pre_season  (11,600 exposed pixel-years, 17 treated clusters)
+    coef -0.0533 (se 0.0109)  p_cluster 0.0000  p_WCB 0.0010  95% WCB CI [-0.0756, -0.0314]
+
+built dist_to_track_km from the exposure file: 0.209 of rows have a catalogued 34-kt track, the rest coded at 500 km
+
+IPSW (radar declaration, ipsw): logit on ['obs_total', 'n_valid_dekads', 'dist_to_track_km', 'elevation_m', 'slope_deg', 'incidence_deg'] + district/season FE, fitted on 90000 of 90000 rows, 813.9 events per parameter, converged=True, weights in [1.25, 100.00]
+  calibration |mean(p_hat) - mean(retained)| = 2.78e-16 (OK)
+
+==========================================================================
+ROBUSTNESS ARM -- exposure classified against the measured season
+==========================================================================
+  S_phase_pre_window          29 exposed district-seasons,  17 treated clusters
+  S_phase_rise                14 exposed district-seasons,  14 treated clusters
+  S_phase_post_heading         4 exposed district-seasons,   4 treated clusters
+    phase_ipsw:harvest:S_phase_post_heading      beta   +0.750 d  (se 4.490)  p_WCB 0.8430  CI [-15.55, +16.85]
+    phase:veg_days:S_phase_pre_window            beta   -0.428 d  (se 1.294)  p_WCB 0.7230  CI [-2.98, +2.05]
+    phase_ipsw:veg_days:S_phase_pre_window       beta   -1.211 d  (se 1.404)  p_WCB 0.4030  CI [-4.54, +1.74]
+    phase:veg_days:S_phase_rise                  beta   -4.597 d  (se 1.436)  p_WCB 0.0110  CI [-8.20, -0.98]
+    phase_ipsw:veg_days:S_phase_rise             beta   -3.358 d  (se 1.614)  p_WCB 0.0850  CI [-7.00, +0.26]
+    phase:veg_days:S_phase_post_heading          beta   -9.084 d  (se 1.127)  p_WCB 0.0270  CI [-11.14, -6.98]
+    phase_ipsw:veg_days:S_phase_post_heading     beta   -7.705 d  (se 1.929)  p_WCB 0.0410  CI [-12.41, -2.69]
+    phase:plateau_days:S_phase_pre_window        beta   -0.568 d  (se 0.796)  p_WCB 0.5280  CI [-2.22, +1.18]
+    phase_ipsw:plateau_days:S_phase_pre_window   beta   -0.254 d  (se 0.797)  p_WCB 0.7510  CI [-1.88, +1.52]
+    phase:plateau_days:S_phase_rise              beta   -1.629 d  (se 0.775)  p_WCB 0.0890  CI [-3.42, +0.23]
+    phase_ipsw:plateau_days:S_phase_rise         beta   -1.743 d  (se 0.835)  p_WCB 0.0710  CI [-3.50, +0.08]
+    phase:plateau_days:S_phase_post_heading      beta   -1.549 d  (se 2.664)  p_WCB 0.7360  CI [-9.50, +6.18]
+    phase_ipsw:plateau_days:S_phase_post_heading beta   -1.025 d  (se 3.044)  p_WCB 0.7130  CI [-11.17, +8.77]
+    phase:fill_days:S_phase_pre_window           beta   -2.945 d  (se 1.149)  p_WCB 0.0400  CI [-5.48, -0.53]
+    phase_ipsw:fill_days:S_phase_pre_window      beta   -2.584 d  (se 1.219)  p_WCB 0.0710  CI [-5.22, +0.02]
+    phase:fill_days:S_phase_rise                 beta   -2.602 d  (se 1.055)  p_WCB 0.0440  CI [-4.86, -0.40]
+    phase_ipsw:fill_days:S_phase_rise            beta   -3.212 d  (se 1.159)  p_WCB 0.0260  CI [-5.60, -0.93]
+    phase:fill_days:S_phase_post_heading         beta   -1.007 d  (se 3.319)  p_WCB 0.8190  CI [-13.47, +11.09]
+    phase_ipsw:fill_days:S_phase_post_heading    beta   -0.019 d  (se 3.628)  p_WCB 0.9970  CI [-14.31, +13.07]
+    phase:season_days:S_phase_pre_window         beta   -3.373 d  (se 1.965)  p_WCB 0.1190  CI [-7.60, +0.45]
+    phase_ipsw:season_days:S_phase_pre_window    beta   -3.795 d  (se 2.091)  p_WCB 0.1100  CI [-8.55, +0.67]
+    phase:season_days:S_phase_rise               beta   -7.199 d  (se 2.029)  p_WCB 0.0120  CI [-11.84, -2.40]
+    phase_ipsw:season_days:S_phase_rise          beta   -6.570 d  (se 2.174)  p_WCB 0.0190  CI [-11.54, -1.90]
+    phase:season_days:S_phase_post_heading       beta  -10.091 d  (se 3.694)  p_WCB 0.1010  CI [-21.90, +0.85]
+    phase_ipsw:season_days:S_phase_post_heading  beta   -7.724 d  (se 4.900)  p_WCB 0.2760  CI [-20.67, +4.72]
+    phase:rise_db:S_phase_pre_window             beta   +0.040 d  (se 0.067)  p_WCB 0.5430  CI [-0.10, +0.17]
+    phase_ipsw:rise_db:S_phase_pre_window        beta   -0.021 d  (se 0.071)  p_WCB 0.7810  CI [-0.17, +0.12]
+    phase:rise_db:S_phase_rise                   beta   -0.159 d  (se 0.098)  p_WCB 0.1430  CI [-0.42, +0.09]
+    phase_ipsw:rise_db:S_phase_rise              beta   -0.158 d  (se 0.091)  p_WCB 0.1160  CI [-0.38, +0.04]
+    phase:rise_db:S_phase_post_heading           beta   +0.098 d  (se 0.250)  p_WCB 0.7230  CI [-1.54, +1.65]
+    phase_ipsw:rise_db:S_phase_post_heading      beta   +0.135 d  (se 0.289)  p_WCB 0.7170  CI [-1.43, +1.65]
+    phase:fall_db:S_phase_pre_window             beta   -0.069 d  (se 0.108)  p_WCB 0.5500  CI [-0.30, +0.17]
+    phase_ipsw:fall_db:S_phase_pre_window        beta   -0.045 d  (se 0.110)  p_WCB 0.6940  CI [-0.28, +0.18]
+    phase:fall_db:S_phase_rise                   beta   -0.271 d  (se 0.126)  p_WCB 0.0630  CI [-0.60, +0.04]
+    phase_ipsw:fall_db:S_phase_rise              beta   -0.227 d  (se 0.125)  p_WCB 0.0990  CI [-0.52, +0.06]
+    phase:fall_db:S_phase_post_heading           beta   +0.088 d  (se 0.068)  p_WCB 0.2260  CI [-0.08, +0.25]
+    phase_ipsw:fall_db:S_phase_post_heading      beta   +0.115 d  (se 0.096)  p_WCB 0.3710  CI [-0.14, +0.38]
+    phase:plateau_db:S_phase_pre_window          beta   +0.144 d  (se 0.067)  p_WCB 0.0410  CI [+0.01, +0.27]
+    phase_ipsw:plateau_db:S_phase_pre_window     beta   +0.141 d  (se 0.072)  p_WCB 0.0700  CI [-0.01, +0.29]
+    phase:plateau_db:S_phase_rise                beta   +0.098 d  (se 0.075)  p_WCB 0.2900  CI [-0.07, +0.27]
+    phase_ipsw:plateau_db:S_phase_rise           beta   +0.086 d  (se 0.089)  p_WCB 0.3870  CI [-0.10, +0.29]
+    phase:plateau_db:S_phase_post_heading        beta   +0.065 d  (se 0.132)  p_WCB 0.7590  CI [-0.30, +0.43]
+    phase_ipsw:plateau_db:S_phase_post_heading   beta   +0.112 d  (se 0.151)  p_WCB 0.6060  CI [-0.34, +0.55]
+    phase_pretrend:trough:Slead_phase_pre_window beta   -0.270 d  (se 1.956)  p_WCB 0.8890  CI [-4.39, +4.21]

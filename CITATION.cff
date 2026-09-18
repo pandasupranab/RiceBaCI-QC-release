@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Cite this versioned code/results repository and retain the upstream data citations."
+type: software
+title: "RiceBaCI-QC: code and results for Sentinel-1 rice breakpoint repeatability and interpretation limits"
+authors:
+  - family-names: Panda
+    given-names: Supranab
+    orcid: "https://orcid.org/0009-0009-6496-6545"
+  - family-names: Sahu
+    given-names: Sarat Chandra
+    orcid: "https://orcid.org/0000-0002-8048-1910"
+version: 1.0.0
+date-released: 2026-09-18
+repository-code: "https://github.com/pandasupranab/RiceBaCI-QC-release"
+url: "https://github.com/pandasupranab/RiceBaCI-QC-release"
+license:
+  - MIT
+  - CC-BY-4.0
+abstract: "Accepted analysis code and result tables for a descriptive study of Sentinel-1 rice phenology breakpoint repeatability and interpretation limits. Code is MIT; author-created data/results are CC BY 4.0; third-party rights are retained. Raw-data deposit publication is pending. See LICENSE-DATA.md and THIRD_PARTY_NOTICES.md for licence scope."

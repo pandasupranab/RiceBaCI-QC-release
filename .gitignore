@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+.python-version
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data — keep code, not raw exports
+data/raw/
+data/interim/
+*.tif
+*.tiff
+*.geotiff
+*.h5
+*.nc
+*.zarr/
+
+# But do version-control the small panel CSVs explicitly listed in OSF pre-reg
+!data/balanced_panel_2017_2022.csv
+!data/sar_tp_by_district.csv
+!data/tier1_hls_rmse.csv
+!data/tier2_modis_spearman.csv
+
+# GEE
+.earthengine/
+ee-temp/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# results/*.log is analysis provenance, not build noise. These are the verbatim
+# run output of the panel pass and of the two §3.10 diagnostics, and they are
+# the only record of what produced the committed tables beside them. The *.log
+# rule above silently dropped three of them from be4079e, which `git status`
+# could not show because an ignored file is not a change. This negation records
+# the intent in the repository rather than bypassing the rule per-file.
+!results/*.log
+
+!results/**/*.log
+!results/**/*.json

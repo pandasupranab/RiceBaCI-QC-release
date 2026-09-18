@@ -1,0 +1,169 @@
+cyclone,ibtracs_sid,analysis_year,state,district_gadm_name,max_wind_kt_within_100km,min_dist_to_track34kt_km,in_footprint,fringe,clean_control,treated_other_severe_exposure
+Fani,2019116N02090,2019,Andhra Pradesh,East Godavari,0,,0,0,1,0
+Fani,2019116N02090,2019,Andhra Pradesh,Guntur,0,,0,0,1,0
+Fani,2019116N02090,2019,Andhra Pradesh,Krishna,0,,0,0,1,0
+Fani,2019116N02090,2019,Andhra Pradesh,Nellore,0,,0,0,0,0
+Fani,2019116N02090,2019,Andhra Pradesh,Prakasam,0,,0,0,1,0
+Fani,2019116N02090,2019,Andhra Pradesh,Srikakulam,115,65.0,1,0,0,1
+Fani,2019116N02090,2019,Andhra Pradesh,Visakhapatnam,0,,0,0,1,0
+Fani,2019116N02090,2019,Andhra Pradesh,Vizianagaram,0,,0,0,0,0
+Fani,2019116N02090,2019,Andhra Pradesh,West Godavari,0,,0,0,1,0
+Fani,2019116N02090,2019,Odisha,Baleshwar,85,0.0,1,0,0,1
+Fani,2019116N02090,2019,Odisha,Bhadrak,100,0.0,1,0,0,1
+Fani,2019116N02090,2019,Odisha,Cuttack,105,0.0,1,0,0,1
+Fani,2019116N02090,2019,Odisha,Gajapati,115,85.9,1,0,0,1
+Fani,2019116N02090,2019,Odisha,Ganjam,115,46.3,1,0,0,1
+Fani,2019116N02090,2019,Odisha,Jagatsinghapur,105,3.8,1,0,0,1
+Fani,2019116N02090,2019,Odisha,Jajapur,100,0.0,1,0,0,0
+Fani,2019116N02090,2019,Odisha,Kendrapara,100,20.4,1,0,0,1
+Fani,2019116N02090,2019,Odisha,Khordha,115,0.0,1,0,0,1
+Fani,2019116N02090,2019,Odisha,Mayurbhanj,85,0.0,1,0,0,0
+Fani,2019116N02090,2019,Odisha,Nayagarh,115,36.4,1,0,0,1
+Fani,2019116N02090,2019,Odisha,Puri,115,0.0,1,0,0,1
+Fani,2019116N02090,2019,West Bengal,Haora,60,0.0,1,0,0,1
+Fani,2019116N02090,2019,West Bengal,Hugli,60,0.0,1,0,0,1
+Fani,2019116N02090,2019,West Bengal,Kolkata,55,17.4,1,0,0,1
+Fani,2019116N02090,2019,West Bengal,North 24 Parganas,55,6.9,1,0,0,1
+Fani,2019116N02090,2019,West Bengal,Pashchim Medinipur,75,0.0,1,0,0,1
+Fani,2019116N02090,2019,West Bengal,Purba Medinipur,70,0.0,1,0,0,1
+Fani,2019116N02090,2019,West Bengal,South 24 Parganas,60,12.7,1,0,0,1
+Bulbul,2019302N11118,2019,Andhra Pradesh,East Godavari,0,,0,0,1,0
+Bulbul,2019302N11118,2019,Andhra Pradesh,Guntur,0,,0,0,1,0
+Bulbul,2019302N11118,2019,Andhra Pradesh,Krishna,0,,0,0,1,0
+Bulbul,2019302N11118,2019,Andhra Pradesh,Nellore,0,,0,0,0,0
+Bulbul,2019302N11118,2019,Andhra Pradesh,Prakasam,0,,0,0,1,0
+Bulbul,2019302N11118,2019,Andhra Pradesh,Srikakulam,0,,0,0,0,0
+Bulbul,2019302N11118,2019,Andhra Pradesh,Visakhapatnam,0,,0,0,1,0
+Bulbul,2019302N11118,2019,Andhra Pradesh,Vizianagaram,0,,0,0,0,0
+Bulbul,2019302N11118,2019,Andhra Pradesh,West Godavari,0,,0,0,1,0
+Bulbul,2019302N11118,2019,Odisha,Baleshwar,70,77.0,1,0,0,1
+Bulbul,2019302N11118,2019,Odisha,Bhadrak,75,73.8,1,0,0,1
+Bulbul,2019302N11118,2019,Odisha,Cuttack,0,,0,0,0,0
+Bulbul,2019302N11118,2019,Odisha,Gajapati,0,,0,0,0,0
+Bulbul,2019302N11118,2019,Odisha,Ganjam,0,,0,0,0,0
+Bulbul,2019302N11118,2019,Odisha,Jagatsinghapur,75,90.4,1,0,0,1
+Bulbul,2019302N11118,2019,Odisha,Jajapur,0,,0,0,0,0
+Bulbul,2019302N11118,2019,Odisha,Kendrapara,75,64.5,1,0,0,1
+Bulbul,2019302N11118,2019,Odisha,Khordha,0,,0,0,0,0
+Bulbul,2019302N11118,2019,Odisha,Mayurbhanj,0,,0,0,0,0
+Bulbul,2019302N11118,2019,Odisha,Nayagarh,0,,0,0,0,0
+Bulbul,2019302N11118,2019,Odisha,Puri,0,,0,0,0,0
+Bulbul,2019302N11118,2019,West Bengal,Haora,70,87.3,1,0,0,1
+Bulbul,2019302N11118,2019,West Bengal,Hugli,0,,0,0,0,0
+Bulbul,2019302N11118,2019,West Bengal,Kolkata,60,98.8,1,0,0,1
+Bulbul,2019302N11118,2019,West Bengal,North 24 Parganas,70,0.0,1,0,0,1
+Bulbul,2019302N11118,2019,West Bengal,Pashchim Medinipur,70,91.0,1,0,0,1
+Bulbul,2019302N11118,2019,West Bengal,Purba Medinipur,70,57.6,1,0,0,1
+Bulbul,2019302N11118,2019,West Bengal,South 24 Parganas,70,0.0,1,0,0,1
+Amphan,2020136N10088,2020,Andhra Pradesh,East Godavari,0,,0,0,1,0
+Amphan,2020136N10088,2020,Andhra Pradesh,Guntur,0,,0,0,1,0
+Amphan,2020136N10088,2020,Andhra Pradesh,Krishna,0,,0,0,1,0
+Amphan,2020136N10088,2020,Andhra Pradesh,Nellore,0,,0,0,0,0
+Amphan,2020136N10088,2020,Andhra Pradesh,Prakasam,0,,0,0,1,0
+Amphan,2020136N10088,2020,Andhra Pradesh,Srikakulam,0,,0,0,0,0
+Amphan,2020136N10088,2020,Andhra Pradesh,Visakhapatnam,0,,0,0,1,0
+Amphan,2020136N10088,2020,Andhra Pradesh,Vizianagaram,0,,0,0,1,0
+Amphan,2020136N10088,2020,Andhra Pradesh,West Godavari,0,,0,0,1,0
+Amphan,2020136N10088,2020,Odisha,Baleshwar,90,66.8,1,0,0,1
+Amphan,2020136N10088,2020,Odisha,Bhadrak,0,,0,0,0,0
+Amphan,2020136N10088,2020,Odisha,Cuttack,0,,0,0,0,0
+Amphan,2020136N10088,2020,Odisha,Gajapati,0,,0,0,0,0
+Amphan,2020136N10088,2020,Odisha,Ganjam,0,,0,0,0,0
+Amphan,2020136N10088,2020,Odisha,Jagatsinghapur,0,,0,0,0,0
+Amphan,2020136N10088,2020,Odisha,Jajapur,0,,0,0,0,0
+Amphan,2020136N10088,2020,Odisha,Kendrapara,95,93.0,1,0,0,1
+Amphan,2020136N10088,2020,Odisha,Khordha,0,,0,0,0,0
+Amphan,2020136N10088,2020,Odisha,Mayurbhanj,0,,0,0,0,0
+Amphan,2020136N10088,2020,Odisha,Nayagarh,0,,0,0,0,0
+Amphan,2020136N10088,2020,Odisha,Puri,0,,0,0,0,0
+Amphan,2020136N10088,2020,West Bengal,Haora,90,17.5,1,0,0,1
+Amphan,2020136N10088,2020,West Bengal,Hugli,90,19.6,1,0,0,1
+Amphan,2020136N10088,2020,West Bengal,Kolkata,90,12.0,1,0,0,1
+Amphan,2020136N10088,2020,West Bengal,North 24 Parganas,90,0.0,1,0,0,1
+Amphan,2020136N10088,2020,West Bengal,Pashchim Medinipur,90,61.5,1,0,0,1
+Amphan,2020136N10088,2020,West Bengal,Purba Medinipur,90,19.8,1,0,0,1
+Amphan,2020136N10088,2020,West Bengal,South 24 Parganas,90,0.0,1,0,0,1
+Yaas,2021143N15090,2021,Andhra Pradesh,East Godavari,0,,0,0,0,0
+Yaas,2021143N15090,2021,Andhra Pradesh,Guntur,0,,0,0,0,0
+Yaas,2021143N15090,2021,Andhra Pradesh,Krishna,0,,0,0,0,0
+Yaas,2021143N15090,2021,Andhra Pradesh,Nellore,0,,0,0,0,0
+Yaas,2021143N15090,2021,Andhra Pradesh,Prakasam,0,,0,0,1,0
+Yaas,2021143N15090,2021,Andhra Pradesh,Srikakulam,0,,0,0,1,0
+Yaas,2021143N15090,2021,Andhra Pradesh,Visakhapatnam,0,,0,0,1,0
+Yaas,2021143N15090,2021,Andhra Pradesh,Vizianagaram,0,,0,0,1,0
+Yaas,2021143N15090,2021,Andhra Pradesh,West Godavari,0,,0,0,0,0
+Yaas,2021143N15090,2021,Odisha,Baleshwar,75,0.0,1,0,0,1
+Yaas,2021143N15090,2021,Odisha,Bhadrak,75,24.6,1,0,0,0
+Yaas,2021143N15090,2021,Odisha,Cuttack,0,,0,0,1,0
+Yaas,2021143N15090,2021,Odisha,Gajapati,0,,0,0,1,0
+Yaas,2021143N15090,2021,Odisha,Ganjam,0,,0,0,1,0
+Yaas,2021143N15090,2021,Odisha,Jagatsinghapur,75,92.3,1,0,0,0
+Yaas,2021143N15090,2021,Odisha,Jajapur,75,66.4,1,0,0,0
+Yaas,2021143N15090,2021,Odisha,Kendrapara,75,31.2,1,0,0,1
+Yaas,2021143N15090,2021,Odisha,Khordha,0,,0,0,1,0
+Yaas,2021143N15090,2021,Odisha,Mayurbhanj,75,0.0,1,0,0,0
+Yaas,2021143N15090,2021,Odisha,Nayagarh,0,,0,0,1,0
+Yaas,2021143N15090,2021,Odisha,Puri,0,,0,0,1,0
+Yaas,2021143N15090,2021,West Bengal,Haora,0,,0,0,0,0
+Yaas,2021143N15090,2021,West Bengal,Hugli,0,,0,0,0,0
+Yaas,2021143N15090,2021,West Bengal,Kolkata,0,,0,0,0,0
+Yaas,2021143N15090,2021,West Bengal,North 24 Parganas,0,,0,0,0,0
+Yaas,2021143N15090,2021,West Bengal,Pashchim Medinipur,75,34.3,1,0,0,1
+Yaas,2021143N15090,2021,West Bengal,Purba Medinipur,75,55.2,1,0,0,1
+Yaas,2021143N15090,2021,West Bengal,South 24 Parganas,75,97.2,1,0,0,1
+Sitrang,2022295N13093,2022,Andhra Pradesh,East Godavari,0,,0,0,0,0
+Sitrang,2022295N13093,2022,Andhra Pradesh,Guntur,0,,0,0,0,0
+Sitrang,2022295N13093,2022,Andhra Pradesh,Krishna,0,,0,0,0,0
+Sitrang,2022295N13093,2022,Andhra Pradesh,Nellore,0,,0,0,0,0
+Sitrang,2022295N13093,2022,Andhra Pradesh,Prakasam,0,,0,0,0,0
+Sitrang,2022295N13093,2022,Andhra Pradesh,Srikakulam,0,,0,0,1,0
+Sitrang,2022295N13093,2022,Andhra Pradesh,Visakhapatnam,0,,0,0,1,0
+Sitrang,2022295N13093,2022,Andhra Pradesh,Vizianagaram,0,,0,0,1,0
+Sitrang,2022295N13093,2022,Andhra Pradesh,West Godavari,0,,0,0,0,0
+Sitrang,2022295N13093,2022,Odisha,Baleshwar,0,,0,0,0,0
+Sitrang,2022295N13093,2022,Odisha,Bhadrak,0,,0,0,0,0
+Sitrang,2022295N13093,2022,Odisha,Cuttack,0,,0,0,1,0
+Sitrang,2022295N13093,2022,Odisha,Gajapati,0,,0,0,1,0
+Sitrang,2022295N13093,2022,Odisha,Ganjam,0,,0,0,1,0
+Sitrang,2022295N13093,2022,Odisha,Jagatsinghapur,0,,0,0,0,0
+Sitrang,2022295N13093,2022,Odisha,Jajapur,0,,0,0,0,0
+Sitrang,2022295N13093,2022,Odisha,Kendrapara,0,,0,0,0,0
+Sitrang,2022295N13093,2022,Odisha,Khordha,0,,0,0,1,0
+Sitrang,2022295N13093,2022,Odisha,Mayurbhanj,0,,0,0,0,0
+Sitrang,2022295N13093,2022,Odisha,Nayagarh,0,,0,0,1,0
+Sitrang,2022295N13093,2022,Odisha,Puri,0,,0,0,1,0
+Sitrang,2022295N13093,2022,West Bengal,Haora,0,,0,0,1,0
+Sitrang,2022295N13093,2022,West Bengal,Hugli,0,,0,0,1,0
+Sitrang,2022295N13093,2022,West Bengal,Kolkata,0,,0,0,1,0
+Sitrang,2022295N13093,2022,West Bengal,North 24 Parganas,0,,0,0,0,0
+Sitrang,2022295N13093,2022,West Bengal,Pashchim Medinipur,0,,0,0,0,0
+Sitrang,2022295N13093,2022,West Bengal,Purba Medinipur,0,,0,0,0,0
+Sitrang,2022295N13093,2022,West Bengal,South 24 Parganas,0,,0,0,0,0
+Remal,2024145N14087,2024,Andhra Pradesh,East Godavari,0,,0,0,0,0
+Remal,2024145N14087,2024,Andhra Pradesh,Guntur,0,,0,0,0,0
+Remal,2024145N14087,2024,Andhra Pradesh,Krishna,0,,0,0,0,0
+Remal,2024145N14087,2024,Andhra Pradesh,Nellore,0,,0,0,0,0
+Remal,2024145N14087,2024,Andhra Pradesh,Prakasam,0,,0,0,0,0
+Remal,2024145N14087,2024,Andhra Pradesh,Srikakulam,0,,0,0,1,0
+Remal,2024145N14087,2024,Andhra Pradesh,Visakhapatnam,0,,0,0,1,0
+Remal,2024145N14087,2024,Andhra Pradesh,Vizianagaram,0,,0,0,1,0
+Remal,2024145N14087,2024,Andhra Pradesh,West Godavari,0,,0,0,0,0
+Remal,2024145N14087,2024,Odisha,Baleshwar,0,,0,0,0,0
+Remal,2024145N14087,2024,Odisha,Bhadrak,0,,0,0,0,0
+Remal,2024145N14087,2024,Odisha,Cuttack,0,,0,0,0,0
+Remal,2024145N14087,2024,Odisha,Gajapati,0,,0,0,1,0
+Remal,2024145N14087,2024,Odisha,Ganjam,0,,0,0,1,0
+Remal,2024145N14087,2024,Odisha,Jagatsinghapur,0,,0,0,0,0
+Remal,2024145N14087,2024,Odisha,Jajapur,0,,0,0,0,0
+Remal,2024145N14087,2024,Odisha,Kendrapara,0,,0,0,0,0
+Remal,2024145N14087,2024,Odisha,Khordha,0,,0,0,1,0
+Remal,2024145N14087,2024,Odisha,Mayurbhanj,0,,0,0,0,0
+Remal,2024145N14087,2024,Odisha,Nayagarh,0,,0,0,1,0
+Remal,2024145N14087,2024,Odisha,Puri,0,,0,0,0,0
+Remal,2024145N14087,2024,West Bengal,Haora,60,62.6,1,0,0,0
+Remal,2024145N14087,2024,West Bengal,Hugli,60,59.8,1,0,0,0
+Remal,2024145N14087,2024,West Bengal,Kolkata,60,57.2,1,0,0,0
+Remal,2024145N14087,2024,West Bengal,North 24 Parganas,60,0.0,1,0,0,1
+Remal,2024145N14087,2024,West Bengal,Pashchim Medinipur,0,,0,0,0,0
+Remal,2024145N14087,2024,West Bengal,Purba Medinipur,60,71.5,1,0,0,1
+Remal,2024145N14087,2024,West Bengal,South 24 Parganas,60,11.3,1,0,0,0

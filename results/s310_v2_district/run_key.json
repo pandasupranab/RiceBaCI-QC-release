@@ -1,0 +1,46 @@
+{
+  "code_path": "python/attrition_diagnostics.py",
+  "code_sha": "650ac9acc6ff3fb06423dddd0e0802c6",
+  "coverage": {
+    "balanced": true,
+    "blocks": [
+      "diagnostics",
+      "headline",
+      "pretrend",
+      "balanced",
+      "phase",
+      "phase_pretrend"
+    ],
+    "phase": true
+  },
+  "exposure_path": "docs/district_cyclone_exposure_ibtracs50km.csv",
+  "exposure_sha": "d5da3934fd3f2fd0a1f1b729d70d4089",
+  "level": "district",
+  "local_helpers": {
+    "python/lf_output.py": "653f05171088bc6e33940c64b8ffcb0d"
+  },
+  "options": {
+    "boot": 9999,
+    "min_treated_clusters": 3,
+    "seed": 42
+  },
+  "panel_path": "results/phen_panel_district_season_static.csv",
+  "panel_sha": "f48210f138c73aa28250e8a0cada4eb7",
+  "phase_exposure_path": "results/exposure_phase.csv",
+  "phase_exposure_sha": "75bfcccf1c66d3fb57f638075285b7bb",
+  "runtime": {
+    "blas": {
+      "detection method": "pkgconfig",
+      "name": "scipy-openblas",
+      "openblas configuration": "OpenBLAS 0.3.31.188.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=24",
+      "version": "0.3.31.188.0"
+    },
+    "implementation": "CPython",
+    "machine": "AMD64",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "python": "3.12.14",
+    "system": "Windows"
+  },
+  "schema": 3
+}

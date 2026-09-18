@@ -1,0 +1,112 @@
+
+==============================================================================
+H1 / H2 CLAUSE (a) -- between-orbit agreement
+==============================================================================
+  pixel-seasons with a usable orbit pair: 8515
+  pixel-seasons with fewer than two fittable orbits: 81485
+  not estimable, by district (top 8):
+      East Godavari          3600
+      Ganjam                 3600
+      Nayagarh               3600
+      Visakhapatnam          3600
+      Guntur                 3594
+      Vizianagaram           3593
+      West Godavari          3575
+      Krishna                3545
+  ascending/descending pairs: 7096 of 8515 (83.3%)
+  paired rate: 8515/90000 = 9.5% of pixel-seasons offered
+    (an orbit is 'fittable' when it has >= 14 dekads; it is 'retained' when the fit passes §3's screens.
+     Clause (a) needs BOTH orbits retained, so per-orbit retention compounds. Do not
+     read the inventory's fittable-orbit counts as this denominator.)
+
+--- H1 clause (a): transplanting / onset ---
+  baseline tolerance T = 70.00 d   (90% quantile of |diff| on 2017, n=798; fixed there, never re-derived)
+  reference: one dekad = 10 d; quantisation floor 2.89 d
+  *** READ T BEFORE READING ANY VERDICT BELOW. T = 70 d is 7 dekads, a large fraction of the season itself.
+      A tolerance that wide is not an agreement criterion. Because T is the 90%
+      quantile of the baseline's own disagreement, '90% within T' is close to
+      true by construction, and the column below tests only whether later seasons
+      are NO WORSE than the untreated baseline -- a STABILITY check, not agreement.
+      The substantive numbers are sigma_single and r, and the absolute-tolerance
+      columns. §2's wording does fix the tolerance on 2017, and this is what that
+      instruction yields on this estimator; it is reported rather than replaced.
+    ALL                    n=  7717  within T 94.4% (stable) |  <=1 dekad 38.2%  <=2 dekads 55.6%  |  sigma  25.90 d  bias  -5.63 d  r +0.339
+    Andhra Pradesh         n=   195  within T 94.9% (stable) |  <=1 dekad 34.9%  <=2 dekads 50.8%  |  sigma  27.97 d  bias  +1.28 d  r +0.240
+    Odisha                 n=  4656  within T 94.0% (stable) |  <=1 dekad 35.8%  <=2 dekads 52.8%  |  sigma  26.77 d  bias  -6.54 d  r +0.288
+    West Bengal            n=  2866  within T 95.1% (stable) |  <=1 dekad 42.3%  <=2 dekads 60.6%  |  sigma  24.21 d  bias  -4.62 d  r +0.402
+    ASC/DESC pairs only    n=  6429  within T 94.6% (stable) |  <=1 dekad 38.7%  <=2 dekads 56.5%  |  sigma  25.46 d  bias  -6.08 d  r +0.350
+    same-pass pairs only   n=  1288  within T 93.6% (stable) |  <=1 dekad 35.6%  <=2 dekads 51.3%  |  sigma  27.97 d  bias  -3.39 d  r +0.265
+
+--- H2 clause (a): harvest ---
+  baseline tolerance T = 60.00 d   (90% quantile of |diff| on 2017, n=798; fixed there, never re-derived)
+  reference: one dekad = 10 d; quantisation floor 2.89 d
+  *** READ T BEFORE READING ANY VERDICT BELOW. T = 60 d is 6 dekads, a large fraction of the season itself.
+      A tolerance that wide is not an agreement criterion. Because T is the 90%
+      quantile of the baseline's own disagreement, '90% within T' is close to
+      true by construction, and the column below tests only whether later seasons
+      are NO WORSE than the untreated baseline -- a STABILITY check, not agreement.
+      The substantive numbers are sigma_single and r, and the absolute-tolerance
+      columns. §2's wording does fix the tolerance on 2017, and this is what that
+      instruction yields on this estimator; it is reported rather than replaced.
+    ALL                    n=  7717  within T 91.1% (stable) |  <=1 dekad 35.0%  <=2 dekads 52.1%  |  sigma  25.79 d  bias  +1.39 d  r +0.147
+    Andhra Pradesh         n=   195  within T 85.6% (worse)  |  <=1 dekad 32.8%  <=2 dekads 52.8%  |  sigma  29.93 d  bias  -2.55 d  r +0.162
+    Odisha                 n=  4656  within T 91.9% (stable) |  <=1 dekad 34.0%  <=2 dekads 51.0%  |  sigma  25.54 d  bias  +0.06 d  r +0.086
+    West Bengal            n=  2866  within T 90.3% (stable) |  <=1 dekad 37.0%  <=2 dekads 53.9%  |  sigma  25.80 d  bias  +3.82 d  r +0.210
+    ASC/DESC pairs only    n=  6429  within T 91.3% (stable) |  <=1 dekad 35.1%  <=2 dekads 51.9%  |  sigma  25.69 d  bias  +1.69 d  r +0.144
+    same-pass pairs only   n=  1288  within T 90.5% (stable) |  <=1 dekad 34.9%  <=2 dekads 53.1%  |  sigma  26.24 d  bias  -0.12 d  r +0.162
+
+--- supplementary: heading ---
+  baseline tolerance T = 50.00 d   (90% quantile of |diff| on 2017, n=798; fixed there, never re-derived)
+  reference: one dekad = 10 d; quantisation floor 2.89 d
+  *** READ T BEFORE READING ANY VERDICT BELOW. T = 50 d is 5 dekads, a large fraction of the season itself.
+      A tolerance that wide is not an agreement criterion. Because T is the 90%
+      quantile of the baseline's own disagreement, '90% within T' is close to
+      true by construction, and the column below tests only whether later seasons
+      are NO WORSE than the untreated baseline -- a STABILITY check, not agreement.
+      The substantive numbers are sigma_single and r, and the absolute-tolerance
+      columns. §2's wording does fix the tolerance on 2017, and this is what that
+      instruction yields on this estimator; it is reported rather than replaced.
+    ALL                    n=  7717  within T 93.9% (stable) |  <=1 dekad 45.3%  <=2 dekads 64.6%  |  sigma  19.82 d  bias  -3.64 d  r +0.290
+    Andhra Pradesh         n=   195  within T 91.8% (stable) |  <=1 dekad 44.6%  <=2 dekads 64.1%  |  sigma  21.75 d  bias  -3.44 d  r +0.175
+    Odisha                 n=  4656  within T 93.1% (stable) |  <=1 dekad 43.1%  <=2 dekads 62.9%  |  sigma  20.40 d  bias  -4.32 d  r +0.235
+    West Bengal            n=  2866  within T 95.3% (stable) |  <=1 dekad 49.0%  <=2 dekads 67.6%  |  sigma  18.67 d  bias  -2.55 d  r +0.336
+    ASC/DESC pairs only    n=  6429  within T 94.2% (stable) |  <=1 dekad 45.7%  <=2 dekads 65.0%  |  sigma  19.56 d  bias  -3.96 d  r +0.295
+    same-pass pairs only   n=  1288  within T 92.4% (stable) |  <=1 dekad 43.0%  <=2 dekads 62.9%  |  sigma  21.01 d  bias  -2.05 d  r +0.261
+
+wrote /home/claude/results/orbit_agreement/Table_SX_OrbitAgreement.csv
+
+==============================================================================
+CLAUSE (b) RECOMPUTED ON A SINGLE ORBIT, corrected with the sigma
+measured on the SAME estimator
+==============================================================================
+  pixels with >= 2 retained seasons on one orbit: 6602   pixel-seasons used: 28562
+  mean retained seasons per pixel on its chosen orbit: 4.33
+  H1 clause (a): transplanting / onset
+    single-orbit within  26.84 d   between  20.21 d   observed ratio 1.328
+    sigma  25.90 d -> true within   7.03 d, true between  15.92 d, corrected ratio 0.441
+    -> below 1 once error is removed: clause (b) failed on noise
+  H2 clause (a): harvest
+    single-orbit within  27.21 d   between  17.25 d   observed ratio 1.577
+    sigma  25.79 d -> true within   8.69 d, true between  12.00 d, corrected ratio 0.724
+    -> below 1 once error is removed: clause (b) failed on noise
+  supplementary: heading
+    single-orbit within  21.32 d   between  14.46 d   observed ratio 1.475
+    sigma  19.82 d -> true within   7.87 d, true between  10.87 d, corrected ratio 0.724
+    -> below 1 once error is removed: clause (b) failed on noise
+  wrote /home/claude/results/orbit_agreement/Table_SX_DispersionSingleOrbit.csv
+
+  The committed panel's own clause (b) figures stay as reported in
+  results/dispersion/ -- they are the claim as §2 words it, on the
+  committed estimator. This table is the error decomposition, and it
+  is a different quantity on a different sample; neither replaces the
+  other and both are reported.
+
+------------------------------------------------------------------------------
+NOT RUN, and withdrawn by dated amendment rather than omitted:
+  H2's post-monsoon Sentinel-2 EOS cross-check (§2 H2, §3.4). §3.4's
+  2026-09-09 amendment removed HLS as a substrate and the optical
+  panel is unusable under monsoon cloud, so no Sentinel-2 EOS series
+  exists for these district-seasons. H2 clause (a) is therefore
+  reported on the radar orbit pair alone, with no optical second
+  opinion. See analysis/deviation_log.md.
+------------------------------------------------------------------------------

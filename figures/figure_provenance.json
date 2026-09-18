@@ -1,0 +1,63 @@
+{
+  "source_date_epoch": "1767225600",
+  "hash_policy": "text-lf-normalised-v2",
+  "environment": {
+    "freetype": "2.6.1",
+    "matplotlib": "3.10.9",
+    "numpy": "2.4.4",
+    "pillow": "12.2.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "zlib": "1.3.2"
+  },
+  "scope": "WHAT THIS MANIFEST IS FOR: ARTIFACT INTEGRITY. It answers one question -- has a committed file changed since these hashes were recorded -- for the generator, every input read and every figure written. That is what --verify checks and it is all --verify checks. WHAT IT IS NOT: it is NOT a claim that another machine will reproduce these bytes. Three claims are distinct and only the first is made here. (1) BYTE IDENTITY: the same bytes. Asserted only within the RECORDED TEST ENVIRONMENT listed in 'environment' below -- recorded, NOT pinned: this package ships no lockfile and enforces no version check, so that list is a description of what produced these bytes, not a guarantee that reinstalling it reproduces them. The self-test demonstrates it by saving one figure twice in one process. (2) PIXEL IDENTITY: the same rendered image, possibly different bytes. NOT established -- a different FreeType rasterises glyphs differently. (3) CONTENT EQUALITY: the same numbers, labels and marks, possibly different pixels. NOT established by any hash; it is what a reader checks by looking at the figure. A hash mismatch on another machine therefore means 'these bytes differ', not 'this figure is stale' -- read the recorded environment before concluding anything has drifted.",
+  "provenance_history": [
+    {
+      "field": "inputs/results/phen_panel_sar.csv",
+      "was": "d0559979df253232c623ba4084b710c5",
+      "now": "046d6029b3b131c5a06fb6ca9000d9ad",
+      "changed": "2026-09-15",
+      "why": "No file with the previous hash exists anywhere reachable, so that recorded input had become uncheckable. The replayed panel from the 2026-09-14 reproducibility run was substituted only after a control run at unchanged generator code reproduced all fourteen committed figure files and both derived tables byte-for-byte. SCOPE: that control covered make_figures.py only. The two panels cannot be compared field by field because one no longer exists, so PANEL EQUIVALENCE IS NOT ESTABLISHED. See DATA_AVAILABILITY.md."
+    }
+  ],
+  "note": "PDF /CreationDate is frozen to source_date_epoch so figure hashes are meaningful; staleness is detected by the hashes below, not by file times. `generator` is this file: a change to the drawing code with stale figures fails --verify, which input and output hashes alone cannot catch. Regenerate with make_figures.py and compare with --verify. SCOPE: figure hashes are reproducible within the recorded test environment recorded in `environment` above, not across environments; a different freetype or matplotlib can change the bytes and even the pixels, which is a separate claim this manifest does not make.",
+  "repo_relative": true,
+  "partial_run": {
+    "figures_redrawn": [
+      "fig5"
+    ],
+    "why": "results/phen_panel_sar.csv is excluded from the repository on size, so fig2 cannot be drawn from a clone and a full run is impossible here. Every entry not redrawn was re-hashed from disk and matched.",
+    "unverified_inputs": []
+  },
+  "generator": {
+    "python/make_figures.py": "8be63eeb27d7fe67a54e09881a3af493"
+  },
+  "inputs": {
+    "results/exposure_phase.csv": "75bfcccf1c66d3fb57f638075285b7bb",
+    "results/exposure_phase_storms.csv": "7356202b64259eced6ac4f449f55bfac",
+    "results/montecarlo_precision.csv": "de90f2924dc36516335c002f650732ad",
+    "results/permutation_test/Table_SX_Permutation_district.csv": "9db2962e533aa2b23c0ab8eabc159cf3",
+    "results/phen_curves_district_season.csv": "da8abf6ea0a7b86cc474a2fb2f33ebf7",
+    "results/phen_panel_district_season.csv": "5911e143606fac3fee111b55e1bd633e",
+    "results/phen_panel_sar.csv": "046d6029b3b131c5a06fb6ca9000d9ad",
+    "results/retention_by_terrain.csv": "408fabe889d41e4ea40d59fb78a9a069",
+    "results/s310_v2_district/Table_SX_AttritionDiagnostic.csv": "ce62d01e86633d953cca5435ce2d7a72",
+    "results/splithalf_reliability.csv": "fdca4eb0cc6a7d343e6b5437270b5794"
+  },
+  "outputs": {
+    "figures/fig1_measured_season.pdf": "c85524f29bad16d4e5ccf3e2950772a9",
+    "figures/fig1_measured_season.png": "7267d86dbed8865b7903430809e1a740",
+    "figures/fig2_window_binding.pdf": "6b5f6b5f3a744efccb62aaf3c399631d",
+    "figures/fig2_window_binding.png": "185de9cad04bb453cfdb6ad6c3fe8f91",
+    "figures/fig3_precision.pdf": "cac51ba1bf962e9ed6ff7ed0c1c0b3ea",
+    "figures/fig3_precision.png": "02d224337ab04c21187038a39ba7f9c8",
+    "figures/fig4_calendar.pdf": "3c6166cac840066a7692dd5ed42772f4",
+    "figures/fig4_calendar.png": "54d34aa25642c4a4e030af25c9fde9db",
+    "figures/fig5_coefficients.pdf": "0f922cccf7fc5959a8c24b39395d5787",
+    "figures/fig5_coefficients.png": "0644eefbd9933f9c657dafafbe4e63f9",
+    "figures/fig6_exposure_phase.pdf": "406fa429a7fddc07f48c2b7ef305a23e",
+    "figures/fig6_exposure_phase.png": "86894349db1926c76900ff2e9a07a0cd",
+    "figures/fig7_terrain_retention.pdf": "439e678e6b585905826ebec1796e1195",
+    "figures/fig7_terrain_retention.png": "efc94b8442adfe9016f2bcc4b0a2499e"
+  }
+}

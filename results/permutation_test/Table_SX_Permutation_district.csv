@@ -1,0 +1,7 @@
+level,phenometric,test_var,label,coef,se,t,n_treated_clusters,n_perm_ok,p_perm,perm_abs_t_q95,perm_t_sd
+district,trough,S_pre_season,exploratory analogue: beta_pre on fitted trough breakpoint,-0.4196293921107784,3.5685998446688334,-0.11758936568292096,17,2000,0.9075462268865567,2.049689292091787,0.8931797171917394
+district,heading,S_pre_season,exploratory analogue: beta_pre on fitted rise-end breakpoint [heading],2.0410922323922303,3.541451748752568,0.5763433691031311,17,2000,0.30684657671164417,1.1230151493200016,0.5614294960699089
+district,harvest,S_pre_season,exploratory analogue: beta_pre on fitted fall-end breakpoint [harvest],-10.184347231509404,4.899842623931418,-2.0785049670305393,17,2000,0.0074962518740629685,1.4954950741491089,0.7415590234338002
+district,harvest,S_harvest_window,exploratory analogue: beta_harv on fitted fall-end breakpoint [harvest],1.9120289933614523,5.273145807377633,0.36259740640707144,18,2000,0.7201399300349826,1.9368373120326912,0.9777401215234831
+district,trough,S_harvest_window,SS3.9 TIMING PLACEBO: beta_harv on fitted trough breakpoint (declared zero),5.000990686697369,3.1034920678778075,1.6114075941934294,18,2000,0.30684657671164417,2.497018269196784,0.7482562912458582
+district,heading,S_harvest_window,exploratory (SS4 declares no value): beta_harv on fitted rise-end breakpoint [heading],6.183002870076229,2.4663040963179816,2.5069912827485537,18,2000,0.07196401799100449,2.7067949990811297,0.9160770409687664

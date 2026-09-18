@@ -1,0 +1,68 @@
+panel  90,000 pixel-years | 10,000 pixels | 25 districts | seasons 2017-2025
+retained overall: 0.3527
+all 25 panel districts resolve in the exposure catalogue
+
+NOTE: severe storms hitting roster districts that are NOT in the protocol's estimable list: ['DANA', 'MICHAUNG', 'MONTHA']
+  These enter the §3.8 A exposure panel through S_pre/S_harv but get no per-cyclone row. That is the frozen §3.8 B design (named-cyclone stacks are the six of §1.1); if the catalogue has changed, revisit §1.1 before reporting.
+--resume: 145 strata reusable from Table_SX_AttritionDiagnostic.partial.csv
+  --resume provenance check: class:pre_season reproduces exactly (coef -0.053303, p_WCB 0.0010)
+
+=== class:pre_season  (11,600 exposed pixel-years, 17 treated clusters)
+    coef -0.0533 (se 0.0109)  p_cluster 0.0000  p_WCB 0.0010  95% WCB CI [-0.0756, -0.0314]
+
+built dist_to_track_km from the exposure file: 0.209 of rows have a catalogued 34-kt track, the rest coded at 500 km
+
+IPSW (radar declaration, ipsw): logit on ['obs_total', 'n_valid_dekads', 'dist_to_track_km', 'elevation_m', 'slope_deg', 'incidence_deg'] + district/season FE, fitted on 90000 of 90000 rows, 813.9 events per parameter, converged=True, weights in [1.25, 100.00]
+  calibration |mean(p_hat) - mean(retained)| = 2.78e-16 (OK)
+
+==========================================================================
+ROBUSTNESS ARM -- exposure classified against the measured season
+==========================================================================
+  S_phase_pre_window          29 exposed district-seasons,  17 treated clusters
+  S_phase_rise                14 exposed district-seasons,  14 treated clusters
+  S_phase_post_heading         4 exposed district-seasons,   4 treated clusters
+    phase_pretrend:trough:Slead_phase_post_heading beta   -4.180 d  (se 3.821)  p_WCB 0.5240  CI [-24.15, +17.45]
+    phase_pretrend:heading:Slead_phase_pre_window beta   +0.568 d  (se 1.251)  p_WCB 0.6800  CI [-2.22, +3.58]
+    phase_pretrend:heading:Slead_phase_rise      beta   -2.653 d  (se 0.856)  p_WCB 0.0040  CI [-4.43, -0.54]
+    phase_pretrend:heading:Slead_phase_post_heading beta   -1.252 d  (se 1.344)  p_WCB 0.4580  CI [-6.04, +3.78]
+    phase_pretrend:drainage:Slead_phase_pre_window beta   +0.901 d  (se 1.155)  p_WCB 0.5010  CI [-1.52, +3.82]
+    phase_pretrend:drainage:Slead_phase_rise     beta   -1.183 d  (se 0.668)  p_WCB 0.1120  CI [-2.61, +0.25]
+    phase_pretrend:drainage:Slead_phase_post_heading beta   +0.092 d  (se 1.315)  p_WCB 0.9630  CI [-3.23, +3.35]
+    phase_pretrend:harvest:Slead_phase_pre_window beta   +1.524 d  (se 1.007)  p_WCB 0.1600  CI [-0.47, +3.68]
+    phase_pretrend:harvest:Slead_phase_rise      beta   -1.051 d  (se 1.386)  p_WCB 0.4670  CI [-3.88, +2.02]
+    phase_pretrend:harvest:Slead_phase_post_heading beta   +1.871 d  (se 1.357)  p_WCB 0.2960  CI [-1.12, +4.70]
+    phase_pretrend:veg_days:Slead_phase_pre_window beta   +0.838 d  (se 1.414)  p_WCB 0.5600  CI [-2.34, +3.60]
+    phase_pretrend:veg_days:Slead_phase_rise     beta   -0.082 d  (se 1.748)  p_WCB 0.9700  CI [-3.98, +3.98]
+    phase_pretrend:veg_days:Slead_phase_post_heading beta   +2.929 d  (se 2.684)  p_WCB 0.5820  CI [-9.00, +14.55]
+    phase_pretrend:plateau_days:Slead_phase_pre_window beta   +0.333 d  (se 0.791)  p_WCB 0.6900  CI [-1.35, +2.06]
+    phase_pretrend:plateau_days:Slead_phase_rise beta   +1.470 d  (se 0.695)  p_WCB 0.0570  CI [+0.05, +2.84]
+    phase_pretrend:plateau_days:Slead_phase_post_heading beta   +1.343 d  (se 2.224)  p_WCB 0.6960  CI [-3.00, +5.47]
+    phase_pretrend:fill_days:Slead_phase_pre_window beta   +0.956 d  (se 1.358)  p_WCB 0.5080  CI [-2.17, +4.05]
+    phase_pretrend:fill_days:Slead_phase_rise    beta   +1.601 d  (se 1.478)  p_WCB 0.3360  CI [-1.36, +4.53]
+    phase_pretrend:fill_days:Slead_phase_post_heading beta   +3.123 d  (se 2.390)  p_WCB 0.4410  CI [-3.17, +9.10]
+    phase_pretrend:season_days:Slead_phase_pre_window beta   +1.794 d  (se 1.698)  p_WCB 0.3090  CI [-1.79, +5.50]
+    phase_pretrend:season_days:Slead_phase_rise  beta   +1.519 d  (se 2.193)  p_WCB 0.5530  CI [-3.32, +6.61]
+    phase_pretrend:season_days:Slead_phase_post_heading beta   +6.052 d  (se 4.658)  p_WCB 0.4540  CI [-17.58, +27.59]
+    phase_pretrend:rise_db:Slead_phase_pre_window beta   +0.077 d  (se 0.098)  p_WCB 0.4660  CI [-0.16, +0.31]
+    phase_pretrend:rise_db:Slead_phase_rise      beta   -0.098 d  (se 0.076)  p_WCB 0.2240  CI [-0.26, +0.06]
+    phase_pretrend:rise_db:Slead_phase_post_heading beta   +0.468 d  (se 0.156)  p_WCB 0.1280  CI [-0.10, +0.98]
+    phase_pretrend:fall_db:Slead_phase_pre_window beta   +0.138 d  (se 0.078)  p_WCB 0.1180  CI [-0.04, +0.31]
+    phase_pretrend:fall_db:Slead_phase_rise      beta   -0.033 d  (se 0.087)  p_WCB 0.7250  CI [-0.28, +0.17]
+    phase_pretrend:fall_db:Slead_phase_post_heading beta   +0.284 d  (se 0.155)  p_WCB 0.1590  CI [-0.28, +0.85]
+    phase_pretrend:plateau_db:Slead_phase_pre_window beta   -0.110 d  (se 0.089)  p_WCB 0.2660  CI [-0.33, +0.10]
+    phase_pretrend:plateau_db:Slead_phase_rise   beta   -0.130 d  (se 0.052)  p_WCB 0.0450  CI [-0.23, -0.01]
+    phase_pretrend:plateau_db:Slead_phase_post_heading beta   +0.345 d  (se 0.123)  p_WCB 0.1690  CI [+0.11, +0.58]
+
+wrote /home/claude/results/s310_v2_pixel/Table_SX_AttritionDiagnostic.csv  (176 rows)
+  144 of those rows were reused from the partial table via --resume; 32 were computed in this invocation.
+
+--------------------------------------------------------------------------
+Protocol §3.10 reporting rule -- apply when writing these up:
+  * zero treated support or non-computable bootstrap -> "not estimable"
+  * attrition diagnostic p_WCB < 0.05 -> report balanced-composition and IPSW estimates alongside the unbalanced headline, state |delta_beta|, and describe the magnitude as NOT POINT-IDENTIFIED under differential attrition
+  * agree in sign, small |delta_beta| -> "direction identified; magnitude sensitive to composition"; disagree in sign -> "sign not identified"
+  * underpowered == 1 (fewer than 3 treated clusters) -> report as underpowered, NEVER as a null result
+  * an interval containing zero never supports a direction
+  * phase:* rows are the 2026-09-13 robustness arm, exposure classified against each district's BASELINE markers; the frozen headline:* rows remain the headline
+  * pretrend rows (§3.9): a lead coefficient distinguishable from zero invalidates parallel trends for that exposure class; the corresponding headline coefficient is then not causal
+--------------------------------------------------------------------------

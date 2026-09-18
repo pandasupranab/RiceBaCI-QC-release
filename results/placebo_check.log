@@ -1,0 +1,47 @@
+
+==============================================================================
+§3.9 TIMING PLACEBO -- PIXEL level, 9999 replications
+==============================================================================
+§4: beta_harv = 0 for the earlier fitted radar trough. A harvest-window landfall cannot causally alter the observations
+acquired months earlier; the trough is not an agronomic date.
+
+Q1. the placebo itself, declared specification
+  beta[S_harvest_window] on radar trough breakpoint      +7.438 d  (se  1.764)  p_WCB 0.0008  CI [  +3.39,  +11.49]  n=31741  -> PLACEBO FAILS
+
+Q2. does it survive the adjustments?
+    + lead terms (pre-trend-adjusted)                    +7.106 d  (se  1.652)  p_WCB 0.0006  CI [  +3.20,  +11.05]  n=28001  -> PLACEBO FAILS
+    (IPSW weights are built inside the §3.10 driver, not carried on the panel;
+     the §3.10 table's ipsw row for trough:S_harvest_window is the IPSW answer.)
+
+Q3. THE DISCRIMINATING TEST. Does harvest-window exposure in season t move
+    the trough of season t-1, which precedes the storm by a full year?
+    lambda: beta[Slead_harvest_window] on trough         -2.898 d  (se  1.319)  p_WCB 0.0702  CI [  -5.75,   +0.11]  n=28001  -> placebo passes
+    lambda: beta[Slead_harvest_window] on heading        -2.412 d  (se  0.736)  p_WCB 0.0024  CI [  -4.05,   -0.80]  n=28001  -> PLACEBO FAILS
+
+    Both are anticipation coefficients: a storm that has not yet happened
+    cannot move a marker already measured. Either one non-zero rejects the
+    design, not the hypothesis.
+level=district: one row per district-season, retained := estimable, cell_id := district
+
+==============================================================================
+§3.9 TIMING PLACEBO -- DISTRICT level, 9999 replications
+==============================================================================
+§4: beta_harv = 0 for the earlier fitted radar trough. A harvest-window landfall cannot causally alter the observations
+acquired months earlier; the trough is not an agronomic date.
+
+Q1. the placebo itself, declared specification
+  beta[S_harvest_window] on radar trough breakpoint      +5.001 d  (se  3.103)  p_WCB 0.1102  CI [  -1.04,  +11.25]  n=208  -> placebo passes
+
+Q2. does it survive the adjustments?
+    + lead terms (pre-trend-adjusted)                    +4.821 d  (se  3.686)  p_WCB 0.1783  CI [  -2.14,  +11.92]  n=183  -> placebo passes
+    (IPSW weights are built inside the §3.10 driver, not carried on the panel;
+     the §3.10 table's ipsw row for trough:S_harvest_window is the IPSW answer.)
+
+Q3. THE DISCRIMINATING TEST. Does harvest-window exposure in season t move
+    the trough of season t-1, which precedes the storm by a full year?
+    lambda: beta[Slead_harvest_window] on trough         -8.074 d  (se  5.221)  p_WCB 0.1003  CI [ -17.45,   +1.48]  n=183  -> placebo passes
+    lambda: beta[Slead_harvest_window] on heading        -2.654 d  (se  2.327)  p_WCB 0.2427  CI [  -7.29,   +2.03]  n=183  -> placebo passes
+
+    Both are anticipation coefficients: a storm that has not yet happened
+    cannot move a marker already measured. Either one non-zero rejects the
+    design, not the hypothesis.

@@ -1,0 +1,9 @@
+criterion,verdict,n_improves,n_worsens,n_unchanged,n_not_evaluable,sample
+fit_quality,WORSENS,0,2,0,0,as_is
+temporal_stability,MIXED,1,2,0,0,as_is
+spatial_coherence,MIXED,2,4,0,0,as_is
+orbit_agreement,MIXED,2,4,0,0,as_is
+fit_quality,WORSENS,0,1,0,0,common
+temporal_stability,WORSENS,0,3,0,0,common
+spatial_coherence,MIXED,2,4,0,0,common
+orbit_agreement,NOT EVALUABLE,0,0,0,0,common

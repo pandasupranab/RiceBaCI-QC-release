@@ -1,0 +1,7 @@
+threshold_name,threshold_db,n_units,median_excess,mean_excess,perm_p_one_sided,rule_i_median_excess_ge_0.05,rule_ii_perm_p_le_0.05,verdict,n_units_null_scene_advantaged,window_spec,admissible
+declared3db,3,18,-0.01125,-0.00958333333333,0.816091954023,False,False,WITHHELD -- window not admissible,3,declared,False
+null_q95,5.93203013463,18,0.00625,0.00777777777778,0.0439780109945,False,True,WITHHELD -- window not admissible,3,declared,False
+null_q99,8.55004175903,18,0,0.00277777777778,0.111944027986,False,False,WITHHELD -- window not admissible,3,declared,False
+declared3db,3,18,-0.00625,-0.01375,0.938530734633,False,False,DOES NOT SEPARATE,2,postlandfall,True
+null_q95,5.44810970645,18,0.00375,0.00555555555556,0.0844577711144,False,False,DOES NOT SEPARATE,2,postlandfall,True
+null_q99,8.11021512742,18,0,0.00111111111111,0.259370314843,False,False,DOES NOT SEPARATE,2,postlandfall,True

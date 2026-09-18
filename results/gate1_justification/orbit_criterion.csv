@@ -1,0 +1,7 @@
+statistic,marker,gate_off,gate_on
+sigma_single,trough,25.9003978764,25.9168305699
+within_tolerance_share,trough,0.944278864844,0.944092144429
+sigma_single,heading,19.8168767027,19.8279582364
+within_tolerance_share,heading,0.938706751328,0.938915491135
+sigma_single,harvest,25.7893780491,25.7887443241
+within_tolerance_share,harvest,0.911364519891,0.911349812346
