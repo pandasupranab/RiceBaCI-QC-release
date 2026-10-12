@@ -1,0 +1,37 @@
+      grid  n_valid  rho  n_draws  n_fit      t95      t99    t_med  seed    seconds                                                                                 dispatch
+pixel_free       14  0.0     4000   3779 3.293807 4.470285 1.665624  2014 181.672512 released calibrate_plsm_null.one_cell(grid='free') -> plsm_designs_free(), 12649 designs
+pixel_free       15  0.0     4000   3795 3.270212 4.373886 1.716181  2015 326.763445 released calibrate_plsm_null.one_cell(grid='free') -> plsm_designs_free(), 12649 designs
+pixel_free       16  0.0     4000   3802 3.328199 4.415627 1.787405  2016 180.581254 released calibrate_plsm_null.one_cell(grid='free') -> plsm_designs_free(), 12649 designs
+pixel_free       17  0.0     4000   3819 3.384599 4.288721 1.814263  2017 330.926332 released calibrate_plsm_null.one_cell(grid='free') -> plsm_designs_free(), 12649 designs
+pixel_free       18  0.0     4000   3801 3.327786 4.395031 1.816145  2018 304.116679 released calibrate_plsm_null.one_cell(grid='free') -> plsm_designs_free(), 12649 designs
+pixel_free       19  0.0     4000   3814 3.328619 4.407601 1.838179  2019 169.280502 released calibrate_plsm_null.one_cell(grid='free') -> plsm_designs_free(), 12649 designs
+pixel_free       20  0.0     4000   3815 3.357243 4.087740 1.909299  2020 301.192834 released calibrate_plsm_null.one_cell(grid='free') -> plsm_designs_free(), 12649 designs
+pixel_free       21  0.0     4000   3808 3.400720 4.149373 1.901454  2021 168.180949 released calibrate_plsm_null.one_cell(grid='free') -> plsm_designs_free(), 12649 designs
+pixel_free       22  0.0     4000   3794 3.332571 4.195346 1.879476  2022 166.269011 released calibrate_plsm_null.one_cell(grid='free') -> plsm_designs_free(), 12649 designs
+pixel_free       23  0.0     4000   3819 3.305183 4.148370 1.906962  2023 163.930471 released calibrate_plsm_null.one_cell(grid='free') -> plsm_designs_free(), 12649 designs
+pixel_free       24  0.0     4000   3807 3.319121 3.978655 1.908794  2024 165.951793 released calibrate_plsm_null.one_cell(grid='free') -> plsm_designs_free(), 12649 designs
+pixel_free       25  0.0     4000   3801 3.297724 4.077565 1.944997  2025 165.566189 released calibrate_plsm_null.one_cell(grid='free') -> plsm_designs_free(), 12649 designs
+pixel_free       26  0.0     4000   3796 3.300942 4.065588 1.968951  2026 165.169468 released calibrate_plsm_null.one_cell(grid='free') -> plsm_designs_free(), 12649 designs
+pixel_free       27  0.0     4000   3822 3.248783 4.037689 1.955177  2027 165.261964 released calibrate_plsm_null.one_cell(grid='free') -> plsm_designs_free(), 12649 designs
+pixel_free       28  0.0     4000   3805 3.300496 4.012334 1.989085  2028 164.628660 released calibrate_plsm_null.one_cell(grid='free') -> plsm_designs_free(), 12649 designs
+
+grid  n_valid  n_draws  n_fit      t95  seed  released_t95  released_n_fit  released_row_exists  match_released
+free       14     1500   1411 3.319099  2014           NaN             NaN                False           False
+free       15     1500   1428 3.332236  2015           NaN             NaN                False           False
+free       16     1500   1429 3.257707  2016      3.257707          1429.0                 True            True
+free       17     1500   1428 3.441927  2017      3.441927          1428.0                 True            True
+free       18     1500   1426 3.265054  2018      3.265054          1426.0                 True            True
+free       19     1500   1421 3.250558  2019      3.250558          1421.0                 True            True
+free       20     1500   1433 3.351037  2020      3.351037          1433.0                 True            True
+free       21     1500   1429 3.382492  2021      3.382492          1429.0                 True            True
+free       22     1500   1411 3.341033  2022      3.341033          1411.0                 True            True
+free       23     1500   1434 3.368346  2023      3.368346          1434.0                 True            True
+free       24     1500   1429 3.230072  2024      3.230072          1429.0                 True            True
+free       25     1500   1421 3.266824  2025      3.266824          1421.0                 True            True
+free       26     1500   1420 3.317103  2026      3.317103          1420.0                 True            True
+free       27     1500   1441 3.301583  2027      3.301583          1441.0                 True            True
+free       28     1500   1428 3.296862  2028      3.296862          1428.0                 True            True
+
+1,500-draw check: 13 of 13 released free-grid rows reproduced exactly
+elapsed 35.8 min with 2 job(s); wrote /home/claude/ext_2026-10-10_shuffle_freegrid/calibration/plsm_null_t_pixel_free.csv
+exit=0 elapsed=2146s

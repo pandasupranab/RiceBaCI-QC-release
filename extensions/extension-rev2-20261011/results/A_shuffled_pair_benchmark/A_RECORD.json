@@ -1,0 +1,62 @@
+{
+ "environment": {
+  "python": "3.13.16",
+  "numpy": "2.4.4",
+  "pandas": "3.0.2",
+  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "cpu_count": 2,
+  "utc": "2026-10-10T18:02:23Z"
+ },
+ "input_sha256": "1327f06c1f32fbef96f4b0f1c32c50522b72bd530c884aca7fd4c8709b48600e",
+ "seed_bench": 20261010,
+ "seed_boot": 20261011,
+ "derangement_algorithm": "numpy default_rng(SeedSequence(seed).spawn per cell), rng.permutation(n), rejected until no fixed point (uniform over derangements); the same draw reassigns trough_b, heading_b and harvest_b together",
+ "fixed_tolerances_d": {
+  "trough": 70.0,
+  "heading": 50.0,
+  "harvest": 60.0
+ },
+ "dekad_d": 10.0,
+ "bootstrap": "district-cluster, with replacement, instance-indexed draws per duplicated district",
+ "arms": {
+  "evaluation": {
+   "rows_total": 7717,
+   "rows_eligible": 7676,
+   "singleton_rows_excluded": 41,
+   "cells_total": 383,
+   "cells_eligible": 342,
+   "rows": 7676,
+   "cells": 342,
+   "two_row_cells": 26,
+   "districts": 21,
+   "R": 1000,
+   "B": 2000,
+   "K": 50,
+   "rejection_tries": 917089,
+   "seconds_pool": 7.172931909561157,
+   "seconds_main": 4.827316999435425,
+   "seconds_bootstrap": 558.2768740653992,
+   "max_district_multiplicity": 7
+  },
+  "baseline": {
+   "rows_total": 798,
+   "rows_eligible": 792,
+   "singleton_rows_excluded": 6,
+   "cells_total": 47,
+   "cells_eligible": 41,
+   "rows": 792,
+   "cells": 41,
+   "two_row_cells": 2,
+   "districts": 18,
+   "R": 1000,
+   "B": 2000,
+   "K": 50,
+   "rejection_tries": 110248,
+   "seconds_pool": 0.7512774467468262,
+   "seconds_main": 0.337904691696167,
+   "seconds_bootstrap": 57.601553201675415,
+   "max_district_multiplicity": 6
+  }
+ }
+}

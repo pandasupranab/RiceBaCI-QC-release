@@ -1,0 +1,283 @@
+{
+ "environment": {
+  "python": "3.13.16",
+  "numpy": "2.4.4",
+  "pandas": "3.0.2",
+  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "cpu_count": 2,
+  "utc": "2026-10-11T03:45:59Z"
+ },
+ "checks": [
+  {
+   "name": "release_src/ equals the recorded 59-file v1.0.0 set (byte-exact git blobs, no missing or extra files; validated in place, nothing copied/removed/modified)",
+   "ok": true,
+   "detail": "59 of 59 matched, 59 present, 0 problems"
+  },
+  {
+   "name": "225 per-orbit exports match the deposit manifest",
+   "ok": true,
+   "detail": "225 files, 295,007,797 bytes, mismatches []"
+  },
+  {
+   "name": "G0 fit cache matches the replay-inputs manifest",
+   "ok": true,
+   "detail": "31b96b6ea2521dce"
+  },
+  {
+   "name": "released orbit_pairs.csv == submitted snapshot == ledger hash",
+   "ok": true,
+   "detail": "1327f06c1f32fbef ledger=1327f06c1f32fbef"
+  },
+  {
+   "name": "pairs: 8,515 = 798 baseline + 7,717 evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "pairs: unique (district, year, cell_id) keys",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "pairs: no missing marker differences",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "evaluation cells: 383 total, 342 eligible, 7,676 eligible rows, 41 singletons",
+   "ok": true,
+   "detail": "383 cells, 342 eligible, 7676 rows, 41 singletons, 26 two-row cells"
+  },
+  {
+   "name": "eligible evaluation pass split 6,409 A/D + 1,267 same-pass",
+   "ok": true,
+   "detail": "6409 / 1267; districts 21"
+  },
+  {
+   "name": "baseline cells: 41 eligible, 792 rows",
+   "ok": true,
+   "detail": "47 cells, 41 eligible, 792 rows"
+  },
+  {
+   "name": "cache: 170,321 series, 44,659 retained, 90,000 pixel-seasons, 12 orbits",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "cache: unique (district, year, cell_id, orbit) keys",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "every published pair joins to retained cache rows with identical markers",
+   "ok": true,
+   "detail": "marker mismatches 0"
+  },
+  {
+   "name": "free grid has 12,649 designs; restricted 4,322; restricted is a subset",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "restricted design matrices equal the corresponding free design matrices",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "released lookup: 'free' -> district AR(1) 4.1731..., unknown key -> 3.5 fallback (recorded; NOT used for G2)",
+   "ok": true,
+   "detail": "free=4.173158 pixel_free(unknown)=3.5 pixel(n=20)=2.810667"
+  },
+  {
+   "name": "strict lookup stops on a missing n_valid row, a missing grid key and an absent table",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "fit_one_file_ext stops when the design count is not the expected one",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "G0 replay reproduces the cache row for row (flags, reasons, markers exact; rise/rmse to 1e-9)",
+   "ok": true,
+   "detail": "6837 series in 8 files: 2090 retained, 4747 rejected, 1177 bound-touching retained marker positions; mismatches 0, missing 0"
+  },
+  {
+   "name": "build_pairs(cache) == released orbit_pairs.csv (all columns)",
+   "ok": true,
+   "detail": "8515 rebuilt vs 8515 released; not estimable 81485"
+  }
+ ],
+ "release_src_files": {
+  "CITATION.cff": "37a0d19fabbc060a9d3d26dfef22b3e4123aa771",
+  "DATA_AVAILABILITY.md": "5520580056f59586343efdd0a9174d65e4ce51f2",
+  "LICENSE": "477720e733cd911ee428e2186a51f872cf3d4c0b",
+  "LICENSE-DATA.md": "d812b79b41a0dee20e6eeae6643a44f5e781c1b9",
+  "README.md": "dfb0a7d0a3963b926710f15371bca3125807c9f3",
+  "docs/LitGap_v0.1.md": "d66051c7032b88961d0d008e164f026ed3ef7629",
+  "docs/LitGap_v0.2.md": "89c22c46f2fba1359578fc938e68ccc205978510",
+  "docs/Protocol_v1.md": "f6d2d52e1ef05adae3f883365fcbe36a7f46ae0c",
+  "docs/archive/field_reference_sources_DRAFT.md": "0f6456d9d4d605b61ca932c445783385f683f7eb",
+  "docs/candidate_cohort_v1.csv": "e3e7eef0aa9d2de44af68fad878291c1f6bd704a",
+  "docs/candidate_cohort_v2.csv": "3b431d8fea7c1826e088fbe98e063c5fa8669b6f",
+  "docs/chen_rice_2018_per_district.csv": "ad7525f112283d3a061077f1a6daa61f96b8622a",
+  "docs/coastal_districts_crosswalk.csv": "8ad7b06c36935086145c72152cd08dfa99ce541c",
+  "docs/coastal_districts_gadm41.csv": "9edf53d069000585fecf08a7342e76576fc9e5b3",
+  "docs/cyclone_footprints_ibtracs50km.csv": "49120c908883190d10a10cfadde90e882c39dfcd",
+  "docs/district_cyclone_exposure_ibtracs50km.csv": "b1f2c71faf869114fb171ea7bd2f098878d8c2c0",
+  "docs/field_reference_sources.md": "e07fcb0a94832be22a0a93f71e25cb5b4679f766",
+  "docs/rice_mask_options.md": "59c724a53b189d3021b3818bd03d4dd19a1f39fa",
+  "docs/verify_masked_panels.md": "735d1865b63f66d465b364bf38f0fdfac67450ec",
+  "python/README.md": "e1b9e81c2a83841da6fe8159732c10b5c807b5cf",
+  "python/apply_round2.py": "1ba0532d3142ecf16da1180f825c206cb3ec1812",
+  "python/apply_round3.py": "d294c265cfc08262b99c7d058c750fe1bca09fdc",
+  "python/attrition_completeness.py": "2512848b7c8b61a4e4e2d7e9294f2971344b7fa6",
+  "python/attrition_diagnostics.py": "59cb0944607c148e3efd29200afbe2816b76e14f",
+  "python/build_coastal_districts.py": "cbe3a9f7ad67f8df32b5c650bad0eb1483cedbfe",
+  "python/build_cyclone_exposure.py": "5ede59c3633966f210d43dbb71559ffd18ff7807",
+  "python/calibrate_plsm_null.py": "06ea9d280ece063fc42f8e8ab8f3b5a57c979542",
+  "python/censoring_test.py": "77696695b619de6dd635abe040c7fd2668e2b2a2",
+  "python/claim_guard.py": "5502b80c862f60d13f334568c1c640cff49cf8d3",
+  "python/classify_exposure_phase.py": "a7ed630994d142d9ec325747a4b7b6c54208f971",
+  "python/compare_tables.py": "8107a259ff9467ecde5ee672d2d2dbd7712ba09f",
+  "python/dispersion_test.py": "a14a60d41786e084c217b4276f717dac1705401c",
+  "python/environment_check.py": "57fb3e65002b21704a201e0b8094c15cc0bbd5eb",
+  "python/event_study.py": "417ec1c31a5505ee06c28c1b64fddb2a1e789fd0",
+  "python/extract_phenometrics_sar.py": "468098d6537d10efe29dae0e35b574f9a07e9403",
+  "python/fit_phenometrics.py": "b05b5e0d96c237321c8dd257b2e8cbd172303443",
+  "python/gate1_justification.py": "65382a17a19033071d39c4a9e5f3ee99fd65c49e",
+  "python/gate2_state_sensitivity.py": "7bd116294ef0d45a23ad3199896da3749980b426",
+  "python/inundation_intensity.py": "b3ccc3b7e1617c8a3412caa24c7d7bf91e9374fa",
+  "python/lf_output.py": "eba23e2b6461e0e67c732850b872c0614e6aa470",
+  "python/make_figures.py": "aadf1ee3e49bbea9536f954d72787fc161640862",
+  "python/marc_agreement.py": "5f2f582349e36c5f9e3f8b084d69e98a92278da7",
+  "python/mask_sensitivity.py": "9eea04307384781ff9a8dbf44bc80590d299cfb0",
+  "python/merge_cohort_exports.py": "a5c03374472bca1e6a4465370d6d9e754fccf64b",
+  "python/merge_static_covariates.py": "134ad16026ec95a913781d00d4d5f8cda7f4cb6a",
+  "python/orbit_agreement.py": "cbca675f91ea535d2a0120f81c3830ba7b7a63b5",
+  "python/orbit_pair_selection_sensitivity.py": "b267e1108a97da4fe58831269584a9a99201d9a4",
+  "python/orbit_state_sensitivity.py": "7e1f33721326ea7ea1579f2075d9f27ce443389a",
+  "python/permutation_test.py": "112229171db2fde18a96f2d2c2146f280474dfaa",
+  "python/placebo_check.py": "75e8cfaaa1f933165c0937e3fb486a8a69b0fccf",
+  "python/plsm_null_t.csv": "2b25c71d6bcbaa1ae4406d62f875ec0ce1b4542e",
+  "python/plsm_null_t_ar1.csv": "a63a845d05e9a20de3b3e4de5883411eadcb9051",
+  "python/repeat_coverage_sensitivity.py": "63529bf9e388d18d70df753eed05b450e03430ff",
+  "python/robustness_arms.py": "b2f721275672b450e047969463e03ef1718de472",
+  "python/semivariance.py": "4a77ed0380f1f4b3a28bae29ea283594416d0e49",
+  "python/window_sweep.py": "2c135dfeb6561a1ac0a4ec0486a595cfab60a2bc",
+  "requirements.txt": "569ec25ff8d8aa3543466345dd414e2bf7b19008",
+  "results/orbit_agreement/orbit_pairs.csv": "c399d9c6890e0b463f44b75e000a703075d0deaa",
+  "run_all.sh": "502d0d36537b128780d495998d802d191ccc8c2f"
+ },
+ "release_src_validation": {
+  "mode": "in place, fail-closed (scripts/validate_release_src.py)",
+  "expected_list": "inputs/staged/release_src_expected_blobs.txt",
+  "tree_record": "inputs/staged/git_ls_tree_v1.0.0.txt",
+  "release_commit": "a465400e7eb7ec05f7c7d819ab14303cc14146d9",
+  "ok": true
+ },
+ "perorbit_total_bytes": 295007797,
+ "cache_g0_sha256": "31b96b6ea2521dce7ee4b9adabd32d9870ea34fff88468e20084073e49f089cf",
+ "pairs_sha256": "1327f06c1f32fbef96f4b0f1c32c50522b72bd530c884aca7fd4c8709b48600e",
+ "released_lookup": {
+  "free": 4.173157563070177,
+  "unknown_key": 3.5,
+  "pixel_n20": 2.8106671314235525
+ },
+ "free_grid_keys_sha1": "4b6b77340b35a8581e6171036cbcf2acdac125f8",
+ "free_grid_dekad_doy": [
+  154.5,
+  164.5,
+  174.5,
+  184.5,
+  194.5,
+  204.5,
+  214.5,
+  224.5,
+  234.5,
+  244.5,
+  254.5,
+  264.5,
+  274.5,
+  284.5,
+  294.5,
+  304.5,
+  314.5,
+  324.5,
+  334.5,
+  344.5,
+  354.5,
+  364.5,
+  374.5,
+  384.5,
+  394.5,
+  404.5,
+  414.5,
+  422.0
+ ],
+ "g0_replay_files": [
+  "S1_ORBIT_Baleshwar_2017.csv",
+  "S1_ORBIT_West_Godavari_2025.csv",
+  "S1_ORBIT_Pashchim_Medinipur_2024.csv",
+  "S1_ORBIT_Puri_2019.csv",
+  "S1_ORBIT_Krishna_2021.csv",
+  "S1_ORBIT_Haora_2022.csv",
+  "S1_ORBIT_South_24_Parganas_2019.csv",
+  "S1_ORBIT_Jagatsinghapur_2020.csv"
+ ],
+ "g0_replay_timing": {
+  "files": [
+   [
+    "S1_ORBIT_Baleshwar_2017.csv",
+    860,
+    15.405035734176636
+   ],
+   [
+    "S1_ORBIT_West_Godavari_2025.csv",
+    918,
+    9.182371377944946
+   ],
+   [
+    "S1_ORBIT_Pashchim_Medinipur_2024.csv",
+    989,
+    17.212904453277588
+   ],
+   [
+    "S1_ORBIT_Puri_2019.csv",
+    826,
+    14.573036432266235
+   ],
+   [
+    "S1_ORBIT_Krishna_2021.csv",
+    449,
+    8.054494142532349
+   ],
+   [
+    "S1_ORBIT_Haora_2022.csv",
+    800,
+    14.160033226013184
+   ],
+   [
+    "S1_ORBIT_South_24_Parganas_2019.csv",
+    1047,
+    18.451204299926758
+   ],
+   [
+    "S1_ORBIT_Jagatsinghapur_2020.csv",
+    948,
+    17.124542474746704
+   ]
+  ],
+  "sec_per_series_restricted": 0.016697911677765746
+ },
+ "free_grid_timing_pilot": {
+  "file": "S1_ORBIT_Baleshwar_2017.csv",
+  "series": 860,
+  "seconds": 47.87251305580139,
+  "sec_per_series": 0.05566571285558301
+ },
+ "failed": [],
+ "passed": true
+}

@@ -1,0 +1,183 @@
+{
+ "utc": "2026-10-11T03:45:58Z",
+ "python": "3.13.16",
+ "seconds": 2.0,
+ "cases": [
+  {
+   "case": "real release_src/ has 59 files before the tests",
+   "required": 59,
+   "observed": 59,
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "case": "documented path: scripts/validate_release_src.py on the shipped release_src/",
+   "required": "exit 0",
+   "observed": "exit 0",
+   "ok": true,
+   "detail": "release_src valid: 59 of 59 expected files present, byte-exact v1.0.0 blobs, no extra files; nothing modified"
+  },
+  {
+   "case": "documented path: scripts/preflight.py --validate-sources-only on the shipped release_src/",
+   "required": "exit 0",
+   "observed": "exit 0",
+   "ok": true,
+   "detail": "=========================================================================="
+  },
+  {
+   "case": "intact disposable copy [validate]",
+   "required": "exit 0, message contains 'release_src valid', copy untouched, no report",
+   "observed": "exit 0, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "release_src valid: 59 of 59 expected files present, byte-exact v1.0.0 blobs, no extra files; nothing modified"
+  },
+  {
+   "case": "absent release_src/ [validate]",
+   "required": "exit 2, message contains 'absent or not a directory', copy untouched, no report",
+   "observed": "exit 2, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "release_src INVALID (1 problem(s); 0 files present, 0 matched of 59 expected): .: release_src is absent or not a directory"
+  },
+  {
+   "case": "empty release_src/ [validate]",
+   "required": "exit 2, message contains 'release_src is empty', copy untouched, no report",
+   "observed": "exit 2, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "release_src INVALID (60 problem(s); 0 files present, 0 matched of 59 expected): .: release_src is empty; CITATION.cff: missing file; DATA_AVAILABILITY.md: missing file; LICENSE: missing file; LICENSE-"
+  },
+  {
+   "case": "missing file (python/orbit_agreement.py removed) [validate]",
+   "required": "exit 2, message contains 'python/orbit_agreement.py: missing file', copy untouched, no report",
+   "observed": "exit 2, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "release_src INVALID (1 problem(s); 58 files present, 58 matched of 59 expected): python/orbit_agreement.py: missing file"
+  },
+  {
+   "case": "extra file (python/json.py planted) [validate]",
+   "required": "exit 2, message contains 'python/json.py: unexpected file', copy untouched, no report",
+   "observed": "exit 2, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "release_src INVALID (1 problem(s); 60 files present, 59 matched of 59 expected): python/json.py: unexpected file (not in the recorded release_src set)"
+  },
+  {
+   "case": "changed blob (one line appended to extract_phenometrics_sar.py) [validate]",
+   "required": "exit 2, message contains 'python/extract_phenometrics_sar.py: blob SHA-1', copy untouched, no report",
+   "observed": "exit 2, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "release_src INVALID (1 problem(s); 59 files present, 58 matched of 59 expected): python/extract_phenometrics_sar.py: blob SHA-1 0107ce5b3a43ffb0b9f1e57c041c687346d7c168 differs from recorded 468098d65"
+  },
+  {
+   "case": "CRLF line endings (fit_phenometrics.py re-encoded) [validate]",
+   "required": "exit 2, message contains 'CRLF', copy untouched, no report",
+   "observed": "exit 2, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "release_src INVALID (1 problem(s); 59 files present, 58 matched of 59 expected): python/fit_phenometrics.py: blob differs only by CRLF line endings; byte-exact LF release bytes are required"
+  },
+  {
+   "case": "unexpected symbolic link inside release_src/ [validate]",
+   "required": "exit 2, message contains 'unexpected symbolic link', copy untouched, no report",
+   "observed": "exit 2, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "release_src INVALID (1 problem(s); 59 files present, 59 matched of 59 expected): python/oa_link.py: unexpected symbolic link"
+  },
+  {
+   "case": "interpreter bytecode cache inside release_src/python/ [validate]",
+   "required": "exit 2, message contains 'bytecode cache present', copy untouched, no report",
+   "observed": "exit 2, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "release_src INVALID (1 problem(s); 59 files present, 59 matched of 59 expected): python/__pycache__: interpreter bytecode cache present; remove this directory and run the extension with 'python -I -B'"
+  },
+  {
+   "case": "expectation list missing (inputs/staged/release_src_expected_blobs.txt removed) [validate]",
+   "required": "exit 3, message contains 'NOT PERFORMED', copy untouched, no report",
+   "observed": "exit 3, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "release_src validation NOT PERFORMED: expected-blob list missing: /tmp/ext_rev2_validation_tests_zvup_gwg/noexp_validate/inputs/staged/release_src_expected_blobs.txt"
+  },
+  {
+   "case": "intact disposable copy [preflight]",
+   "required": "exit 0, message contains 'release_src valid', copy untouched, no report",
+   "observed": "exit 0, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "[PASS] release_src/ equals the recorded 59-file v1.0.0 set, byte-exact blobs, no extra files (validated in place; nothing copied, removed or modified)  -- release_src valid: 59 of 59 expected files pr"
+  },
+  {
+   "case": "absent release_src/ [preflight]",
+   "required": "exit 2, message contains 'absent or not a directory', copy untouched, no report",
+   "observed": "exit 2, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "PREFLIGHT STOPPED: release_src/ is not the verified v1.0.0 copy. No released module was imported, no file was changed, no report was written. Restore release_src/ as described in README.md."
+  },
+  {
+   "case": "empty release_src/ [preflight]",
+   "required": "exit 2, message contains 'release_src is empty', copy untouched, no report",
+   "observed": "exit 2, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "PREFLIGHT STOPPED: release_src/ is not the verified v1.0.0 copy. No released module was imported, no file was changed, no report was written. Restore release_src/ as described in README.md."
+  },
+  {
+   "case": "missing file (python/orbit_agreement.py removed) [preflight]",
+   "required": "exit 2, message contains 'python/orbit_agreement.py: missing file', copy untouched, no report",
+   "observed": "exit 2, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "PREFLIGHT STOPPED: release_src/ is not the verified v1.0.0 copy. No released module was imported, no file was changed, no report was written. Restore release_src/ as described in README.md."
+  },
+  {
+   "case": "extra file (python/json.py planted) [preflight]",
+   "required": "exit 2, message contains 'python/json.py: unexpected file', copy untouched, no report",
+   "observed": "exit 2, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "PREFLIGHT STOPPED: release_src/ is not the verified v1.0.0 copy. No released module was imported, no file was changed, no report was written. Restore release_src/ as described in README.md."
+  },
+  {
+   "case": "changed blob (one line appended to extract_phenometrics_sar.py) [preflight]",
+   "required": "exit 2, message contains 'python/extract_phenometrics_sar.py: blob SHA-1', copy untouched, no report",
+   "observed": "exit 2, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "PREFLIGHT STOPPED: release_src/ is not the verified v1.0.0 copy. No released module was imported, no file was changed, no report was written. Restore release_src/ as described in README.md."
+  },
+  {
+   "case": "CRLF line endings (fit_phenometrics.py re-encoded) [preflight]",
+   "required": "exit 2, message contains 'CRLF', copy untouched, no report",
+   "observed": "exit 2, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "PREFLIGHT STOPPED: release_src/ is not the verified v1.0.0 copy. No released module was imported, no file was changed, no report was written. Restore release_src/ as described in README.md."
+  },
+  {
+   "case": "unexpected symbolic link inside release_src/ [preflight]",
+   "required": "exit 2, message contains 'unexpected symbolic link', copy untouched, no report",
+   "observed": "exit 2, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "PREFLIGHT STOPPED: release_src/ is not the verified v1.0.0 copy. No released module was imported, no file was changed, no report was written. Restore release_src/ as described in README.md."
+  },
+  {
+   "case": "interpreter bytecode cache inside release_src/python/ [preflight]",
+   "required": "exit 2, message contains 'bytecode cache present', copy untouched, no report",
+   "observed": "exit 2, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "PREFLIGHT STOPPED: release_src/ is not the verified v1.0.0 copy. No released module was imported, no file was changed, no report was written. Restore release_src/ as described in README.md."
+  },
+  {
+   "case": "expectation list missing (inputs/staged/release_src_expected_blobs.txt removed) [preflight]",
+   "required": "exit 3, message contains 'not performed', copy untouched, no report",
+   "observed": "exit 3, message found, copy untouched, report none",
+   "ok": true,
+   "detail": "[STOP] release_src validation not performed: expected-blob list missing: /tmp/ext_rev2_validation_tests_zvup_gwg/noexp_preflight/inputs/staged/release_src_expected_blobs.txt"
+  },
+  {
+   "case": "tampered expectation list (blob differs from tree record)",
+   "required": "ExpectationError",
+   "observed": "ExpectationError",
+   "ok": true,
+   "detail": "expected blob differs from the v1.0.0 tree record: run_all.sh"
+  },
+  {
+   "case": "real release_src/ byte-identical after the tests",
+   "required": "identical",
+   "observed": "identical",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "all_passed": true
+}

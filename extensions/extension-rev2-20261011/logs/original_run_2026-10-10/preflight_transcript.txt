@@ -1,0 +1,44 @@
+==========================================================================
+PREFLIGHT 1 -- input identities
+==========================================================================
+  [PASS] release files match v1.0.0 git blobs  -- 59 files: 59 exact, 0 CRLF-normalised, 0 bad []
+  [PASS] 225 per-orbit exports match the deposit manifest  -- 225 files, 295,007,797 bytes, mismatches []
+  [PASS] G0 fit cache matches the replay-inputs manifest  -- 31b96b6ea2521dce
+  [PASS] released orbit_pairs.csv == submitted snapshot == ledger hash  -- 1327f06c1f32fbef ledger=1327f06c1f32fbef
+==========================================================================
+PREFLIGHT 2 -- structure
+==========================================================================
+  [PASS] pairs: 8,515 = 798 baseline + 7,717 evaluation
+  [PASS] pairs: unique (district, year, cell_id) keys
+  [PASS] pairs: no missing marker differences
+  [PASS] evaluation cells: 383 total, 342 eligible, 7,676 eligible rows, 41 singletons  -- 383 cells, 342 eligible, 7676 rows, 41 singletons, 26 two-row cells
+  [PASS] eligible evaluation pass split 6,409 A/D + 1,267 same-pass  -- 6409 / 1267; districts 21
+  [PASS] baseline cells: 41 eligible, 792 rows  -- 47 cells, 41 eligible, 792 rows
+  [PASS] cache: 170,321 series, 44,659 retained, 90,000 pixel-seasons, 12 orbits
+  [PASS] cache: unique (district, year, cell_id, orbit) keys
+  [PASS] every published pair joins to retained cache rows with identical markers  -- marker mismatches 0
+==========================================================================
+PREFLIGHT 3 -- designs and the released critical-value lookup
+==========================================================================
+  [PASS] free grid has 12,649 designs; restricted 4,322; restricted is a subset
+  [PASS] restricted design matrices equal the corresponding free design matrices
+  [PASS] released lookup: 'free' -> district AR(1) 4.1731..., unknown key -> 3.5 fallback (recorded; NOT used for G2)  -- free=4.173158 pixel_free(unknown)=3.5 pixel(n=20)=2.810667
+  [PASS] strict lookup stops on a missing n_valid row, a missing grid key and an absent table
+  [PASS] fit_one_file_ext stops when the design count is not the expected one
+==========================================================================
+PREFLIGHT 4 -- G0 replay in this environment (restricted grid, released retention)
+==========================================================================
+  [PASS] G0 replay reproduces the cache row for row (flags, reasons, markers exact; rise/rmse to 1e-9)  -- 6837 series in 8 files: 2090 retained, 4747 rejected, 1177 bound-touching retained marker positions; mismatches 0, missing 0
+  restricted-grid timing: 13.8 ms per series (6837 series)
+  free-grid timing pilot: 43.3 ms per series on S1_ORBIT_Baleshwar_2017.csv (860 series); projected full refit 123 min single-process
+==========================================================================
+PREFLIGHT 5 -- the released pair builder reproduces orbit_pairs.csv from the cache
+==========================================================================
+  [PASS] build_pairs(cache) == released orbit_pairs.csv (all columns)  -- 8515 rebuilt vs 8515 released; not estimable 81485
+==========================================================================
+PREFLIGHT PASSED
+==========================================================================
+
+real	3m9.701s
+user	3m5.001s
+sys	0m3.300s

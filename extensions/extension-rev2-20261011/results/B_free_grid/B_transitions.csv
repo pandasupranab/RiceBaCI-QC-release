@@ -1,0 +1,65 @@
+by,level,transition,pixel_seasons
+ALL,ALL,paired in neither,80827
+ALL,ALL,"paired in both, same orbit pair (common sample)",5114
+ALL,ALL,paired in G0 only,3152
+ALL,ALL,paired in G2 only,658
+ALL,ALL,"paired in both, different orbit pair",249
+year,2017,paired in neither,9123
+year,2017,"paired in both, same orbit pair (common sample)",417
+year,2017,paired in G0 only,346
+year,2017,paired in G2 only,79
+year,2017,"paired in both, different orbit pair",35
+year,2018,paired in neither,8739
+year,2018,"paired in both, same orbit pair (common sample)",719
+year,2018,paired in G0 only,426
+year,2018,paired in G2 only,83
+year,2018,"paired in both, different orbit pair",33
+year,2019,paired in neither,8636
+year,2019,"paired in both, same orbit pair (common sample)",862
+year,2019,paired in G0 only,384
+year,2019,paired in G2 only,72
+year,2019,"paired in both, different orbit pair",46
+year,2020,paired in neither,8907
+year,2020,"paired in both, same orbit pair (common sample)",685
+year,2020,paired in G0 only,298
+year,2020,paired in G2 only,84
+year,2020,"paired in both, different orbit pair",26
+year,2021,paired in neither,9140
+year,2021,"paired in both, same orbit pair (common sample)",464
+year,2021,paired in G0 only,277
+year,2021,paired in G2 only,99
+year,2021,"paired in both, different orbit pair",20
+year,2022,paired in neither,9208
+year,2022,paired in G0 only,386
+year,2022,"paired in both, same orbit pair (common sample)",349
+year,2022,paired in G2 only,37
+year,2022,"paired in both, different orbit pair",20
+year,2023,paired in neither,9127
+year,2023,"paired in both, same orbit pair (common sample)",456
+year,2023,paired in G0 only,345
+year,2023,paired in G2 only,54
+year,2023,"paired in both, different orbit pair",18
+year,2024,paired in neither,9115
+year,2024,"paired in both, same orbit pair (common sample)",481
+year,2024,paired in G0 only,325
+year,2024,paired in G2 only,58
+year,2024,"paired in both, different orbit pair",21
+year,2025,paired in neither,8832
+year,2025,"paired in both, same orbit pair (common sample)",681
+year,2025,paired in G0 only,365
+year,2025,paired in G2 only,92
+year,2025,"paired in both, different orbit pair",30
+state,Andhra Pradesh,paired in neither,24964
+state,Andhra Pradesh,"paired in both, same orbit pair (common sample)",143
+state,Andhra Pradesh,paired in G0 only,67
+state,Andhra Pradesh,paired in G2 only,26
+state,Odisha,paired in neither,37680
+state,Odisha,"paired in both, same orbit pair (common sample)",3063
+state,Odisha,paired in G0 only,1967
+state,Odisha,paired in G2 only,354
+state,Odisha,"paired in both, different orbit pair",136
+state,West Bengal,paired in neither,18183
+state,West Bengal,"paired in both, same orbit pair (common sample)",1908
+state,West Bengal,paired in G0 only,1118
+state,West Bengal,paired in G2 only,278
+state,West Bengal,"paired in both, different orbit pair",113

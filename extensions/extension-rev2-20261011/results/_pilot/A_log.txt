@@ -1,0 +1,9 @@
+environment {'python': '3.13.16', 'numpy': '2.4.4', 'pandas': '3.0.2', 'platform': 'Linux-6.18.44-fc-v114-x86_64-with-glibc2.39', 'machine': 'x86_64', 'cpu_count': 2, 'utc': '2026-10-10T18:01:57Z'}
+input released orbit_pairs.csv sha256 1327f06c1f32fbef96f4b0f1c32c50522b72bd530c884aca7fd4c8709b48600e
+[evaluation] 7676 rows, 342 cells (26 two-row), 21 districts; 100 derangement draws per cell in 0.8s (rejection tries 91506, 2.68 per draw)
+[evaluation] benchmark statistics for 14 scopes x 3 markers in 0.5s
+[evaluation] bootstrap: 50 replicates x 10 draws, max district multiplicity 5, 4s
+[baseline] 792 rows, 41 cells (2 two-row), 18 districts; 100 derangement draws per cell in 0.1s (rejection tries 10991, 2.68 per draw)
+[baseline] benchmark statistics for 6 scopes x 3 markers in 0.1s
+[baseline] bootstrap: 50 replicates x 10 draws, max district multiplicity 5, 1s
+done

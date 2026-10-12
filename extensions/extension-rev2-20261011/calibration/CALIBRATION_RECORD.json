@@ -1,0 +1,61 @@
+{
+ "environment": {
+  "python": "3.13.16",
+  "numpy": "2.4.4",
+  "pandas": "3.0.2",
+  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "cpu_count": 2,
+  "utc": "2026-10-10T18:35:31Z"
+ },
+ "grid_key": "pixel_free",
+ "null": "iid Gaussian, rho=0",
+ "n_valid": [
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28
+ ],
+ "draws": 4000,
+ "seeds": {
+  "14": 2014,
+  "15": 2015,
+  "16": 2016,
+  "17": 2017,
+  "18": 2018,
+  "19": 2019,
+  "20": 2020,
+  "21": 2021,
+  "22": 2022,
+  "23": 2023,
+  "24": 2024,
+  "25": 2025,
+  "26": 2026,
+  "27": 2027,
+  "28": 2028
+ },
+ "check_draws": 1500,
+ "check_rows_with_released_counterpart": 13,
+ "check_rows_matching_release": 13,
+ "elapsed_seconds": 2145.364769935608,
+ "jobs": 2,
+ "free_design_count": 12649,
+ "table_sha256": "51bd132de7f424f088aa3a4206ac9b22c994702d07494bb997989fd22c631b43",
+ "released_table_sha256": "f31629c89e6eb673e52bb49173daac941f7c93a6f8e129606907239741926fe0",
+ "sources_sha256": {
+  "calibrate_plsm_null.py": "33d0ed128f8565c2dd744b0e7f4a351cc7c67615c00e70e74799c5a7a8845d2d",
+  "extract_phenometrics_sar.py": "67cb770268b3c5feaf70634896900157bbd02fb316112dcd59385324867761ae",
+  "fit_phenometrics.py": "791537f949790e819b049beec27d4e84690a2a2151124acf390ad5d3cecb6c00"
+ }
+}

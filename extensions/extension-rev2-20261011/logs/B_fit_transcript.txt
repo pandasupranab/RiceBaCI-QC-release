@@ -1,0 +1,26 @@
+225 export files, 0 already fitted, 225 this run; jobs=2; run_key 08fdcdd9d4dca806
+  10/225  (S1_ORBIT_Bhadrak_2017.csv: 939 series, 39.1s)  elapsed 3.1 min
+  20/225  (S1_ORBIT_Cuttack_2018.csv: 1023 series, 27.5s)  elapsed 6.1 min
+  30/225  (S1_ORBIT_East_Godavari_2019.csv: 400 series, 16.3s)  elapsed 8.2 min
+  40/225  (S1_ORBIT_Gajapati_2020.csv: 470 series, 18.7s)  elapsed 9.7 min
+  50/225  (S1_ORBIT_Ganjam_2021.csv: 800 series, 16.2s)  elapsed 11.2 min
+  60/225  (S1_ORBIT_Guntur_2022.csv: 567 series, 16.7s)  elapsed 12.6 min
+  70/225  (S1_ORBIT_Haora_2023.csv: 800 series, 33.0s)  elapsed 15.0 min
+  80/225  (S1_ORBIT_Hugli_2024.csv: 820 series, 33.9s)  elapsed 17.8 min
+  90/225  (S1_ORBIT_Jagatsinghapur_2025.csv: 948 series, 39.9s)  elapsed 21.1 min
+  100/225  (S1_ORBIT_Kendrapara_2017.csv: 833 series, 35.1s)  elapsed 24.6 min
+  110/225  (S1_ORBIT_Khordha_2018.csv: 885 series, 19.6s)  elapsed 27.2 min
+  120/225  (S1_ORBIT_Krishna_2019.csv: 449 series, 18.1s)  elapsed 28.8 min
+  130/225  (S1_ORBIT_Mayurbhanj_2020.csv: 900 series, 37.3s)  elapsed 31.0 min
+  140/225  (S1_ORBIT_Nayagarh_2021.csv: 800 series, 16.5s)  elapsed 33.1 min
+  150/225  (S1_ORBIT_North_24_Parganas_2022.csv: 1053 series, 44.3s)  elapsed 35.9 min
+  160/225  (S1_ORBIT_Pashchim_Medinipur_2023.csv: 989 series, 43.6s)  elapsed 39.5 min
+  170/225  (S1_ORBIT_Purba_Medinipur_2024.csv: 1042 series, 44.4s)  elapsed 43.1 min
+  180/225  (S1_ORBIT_Puri_2025.csv: 827 series, 37.3s)  elapsed 46.3 min
+  190/225  (S1_ORBIT_Srikakulam_2017.csv: 578 series, 25.3s)  elapsed 50.0 min
+  200/225  (S1_ORBIT_Visakhapatnam_2018.csv: 794 series, 17.8s)  elapsed 52.0 min
+  210/225  (S1_ORBIT_Vizianagaram_2019.csv: 441 series, 19.5s)  elapsed 53.5 min
+  220/225  (S1_ORBIT_West_Godavari_2020.csv: 516 series, 22.5s)  elapsed 55.3 min
+  225/225  (S1_ORBIT_West_Godavari_2025.csv: 918 series, 21.2s)  elapsed 56.1 min
+wrote /home/claude/ext_2026-10-10_shuffle_freegrid/results/B_free_grid/per_orbit_fits_pixel_free.csv; this run 3363s wall for 225 files; complete
+exit=0 elapsed=3365s

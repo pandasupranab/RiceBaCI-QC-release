@@ -1,0 +1,431 @@
+district,year,orbit_a,orbit_b,n_cell,eligible,arm
+Baleshwar,2018,48,121,3,True,evaluation
+Baleshwar,2018,85,48,90,True,evaluation
+Baleshwar,2018,85,121,1,False,evaluation
+Baleshwar,2019,48,121,5,True,evaluation
+Baleshwar,2019,85,48,117,True,evaluation
+Baleshwar,2020,48,121,3,True,evaluation
+Baleshwar,2020,85,48,79,True,evaluation
+Baleshwar,2020,85,121,1,False,evaluation
+Baleshwar,2021,85,48,63,True,evaluation
+Baleshwar,2021,85,121,3,True,evaluation
+Baleshwar,2021,121,48,5,True,evaluation
+Baleshwar,2022,85,48,65,True,evaluation
+Baleshwar,2022,85,121,3,True,evaluation
+Baleshwar,2022,121,48,5,True,evaluation
+Baleshwar,2023,48,121,8,True,evaluation
+Baleshwar,2023,85,48,89,True,evaluation
+Baleshwar,2023,85,121,1,False,evaluation
+Baleshwar,2024,48,121,4,True,evaluation
+Baleshwar,2024,85,48,79,True,evaluation
+Baleshwar,2025,48,121,10,True,evaluation
+Baleshwar,2025,85,48,99,True,evaluation
+Baleshwar,2025,85,121,1,False,evaluation
+Bhadrak,2018,48,121,18,True,evaluation
+Bhadrak,2018,85,48,81,True,evaluation
+Bhadrak,2019,48,121,20,True,evaluation
+Bhadrak,2019,85,48,121,True,evaluation
+Bhadrak,2019,85,121,1,False,evaluation
+Bhadrak,2020,48,121,7,True,evaluation
+Bhadrak,2020,85,48,60,True,evaluation
+Bhadrak,2020,85,121,2,True,evaluation
+Bhadrak,2021,85,48,55,True,evaluation
+Bhadrak,2021,85,121,5,True,evaluation
+Bhadrak,2021,121,48,10,True,evaluation
+Bhadrak,2022,85,48,48,True,evaluation
+Bhadrak,2022,85,121,6,True,evaluation
+Bhadrak,2022,121,48,13,True,evaluation
+Bhadrak,2023,48,121,12,True,evaluation
+Bhadrak,2023,85,48,66,True,evaluation
+Bhadrak,2023,85,121,4,True,evaluation
+Bhadrak,2024,48,121,6,True,evaluation
+Bhadrak,2024,85,48,68,True,evaluation
+Bhadrak,2024,85,121,3,True,evaluation
+Bhadrak,2025,48,121,15,True,evaluation
+Bhadrak,2025,85,48,66,True,evaluation
+Bhadrak,2025,85,121,4,True,evaluation
+Cuttack,2018,48,121,17,True,evaluation
+Cuttack,2018,85,48,13,True,evaluation
+Cuttack,2018,85,121,5,True,evaluation
+Cuttack,2019,48,121,19,True,evaluation
+Cuttack,2019,85,48,20,True,evaluation
+Cuttack,2019,85,121,11,True,evaluation
+Cuttack,2020,48,121,13,True,evaluation
+Cuttack,2020,85,48,13,True,evaluation
+Cuttack,2020,85,121,6,True,evaluation
+Cuttack,2021,48,121,3,True,evaluation
+Cuttack,2021,85,48,12,True,evaluation
+Cuttack,2021,85,121,10,True,evaluation
+Cuttack,2021,121,48,8,True,evaluation
+Cuttack,2022,85,48,4,True,evaluation
+Cuttack,2022,85,121,8,True,evaluation
+Cuttack,2022,121,48,8,True,evaluation
+Cuttack,2023,48,121,10,True,evaluation
+Cuttack,2023,85,48,7,True,evaluation
+Cuttack,2023,85,121,4,True,evaluation
+Cuttack,2024,48,121,10,True,evaluation
+Cuttack,2024,85,48,15,True,evaluation
+Cuttack,2024,85,121,5,True,evaluation
+Cuttack,2025,48,121,18,True,evaluation
+Cuttack,2025,85,48,12,True,evaluation
+Cuttack,2025,85,121,5,True,evaluation
+Gajapati,2018,19,121,5,True,evaluation
+Gajapati,2019,19,121,7,True,evaluation
+Gajapati,2020,19,121,9,True,evaluation
+Gajapati,2021,19,121,5,True,evaluation
+Gajapati,2022,19,121,3,True,evaluation
+Gajapati,2023,19,121,11,True,evaluation
+Gajapati,2024,121,19,2,True,evaluation
+Gajapati,2025,19,121,10,True,evaluation
+Guntur,2019,165,92,1,False,evaluation
+Guntur,2021,165,92,1,False,evaluation
+Guntur,2022,92,165,1,False,evaluation
+Guntur,2023,165,92,2,True,evaluation
+Haora,2018,12,48,40,True,evaluation
+Haora,2019,12,48,32,True,evaluation
+Haora,2020,12,48,35,True,evaluation
+Haora,2021,12,48,10,True,evaluation
+Haora,2022,12,48,22,True,evaluation
+Haora,2023,12,48,28,True,evaluation
+Haora,2024,12,48,24,True,evaluation
+Haora,2025,12,48,22,True,evaluation
+Hugli,2018,12,48,37,True,evaluation
+Hugli,2018,12,85,1,False,evaluation
+Hugli,2018,85,48,1,False,evaluation
+Hugli,2019,12,48,23,True,evaluation
+Hugli,2019,12,85,3,True,evaluation
+Hugli,2019,85,48,2,True,evaluation
+Hugli,2020,12,48,39,True,evaluation
+Hugli,2021,12,48,21,True,evaluation
+Hugli,2021,85,12,1,False,evaluation
+Hugli,2022,12,48,17,True,evaluation
+Hugli,2023,12,48,34,True,evaluation
+Hugli,2023,85,48,1,False,evaluation
+Hugli,2024,12,48,26,True,evaluation
+Hugli,2025,12,48,45,True,evaluation
+Hugli,2025,85,12,2,True,evaluation
+Hugli,2025,85,48,2,True,evaluation
+Jagatsinghapur,2018,48,121,21,True,evaluation
+Jagatsinghapur,2018,85,48,84,True,evaluation
+Jagatsinghapur,2019,48,121,17,True,evaluation
+Jagatsinghapur,2019,85,48,105,True,evaluation
+Jagatsinghapur,2019,85,121,2,True,evaluation
+Jagatsinghapur,2020,48,121,15,True,evaluation
+Jagatsinghapur,2020,85,48,91,True,evaluation
+Jagatsinghapur,2020,85,121,2,True,evaluation
+Jagatsinghapur,2021,48,121,16,True,evaluation
+Jagatsinghapur,2021,85,48,68,True,evaluation
+Jagatsinghapur,2021,85,121,2,True,evaluation
+Jagatsinghapur,2022,85,48,47,True,evaluation
+Jagatsinghapur,2022,85,121,5,True,evaluation
+Jagatsinghapur,2022,121,48,7,True,evaluation
+Jagatsinghapur,2023,48,121,15,True,evaluation
+Jagatsinghapur,2023,85,48,61,True,evaluation
+Jagatsinghapur,2023,85,121,1,False,evaluation
+Jagatsinghapur,2024,48,121,6,True,evaluation
+Jagatsinghapur,2024,85,48,64,True,evaluation
+Jagatsinghapur,2024,85,121,1,False,evaluation
+Jagatsinghapur,2025,48,121,13,True,evaluation
+Jagatsinghapur,2025,85,48,76,True,evaluation
+Jagatsinghapur,2025,85,121,8,True,evaluation
+Jajapur,2018,48,121,37,True,evaluation
+Jajapur,2018,85,48,56,True,evaluation
+Jajapur,2018,85,121,4,True,evaluation
+Jajapur,2019,48,121,34,True,evaluation
+Jajapur,2019,85,48,72,True,evaluation
+Jajapur,2019,85,121,12,True,evaluation
+Jajapur,2020,48,121,17,True,evaluation
+Jajapur,2020,85,48,36,True,evaluation
+Jajapur,2020,85,121,23,True,evaluation
+Jajapur,2021,85,48,27,True,evaluation
+Jajapur,2021,85,121,29,True,evaluation
+Jajapur,2021,121,48,16,True,evaluation
+Jajapur,2022,85,48,29,True,evaluation
+Jajapur,2022,85,121,30,True,evaluation
+Jajapur,2022,121,48,17,True,evaluation
+Jajapur,2023,48,121,28,True,evaluation
+Jajapur,2023,85,48,35,True,evaluation
+Jajapur,2023,85,121,6,True,evaluation
+Jajapur,2024,48,121,11,True,evaluation
+Jajapur,2024,85,48,39,True,evaluation
+Jajapur,2024,85,121,11,True,evaluation
+Jajapur,2025,48,121,32,True,evaluation
+Jajapur,2025,85,48,70,True,evaluation
+Jajapur,2025,85,121,16,True,evaluation
+Kendrapara,2018,48,121,3,True,evaluation
+Kendrapara,2018,85,48,97,True,evaluation
+Kendrapara,2018,85,121,1,False,evaluation
+Kendrapara,2019,48,121,4,True,evaluation
+Kendrapara,2019,85,48,92,True,evaluation
+Kendrapara,2020,48,121,4,True,evaluation
+Kendrapara,2020,85,48,66,True,evaluation
+Kendrapara,2020,85,121,1,False,evaluation
+Kendrapara,2021,85,48,70,True,evaluation
+Kendrapara,2021,85,121,3,True,evaluation
+Kendrapara,2021,121,48,1,False,evaluation
+Kendrapara,2022,85,48,47,True,evaluation
+Kendrapara,2022,85,121,1,False,evaluation
+Kendrapara,2022,121,48,1,False,evaluation
+Kendrapara,2023,48,121,2,True,evaluation
+Kendrapara,2023,85,48,50,True,evaluation
+Kendrapara,2024,85,48,81,True,evaluation
+Kendrapara,2024,85,121,2,True,evaluation
+Kendrapara,2025,48,121,4,True,evaluation
+Kendrapara,2025,85,48,80,True,evaluation
+Kendrapara,2025,85,121,1,False,evaluation
+Khordha,2018,48,121,7,True,evaluation
+Khordha,2018,85,48,2,True,evaluation
+Khordha,2019,48,121,3,True,evaluation
+Khordha,2019,85,48,3,True,evaluation
+Khordha,2019,85,121,2,True,evaluation
+Khordha,2020,48,121,3,True,evaluation
+Khordha,2020,85,48,4,True,evaluation
+Khordha,2020,85,121,2,True,evaluation
+Khordha,2021,48,121,2,True,evaluation
+Khordha,2021,85,48,2,True,evaluation
+Khordha,2021,85,121,4,True,evaluation
+Khordha,2022,85,121,2,True,evaluation
+Khordha,2022,121,48,1,False,evaluation
+Khordha,2023,48,121,3,True,evaluation
+Khordha,2023,85,48,1,False,evaluation
+Khordha,2023,85,121,1,False,evaluation
+Khordha,2024,48,121,3,True,evaluation
+Khordha,2024,85,48,1,False,evaluation
+Khordha,2024,85,121,4,True,evaluation
+Khordha,2025,48,121,1,False,evaluation
+Khordha,2025,85,48,1,False,evaluation
+Khordha,2025,85,121,2,True,evaluation
+Krishna,2018,19,92,8,True,evaluation
+Krishna,2019,19,92,9,True,evaluation
+Krishna,2020,19,92,7,True,evaluation
+Krishna,2021,19,92,10,True,evaluation
+Krishna,2022,19,92,9,True,evaluation
+Krishna,2023,19,92,4,True,evaluation
+Krishna,2024,92,19,2,True,evaluation
+Krishna,2025,19,92,4,True,evaluation
+Mayurbhanj,2018,48,121,6,True,evaluation
+Mayurbhanj,2018,85,48,41,True,evaluation
+Mayurbhanj,2018,85,121,13,True,evaluation
+Mayurbhanj,2019,48,121,8,True,evaluation
+Mayurbhanj,2019,85,48,60,True,evaluation
+Mayurbhanj,2019,85,121,11,True,evaluation
+Mayurbhanj,2020,48,121,6,True,evaluation
+Mayurbhanj,2020,85,48,57,True,evaluation
+Mayurbhanj,2020,85,121,15,True,evaluation
+Mayurbhanj,2021,85,48,35,True,evaluation
+Mayurbhanj,2021,85,121,22,True,evaluation
+Mayurbhanj,2021,121,48,5,True,evaluation
+Mayurbhanj,2022,85,48,28,True,evaluation
+Mayurbhanj,2022,85,121,12,True,evaluation
+Mayurbhanj,2022,121,48,4,True,evaluation
+Mayurbhanj,2023,48,121,7,True,evaluation
+Mayurbhanj,2023,85,48,32,True,evaluation
+Mayurbhanj,2023,85,121,12,True,evaluation
+Mayurbhanj,2024,48,121,8,True,evaluation
+Mayurbhanj,2024,85,48,41,True,evaluation
+Mayurbhanj,2024,85,121,7,True,evaluation
+Mayurbhanj,2025,48,121,9,True,evaluation
+Mayurbhanj,2025,85,48,53,True,evaluation
+Mayurbhanj,2025,85,121,8,True,evaluation
+North 24 Parganas,2018,12,48,13,True,evaluation
+North 24 Parganas,2018,12,150,51,True,evaluation
+North 24 Parganas,2018,48,150,10,True,evaluation
+North 24 Parganas,2018,150,48,1,False,evaluation
+North 24 Parganas,2019,12,48,6,True,evaluation
+North 24 Parganas,2019,12,150,45,True,evaluation
+North 24 Parganas,2019,48,150,3,True,evaluation
+North 24 Parganas,2019,150,48,9,True,evaluation
+North 24 Parganas,2020,12,48,12,True,evaluation
+North 24 Parganas,2020,12,150,46,True,evaluation
+North 24 Parganas,2020,48,150,8,True,evaluation
+North 24 Parganas,2021,12,48,6,True,evaluation
+North 24 Parganas,2021,12,150,22,True,evaluation
+North 24 Parganas,2021,150,48,8,True,evaluation
+North 24 Parganas,2022,12,48,3,True,evaluation
+North 24 Parganas,2022,12,150,27,True,evaluation
+North 24 Parganas,2022,150,48,6,True,evaluation
+North 24 Parganas,2023,12,48,7,True,evaluation
+North 24 Parganas,2023,12,150,23,True,evaluation
+North 24 Parganas,2023,48,150,3,True,evaluation
+North 24 Parganas,2024,12,48,9,True,evaluation
+North 24 Parganas,2024,12,150,39,True,evaluation
+North 24 Parganas,2024,48,150,5,True,evaluation
+North 24 Parganas,2025,12,48,9,True,evaluation
+North 24 Parganas,2025,12,150,39,True,evaluation
+North 24 Parganas,2025,48,150,15,True,evaluation
+Pashchim Medinipur,2018,12,48,33,True,evaluation
+Pashchim Medinipur,2018,12,85,3,True,evaluation
+Pashchim Medinipur,2018,85,48,86,True,evaluation
+Pashchim Medinipur,2018,121,48,1,False,evaluation
+Pashchim Medinipur,2019,12,48,17,True,evaluation
+Pashchim Medinipur,2019,12,85,5,True,evaluation
+Pashchim Medinipur,2019,85,48,96,True,evaluation
+Pashchim Medinipur,2019,85,121,1,False,evaluation
+Pashchim Medinipur,2020,12,48,20,True,evaluation
+Pashchim Medinipur,2020,12,85,11,True,evaluation
+Pashchim Medinipur,2020,85,48,83,True,evaluation
+Pashchim Medinipur,2021,12,48,5,True,evaluation
+Pashchim Medinipur,2021,85,12,5,True,evaluation
+Pashchim Medinipur,2021,85,48,53,True,evaluation
+Pashchim Medinipur,2022,12,48,9,True,evaluation
+Pashchim Medinipur,2022,12,85,3,True,evaluation
+Pashchim Medinipur,2022,85,48,78,True,evaluation
+Pashchim Medinipur,2022,121,48,1,False,evaluation
+Pashchim Medinipur,2023,12,48,11,True,evaluation
+Pashchim Medinipur,2023,12,85,7,True,evaluation
+Pashchim Medinipur,2023,48,121,2,True,evaluation
+Pashchim Medinipur,2023,85,48,71,True,evaluation
+Pashchim Medinipur,2024,12,48,9,True,evaluation
+Pashchim Medinipur,2024,12,85,3,True,evaluation
+Pashchim Medinipur,2024,85,48,73,True,evaluation
+Pashchim Medinipur,2024,85,121,1,False,evaluation
+Pashchim Medinipur,2025,12,48,7,True,evaluation
+Pashchim Medinipur,2025,48,121,1,False,evaluation
+Pashchim Medinipur,2025,85,12,9,True,evaluation
+Pashchim Medinipur,2025,85,48,94,True,evaluation
+Pashchim Medinipur,2025,85,121,1,False,evaluation
+Purba Medinipur,2018,12,48,47,True,evaluation
+Purba Medinipur,2018,12,85,3,True,evaluation
+Purba Medinipur,2018,85,48,52,True,evaluation
+Purba Medinipur,2019,12,48,31,True,evaluation
+Purba Medinipur,2019,12,85,1,False,evaluation
+Purba Medinipur,2019,85,48,38,True,evaluation
+Purba Medinipur,2020,12,48,19,True,evaluation
+Purba Medinipur,2020,12,85,5,True,evaluation
+Purba Medinipur,2020,85,12,2,True,evaluation
+Purba Medinipur,2020,85,48,29,True,evaluation
+Purba Medinipur,2021,12,48,13,True,evaluation
+Purba Medinipur,2021,12,85,2,True,evaluation
+Purba Medinipur,2021,85,12,2,True,evaluation
+Purba Medinipur,2021,85,48,15,True,evaluation
+Purba Medinipur,2022,12,48,28,True,evaluation
+Purba Medinipur,2022,12,85,6,True,evaluation
+Purba Medinipur,2022,85,48,41,True,evaluation
+Purba Medinipur,2023,12,48,33,True,evaluation
+Purba Medinipur,2023,12,85,8,True,evaluation
+Purba Medinipur,2023,85,48,28,True,evaluation
+Purba Medinipur,2024,12,48,16,True,evaluation
+Purba Medinipur,2024,12,85,6,True,evaluation
+Purba Medinipur,2024,85,48,35,True,evaluation
+Purba Medinipur,2025,12,48,10,True,evaluation
+Purba Medinipur,2025,85,12,6,True,evaluation
+Purba Medinipur,2025,85,48,61,True,evaluation
+Puri,2018,48,121,18,True,evaluation
+Puri,2018,85,48,19,True,evaluation
+Puri,2018,85,121,6,True,evaluation
+Puri,2019,48,121,26,True,evaluation
+Puri,2019,85,48,26,True,evaluation
+Puri,2019,85,121,12,True,evaluation
+Puri,2020,48,121,10,True,evaluation
+Puri,2020,85,48,18,True,evaluation
+Puri,2020,85,121,5,True,evaluation
+Puri,2021,48,121,20,True,evaluation
+Puri,2021,85,48,17,True,evaluation
+Puri,2021,85,121,9,True,evaluation
+Puri,2022,85,48,9,True,evaluation
+Puri,2022,85,121,8,True,evaluation
+Puri,2022,121,48,7,True,evaluation
+Puri,2023,48,121,13,True,evaluation
+Puri,2023,85,48,16,True,evaluation
+Puri,2023,85,121,9,True,evaluation
+Puri,2024,48,121,7,True,evaluation
+Puri,2024,85,48,19,True,evaluation
+Puri,2024,85,121,9,True,evaluation
+Puri,2025,48,121,16,True,evaluation
+Puri,2025,85,48,36,True,evaluation
+Puri,2025,85,121,9,True,evaluation
+South 24 Parganas,2018,12,48,67,True,evaluation
+South 24 Parganas,2018,12,150,34,True,evaluation
+South 24 Parganas,2018,48,150,26,True,evaluation
+South 24 Parganas,2019,12,48,69,True,evaluation
+South 24 Parganas,2019,12,150,24,True,evaluation
+South 24 Parganas,2019,48,150,37,True,evaluation
+South 24 Parganas,2019,150,48,4,True,evaluation
+South 24 Parganas,2020,12,48,53,True,evaluation
+South 24 Parganas,2020,12,150,45,True,evaluation
+South 24 Parganas,2020,48,150,9,True,evaluation
+South 24 Parganas,2021,12,48,13,True,evaluation
+South 24 Parganas,2021,12,150,24,True,evaluation
+South 24 Parganas,2021,150,48,10,True,evaluation
+South 24 Parganas,2022,12,48,22,True,evaluation
+South 24 Parganas,2022,12,150,45,True,evaluation
+South 24 Parganas,2022,48,150,1,False,evaluation
+South 24 Parganas,2022,150,48,5,True,evaluation
+South 24 Parganas,2023,12,48,27,True,evaluation
+South 24 Parganas,2023,12,150,8,True,evaluation
+South 24 Parganas,2023,48,150,4,True,evaluation
+South 24 Parganas,2024,12,48,26,True,evaluation
+South 24 Parganas,2024,12,150,26,True,evaluation
+South 24 Parganas,2024,48,150,5,True,evaluation
+South 24 Parganas,2025,12,48,18,True,evaluation
+South 24 Parganas,2025,12,150,26,True,evaluation
+South 24 Parganas,2025,48,150,9,True,evaluation
+Srikakulam,2018,19,121,12,True,evaluation
+Srikakulam,2018,121,19,1,False,evaluation
+Srikakulam,2019,19,121,19,True,evaluation
+Srikakulam,2020,19,121,13,True,evaluation
+Srikakulam,2021,19,121,8,True,evaluation
+Srikakulam,2022,19,121,10,True,evaluation
+Srikakulam,2023,19,121,12,True,evaluation
+Srikakulam,2024,121,19,14,True,evaluation
+Srikakulam,2025,19,121,16,True,evaluation
+Srikakulam,2025,121,19,1,False,evaluation
+Vizianagaram,2021,19,121,2,True,evaluation
+Vizianagaram,2022,19,121,2,True,evaluation
+Vizianagaram,2024,121,19,1,False,evaluation
+Vizianagaram,2025,19,121,1,False,evaluation
+West Godavari,2018,19,92,3,True,evaluation
+West Godavari,2019,19,92,7,True,evaluation
+West Godavari,2020,19,92,5,True,evaluation
+West Godavari,2021,19,92,3,True,evaluation
+West Godavari,2022,19,92,1,False,evaluation
+West Godavari,2023,19,92,2,True,evaluation
+West Godavari,2024,92,19,1,False,evaluation
+West Godavari,2025,19,92,3,True,evaluation
+Baleshwar,2017,85,48,66,True,baseline
+Baleshwar,2017,85,121,5,True,baseline
+Baleshwar,2017,121,48,2,True,baseline
+Bhadrak,2017,85,48,37,True,baseline
+Bhadrak,2017,85,121,8,True,baseline
+Bhadrak,2017,121,48,15,True,baseline
+Cuttack,2017,85,48,5,True,baseline
+Cuttack,2017,85,121,12,True,baseline
+Cuttack,2017,121,48,11,True,baseline
+Gajapati,2017,19,121,5,True,baseline
+Guntur,2017,165,92,1,False,baseline
+Haora,2017,12,48,22,True,baseline
+Hugli,2017,12,48,21,True,baseline
+Hugli,2017,12,85,1,False,baseline
+Jagatsinghapur,2017,85,48,68,True,baseline
+Jagatsinghapur,2017,85,121,9,True,baseline
+Jagatsinghapur,2017,121,48,15,True,baseline
+Jajapur,2017,85,48,25,True,baseline
+Jajapur,2017,85,121,27,True,baseline
+Jajapur,2017,121,48,17,True,baseline
+Kendrapara,2017,85,48,65,True,baseline
+Kendrapara,2017,85,121,6,True,baseline
+Kendrapara,2017,121,48,1,False,baseline
+Khordha,2017,85,121,6,True,baseline
+Khordha,2017,121,48,1,False,baseline
+Krishna,2017,19,92,2,True,baseline
+Mayurbhanj,2017,85,48,34,True,baseline
+Mayurbhanj,2017,85,121,19,True,baseline
+Mayurbhanj,2017,121,48,6,True,baseline
+North 24 Parganas,2017,12,48,7,True,baseline
+North 24 Parganas,2017,12,150,27,True,baseline
+North 24 Parganas,2017,48,150,4,True,baseline
+Pashchim Medinipur,2017,12,48,13,True,baseline
+Pashchim Medinipur,2017,12,85,10,True,baseline
+Pashchim Medinipur,2017,85,48,54,True,baseline
+Pashchim Medinipur,2017,85,121,1,False,baseline
+Purba Medinipur,2017,12,48,16,True,baseline
+Purba Medinipur,2017,12,85,5,True,baseline
+Purba Medinipur,2017,85,48,24,True,baseline
+Puri,2017,85,48,6,True,baseline
+Puri,2017,85,121,23,True,baseline
+Puri,2017,121,48,16,True,baseline
+South 24 Parganas,2017,12,48,27,True,baseline
+South 24 Parganas,2017,12,150,34,True,baseline
+South 24 Parganas,2017,48,150,7,True,baseline
+Srikakulam,2017,19,121,11,True,baseline
+Vizianagaram,2017,19,121,1,False,baseline

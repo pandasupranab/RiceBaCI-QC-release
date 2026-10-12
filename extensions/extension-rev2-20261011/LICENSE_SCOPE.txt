@@ -1,0 +1,12 @@
+LICENCE SCOPE — PAPER 2 POST-HOC EXTENSION
+
+Author-owned software in scripts/ is offered under the MIT License; the complete text is in LICENSE_CODE_MIT.txt. Existing software copied under release_src/ retains its original MIT notice and other upstream notices.
+
+Author-created calibration outputs, result tables, fit caches and documentation are offered under the Creative Commons Attribution 4.0 International licence:
+https://creativecommons.org/licenses/by/4.0/
+
+Credit Supranab Panda and Sarat Chandra Sahu, identify the published extension version and DOI, and indicate changes when adapting the material.
+
+These licences apply only to material the authors are entitled to license. Third-party products, data and rights are not relicensed. Retained provenance and copyright/licence notices continue to apply. The original raw inputs and replay kit have their own published licence scope at https://doi.org/10.5281/zenodo.22750338.
+
+No journal/publisher PDF, peer-review correspondence, credentials or GADM shapefile is part of this prepared release. Internal review records are retained privately rather than deposited. The frozen scientific evidence and results are not changed by the licensing wrapper.

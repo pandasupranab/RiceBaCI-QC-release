@@ -1,0 +1,83 @@
+{
+ "environment": {
+  "python": "3.13.16",
+  "numpy": "2.4.4",
+  "pandas": "3.0.2",
+  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "cpu_count": 2,
+  "utc": "2026-10-10T19:46:21Z"
+ },
+ "g0_cache_sha256": "31b96b6ea2521dce7ee4b9adabd32d9870ea34fff88468e20084073e49f089cf",
+ "g2_fits_sha256": "43ed53db122b02ca6e3f6cd56015dfa839a03374fdff73388ebc66ea8348c259",
+ "pairs_released_sha256": "1327f06c1f32fbef96f4b0f1c32c50522b72bd530c884aca7fd4c8709b48600e",
+ "g2_pairs_sha256": "a1f6ae7d8381bece2aa56d2005cb772b72d0495960f04fe6405bd53589a744eb",
+ "seed_boot": 20261012,
+ "bootstrap_replicates": 2000,
+ "g0_bounds": {
+  "trough": [
+   184.5,
+   304.5
+  ],
+  "heading": [
+   274.5,
+   354.5
+  ],
+  "harvest": [
+   324.5,
+   422.0
+  ]
+ },
+ "g2_design_limits": {
+  "trough": [
+   174.5,
+   374.5
+  ],
+  "heading": [
+   194.5,
+   404.5
+  ],
+  "harvest": [
+   214.5,
+   422.0
+  ]
+ },
+ "own_2017_tolerances": {
+  "G0": {
+   "trough": [
+    70.0,
+    798
+   ],
+   "heading": [
+    50.0,
+    798
+   ],
+   "harvest": [
+    60.0,
+    798
+   ]
+  },
+  "G2": {
+   "trough": [
+    80.0,
+    531
+   ],
+   "heading": [
+    70.0,
+    531
+   ],
+   "harvest": [
+    70.0,
+    531
+   ]
+  }
+ },
+ "share_G2_retained_outside_G0_range": {
+  "t1": 0.09587192378936227,
+  "t2": 0.23286583752315426,
+  "t4": 0.06615506747816882
+ },
+ "series_retained_both": 33705,
+ "seconds": 109.16663885116577,
+ "pairs_G0_rebuilt_equals_released_count": true
+}
